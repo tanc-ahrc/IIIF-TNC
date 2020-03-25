@@ -49,9 +49,8 @@ END;
 	$defs = ob_get_contents();
 	ob_end_clean(); // Don't send output to client	
 
-
-ob_start();
-echo <<<END
+	ob_start();
+	echo <<<END
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,15 +82,16 @@ console.log(mermaid.render);
 </body>
 </html>
 END;
-$html = ob_get_contents();
-ob_end_clean(); // Don't send output to client	
+	$html = ob_get_contents();
+	ob_end_clean(); // Don't send output to client	
 
-if (file_exists("../docs/timeline.html"))
-	{unlink ("../docs/timeline.html");}
+	if (file_exists("../docs/timeline.html"))
+		{unlink ("../docs/timeline.html");}
 	
-$myfile = fopen("../docs/timeline.html", "w");
-fwrite($myfile, $html);
-fclose($myfile);
+	$myfile = fopen("../docs/timeline.html", "w");
+	fwrite($myfile, $html);
+	fclose($myfile);
+	}
 	
 function dA ($v)
 	{
