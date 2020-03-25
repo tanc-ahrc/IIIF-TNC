@@ -1,0 +1,58 @@
+	{
+	"project": "Practical applications of IIIF as a building block towards a digital National Collection",
+	"start date": "2020-02-01",
+	"margin": -3,
+	"groups": {
+		"int": {
+			"title": "Initial discussion and planning",
+			"stages" : [
+				["Literature/website/software review", "", 3, 8],
+				["Establish communications, collaborative environments and links with related interest groups",	"", 0, 3],
+				["Establish connections with related AHRC projects – PIDs, Linked data, etc", "", 0, 3],
+				["Recruit Project Researcher", "crit", "3,3", 6],
+				["Identify areas of collaboration with related AHRC projects and how their work can inform planned development, specifically relating to PIDs and Linked data.", "", 0, 3],
+				["Project Researcher In Post", "crit", 6, 21],
+				["Provisional Reopening NG", "crit", "3,3", "3,9"]
+			]},
+		"ws": {
+			"title": "Workshops",
+			"stages": [
+				["Organise Workshop 1", "", 3, 5],
+				["Workshop 1 - Showcase and discuss the current IIIF use and best practice", "crit, active", 5, 6],
+				["Organise Workshop 2",	"", 6, 9],
+				["Workshop 2 - Discuss the potential of shared IIIF services", "crit, active", 9, 10],
+				["Organise Workshop 3 – Document available resources and development ideas", "", 10, 18],
+				["Workshop 3 - Developing practical IIIF solutions", "crit, active", 18, 19]
+			]},
+		"cr": {
+			"title": "Collaborative Research",
+			"stages": [
+				["Assessing the output of Workshop 1", "", 6, 7],
+				["Define scope and selection of main IIIF demonstration/examples", "", 1, 7],
+				["Development work of main IIIF demonstration/examples", "", 1, 19],
+				["Assessing the output of Workshop 2", "", 10, 12],
+				["Explore available and potential future IIIF services and tools", "", 2, 9],
+				["Write recommendations for required IIIF services and related future proposals", "", 10, 20],
+				["IIIF Resource survey", "", 3, 7],
+				["Evaluate selection of identified IIIF Resources", "", 7, 8],
+				["Refresh IIIF Resource List for Workshop 3", "", 16, 18],
+				["Assessing the output of Workshop 3", "", 19, 20] 
+			]},
+		"pl": {
+			"title": "Placements",
+			"stages": [
+				["Secondments (some may be virtual) for researcher", "", 6, 14] 
+			]},
+		"pd": {
+			"title": "Public demonstrations",
+			"stages": [
+				["Evaluation of demonstration deliverables", "crit, active", 19, 20], 
+				["Presentation of demonstration deliverables", "crit, active", 20, 21] 
+			]},
+		"rp": {
+			"title": "Reporting",
+			"stages": [
+				["Complete and Deliver final report",	"crit, active", 20, 21] 
+			]}
+		}
+	}
