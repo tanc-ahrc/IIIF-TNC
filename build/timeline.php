@@ -92,14 +92,13 @@ if (file_exists("../docs/timeline.html"))
 $myfile = fopen("../docs/timeline.html", "w");
 fwrite($myfile, $html);
 fclose($myfile);
-echo $html;
 	
-function dA ($v)//$m, $d=0)
+function dA ($v)
 	{
 	global $start;
 	$a = explode(",", $v);
 	$m = intval($a[0]);
-	if(isset($a[1]));
+	if(isset($a[1]))
 		{$d = intval($a[1]);}
 	else
 		{$d = 0;}
