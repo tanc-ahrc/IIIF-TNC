@@ -10,8 +10,13 @@
 	"footer": "&copy; The National Gallery 2020",
 	"extra_logos": {
 		"github": {
-			"link": "https://github.com/",
-			"logo": "graphics/github logo.png",
-			"alt": "GitHub"}
-		}
+			"link": "https://github.com/jpadfield/simple-site",
+			"logo": "graphics/github logo white.png",
+			"alt": "GitHub Jpadfield Simple-site"
+			}
+		},
+	"extra_js_scripts": [],
+	"extra_css_scripts": [],
+	"extra_css": "",
+	"extra_js": ""
 	}
