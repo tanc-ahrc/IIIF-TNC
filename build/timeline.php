@@ -107,5 +107,14 @@ function dA ($v)
 	$new = $date->format('Y-m-d'); // Output is 2020-Aug-30
 	return($new);
 	}
+
+function getRemoteJsonDetails ($uri, $format=false, $decode=false)
+	{if ($format) {$uri = $uri.".".$format;}
+	 $fc = file_get_contents($uri);
+	 if ($decode)
+		{$output = json_decode($fc, true);}
+	 else
+		{$output = $fc;}
+	 return ($output);}
 	
 ?>
