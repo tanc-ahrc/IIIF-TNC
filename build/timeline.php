@@ -1,6 +1,6 @@
 <?php
 
-// visualise with: https://mermaidjs.github.io/mermaid-live-editor
+// visualise with: https://mermaidjs.github.io/mermaid-live-editor test
 
 if (!file_exists("timeline.json"))
 	{die("ERROR: timeline.json missing\n");}
