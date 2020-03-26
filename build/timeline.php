@@ -49,6 +49,7 @@ END;
 	$defs = ob_get_contents();
 	ob_end_clean(); // Don't send output to client	
 
+	//Stuff
 	ob_start();
 	echo <<<END
 <!DOCTYPE html>
