@@ -66,7 +66,7 @@ END;
   <div class="mermaid">
   $defs
   </div>
-  <script src="https://github.com/mermaid-js/mermaid/blob/develop/src/mermaid.js"></script>
+  <script src="https://mermaid-js.github.io/mermaid-live-editor/bundle.js"></script>
   <script>
   mermaid.ganttConfig = {
     titleTopMargin:25,
