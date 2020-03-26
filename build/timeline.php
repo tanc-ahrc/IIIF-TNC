@@ -67,7 +67,7 @@ END;
   <div class="mermaid">
   $defs
   </div>
-  <script src="https://unpkg.com/browse/mermaid@8.4.8/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.0/dist/mermaid.min.js"></script>
   <script>
   mermaid.ganttConfig = {
     titleTopMargin:25,
