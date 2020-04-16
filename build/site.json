@@ -10,9 +10,9 @@
 	"footer": "",
 	"extra_logos": {
 		"github": {
-			"link": "https://github.com/jpadfield/simple-site",
+			"link": "https://github.com/tanc-ahrc/IIIF-TNC",
 			"logo": "graphics/github logo white.png",
-			"alt": "GitHub Jpadfield Simple-site"
+			"alt": "GitHub TANC - IIIF"
 			}
 		},
 	"extra_js_scripts": [],
