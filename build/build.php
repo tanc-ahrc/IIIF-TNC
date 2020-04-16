@@ -18,7 +18,7 @@ if (!is_array($pages) or count($pages) < 1)
 else
 	{$pages = pagesCheck(array_merge($expages, $pages));}
 
-$extensionPages = array("timeline", "mirador");
+$extensionPages = array("timeline", "mirador", "gallery");
 
 $menuList = array();
 $subpages = array();
@@ -760,22 +760,33 @@ END;
 			}	
 		}
 	else if ($d["class"] == "gallery")
-		{			
+		{
+		$gcontent = "";
+		
 		if (!file_exists($d["file"]))
 			{die("ERROR: $d[file] missing\n");}
 		else
 			{
 			$dets = getRemoteJsonDetails($d["file"], false, true);
-
-			if (!isset($dets["start date"]))
-				{die("ERROR: $d[file] format problems - 'start date' not found\n");}
-		
-			$gcontent = '<div class="row text-center text-lg-left">';
-
-			foreach ($dets as $n => $a)
+			if (isset($dets["ptitle"]))
+				{$gcontent .= "<h3>$dets[ptitle]</h3>";}
+			$gcontent .= '<div class="row text-center text-lg-left">';
+			$last = "primary";
+			
+			foreach ($dets["images"] as $n => $a)
 				{
 				$a = array_merge(array("logo" => "", "link" => "#", "level" => "primary"), $a);
-				
+
+				if ($a["level"] != $last)
+					{
+					$gcontent .= '</div>';
+					if (isset($dets["stitle"]))
+						{$gcontent .= "<h3>$dets[stitle]</h3>";}
+					$gcontent .= '<div class="row text-center text-lg-left">';
+					}
+
+				$last = $a["level"];
+					
 				ob_start();
 		echo <<<END
     <div class="col-lg-3 col-md-4 col-6">

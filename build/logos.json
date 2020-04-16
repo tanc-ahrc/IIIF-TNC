@@ -1,4 +1,7 @@
 {
+ "ptitle": "Project Investigators",
+ "stitle": "Project Partners",
+ "images": {
 	"The National Gallery":
     {"logo":"graphics/NG Logo Black on Transparent 600.png",
 		 "link": "https://www.nationalgallery.org.uk",
@@ -39,4 +42,4 @@
     {"logo":"graphics/International_Image_Interoperability_Framework_logo.png",
 		 "link": "https://iiif.io/community/consortium/",
 		 "level": "secondary"}
-}
+}}
