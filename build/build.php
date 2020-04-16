@@ -759,6 +759,59 @@ END;
 			$content = positionExtraContent ($content, $mcontent);
 			}	
 		}
+	else if ($d["class"] == "gallery")
+		{			
+		if (!file_exists($d["file"]))
+			{die("ERROR: $d[file] missing\n");}
+		else
+			{
+			$dets = getRemoteJsonDetails($d["file"], false, true);
+
+			if (!isset($dets["start date"]))
+				{die("ERROR: $d[file] format problems - 'start date' not found\n");}
+		
+			$gcontent = '<div class="row text-center text-lg-left">';
+
+			foreach ($dets as $n => $a)
+				{
+				$a = array_merge(array("logo" => "", "link" => "#", "level" => "primary"), $a);
+				
+				ob_start();
+		echo <<<END
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="$a[link]" class="d-block mb-4 h-100">
+        <img class="img-fluid img-thumbnail $a[level] mx-auto d-block"
+				  src="$a[logo]" alt="$n">
+      </a>
+    </div>
+END;
+				$gcontent .= ob_get_contents();
+				ob_end_clean(); // Don't send output to client
+				}
+
+			$gcontent .= '</div>';
+			
+			//use to hide the label used for the first line which is just in place to provide a margin/padding on the left.
+			$pd["extra_css"] .= "
+
+img.primary, img.secondary {
+  display: block;
+  max-width:230px;
+  max-height:128px;
+  width: auto;
+  height: auto;
+	border: 0px solid black;
+	}
+	
+img.secondary{
+  max-width:192px;
+  max-height:96px;
+	}";
+
+			$content = positionExtraContent ($content, $gcontent);
+			}	
+		}
+		
 	return (array($content, $pd));
 	}
 	

@@ -1,0 +1,42 @@
+{
+	"The National Gallery":
+    {"logo":"graphics/NG Logo Black on Transparent 600.png",
+		 "link": "https://www.nationalgallery.org.uk",
+		 "level": "primary"},
+	"The National Portrait Gallery":
+    {"logo":"graphics/NPG_logo_trans_black.png",
+		 "link": "https://www.npg.org.uk/",
+		 "level": "primary"},
+	"The University of Edinburgh":
+    {"logo":"graphics/UoE_Centred Logo_CMYK_v1_160215.png",
+		 "link": "https://www.ed.ac.uk/",
+		 "level": "primary"},
+	"The British Library":
+    {"logo":"graphics/BritishLibrary.svg_.png",
+		 "link": "https://www.bl.uk/",
+		 "level": "primary"},
+	"The Royal Botanical Gardens Edinburgh":
+    {"logo":"graphics/rbge_logo.png",
+		 "link": "https://www.rbge.org.uk/",
+		 "level": "secondary"},
+	"Digirati":
+    {"logo":"graphics/cropped-digirati_logo1.png",
+		 "link": "https://digirati.com/",
+		 "level": "secondary"},
+	"Stanford University Library":
+    {"logo":"graphics/sul.png",
+		 "link": "Stanford University Library",
+		 "level": "secondary"},
+	"Science Museum Group":
+    {"logo":"graphics/1200px-Smg-logo.svg.png",
+		 "link": "https://www.sciencemuseumgroup.org.uk/",
+		 "level": "secondary"},
+	"The Victoria and Albert Museum":
+    {"logo":"graphics/512px-Victoria_and_Albert_Museum_Logo.svg.png",
+		 "link": "https://www.vam.ac.uk/",
+		 "level": "secondary"},
+	"International Image Interoperability Framework (IIIF) Consortium":
+    {"logo":"graphics/International_Image_Interoperability_Framework_logo.png",
+		 "link": "https://iiif.io/community/consortium/",
+		 "level": "secondary"}
+}

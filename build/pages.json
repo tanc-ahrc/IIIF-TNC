@@ -6,6 +6,8 @@
 	"content right": "<figure class=\"figure\"><img src=\"https://media.ng-london.org.uk/iiif/009-01DZ-0000/full/512,/0/default.jpg\" class=\"figure-img img-fluid rounded\" alt=\"Hans Holbein the Younger, Jean de Dinteville and Georges de Selve ('The Ambassadors').\"><figcaption class=\"figure-caption\">Hans Holbein the Younger, Jean de Dinteville and Georges de Selve ('The Ambassadors') \u00a9 The National Gallery, London. Bought, 1890. This image is licensed under [CC-BY-NC-ND 4.0|https://creativecommons.org/licenses/by-nc-nd/4.0/], presented via a IIIF server.</figcaption></figure><p>This project is a Foundation project within the the <a href=\"https://ahrc.ukri.org/\">AHRC</a> funded <a href=\"https://ahrc.ukri.org/funding/apply-for-funding/current-opportunities/towards-a-national-collection-opening-uk-heritage-to-the-world-pre-call-announcement/\">Towards a National Collection Programme</a>.</p>"
 	},
 "about": {
+	"class": "gallery",
+	"file": "logos.json",
 	"title": "Practical applications of IIIF",
 	"content": "<p></p>",
 	"footnotes": [],
