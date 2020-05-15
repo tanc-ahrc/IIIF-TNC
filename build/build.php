@@ -1,5 +1,5 @@
 <?php
-
+//
 // simple array "extentionClassName => newFunctionName"
 $extensionList = array();
 
