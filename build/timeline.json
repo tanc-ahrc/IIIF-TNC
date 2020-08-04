@@ -4,15 +4,15 @@
 	"margin": -3,
 	"groups": {
 		"int": {
-			"title": "Initial discussion and planning",
+			"title": "Administration",
 			"stages" : [
-				["Literature/website/software review", "", 2, 8],
+				["Project on hold due to Covid-19 ", "crit, done", 0, 6],
+				["Literature/website/software review", "", 8, 14],
 				["Establish communications, collaborative environments and links with related interest groups",	"", 0, 4],
 				["Establish connections with related AHRC projects – PIDs, Linked data, etc", "", 0, 4],
-				["Identify areas of collaboration with related AHRC projects and how their work can inform planned development, specifically relating to PIDs and Linked data.", "", 0, 3],
-				["Provisional Reopening NG", "crit", "3,3", "3,9"],				
-				["Recruit Project Researcher", "crit", "3,3", 6],
-				["Project Researcher In Post", "crit", 6, 21]
+				["Identify areas of collaboration with related AHRC projects.", "", 0, 3],
+				["Recruit Project Researcher", "crit", 6, 8],
+				["Project Researcher In Post", "crit", 8, 26]
 			]},
 		"ws": {
 			"title": "Workshops",

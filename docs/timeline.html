@@ -14,8 +14,21 @@
 	<link href="css/main.css" rel="stylesheet" type="text/css">
     <style>
     
-g a {color:inherit;}
-#int0-text {display:none;}
+g a {
+	color:inherit;}
+	
+#int0-text {
+	display:none;}
+
+#tooltip {
+  background: cornsilk;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+  font-size: 0.75em;
+  font-weight: bold;}
+
+
     </style>
   </head>
 
@@ -42,19 +55,19 @@ g a {color:inherit;}
 			<div class="row ">				
 			 <div class="col-12 col-md-12">          
 				
-				<div class="jumbotron"><h2>IIIF - TNC Timeline</h2></div><div class="row"><div class="col-12 col-lg-12"></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12"><p>Please note that as a result of the current Covid-19 crisis the timeline for this project is subject to change.</p>	<div class="mermaid">
+				<div class="jumbotron"><h2>IIIF - TNC Timeline</h2></div><div class="row"><div class="col-12 col-lg-12"></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12"><p>Please note that as a result of the current Covid-19 crisis the timeline for this project is subject to change.</p>	<div id="gantt" class="mermaid">
 gantt
        dateFormat  YYYY-MM-DD
        title Practical applications of IIIF as a building block towards a digital National Collection	
-       	section Initial discussion and planning
+       	section Administration
 		Add as a margin :int0, 2019-11-01, 2019-11-01
-		Literature/website/software review :int1, 2020-04-01, 2020-10-01
-		Establish communications, collaborative environments and links with related interest groups :int2, 2020-02-01, 2020-06-01
-		Establish connections with related AHRC projects – PIDs, Linked data, etc :int3, 2020-02-01, 2020-06-01
-		Identify areas of collaboration with related AHRC projects and how their work can inform planned development, specifically relating to PIDs and Linked data. :int4, 2020-02-01, 2020-05-01
-		Provisional Reopening NG :crit, int5, 2020-05-04, 2020-05-10
-		Recruit Project Researcher :crit, int6, 2020-05-04, 2020-08-01
-		Project Researcher In Post :crit, int7, 2020-08-01, 2021-11-01
+		Project on hold due to Covid-19  :crit, done, int1, 2020-02-01, 2020-08-01
+		Literature/website/software review :int2, 2020-10-01, 2021-04-01
+		Establish communications, collaborative environments and links with related interest groups :int3, 2020-02-01, 2020-06-01
+		Establish connections with related AHRC projects – PIDs, Linked data, etc :int4, 2020-02-01, 2020-06-01
+		Identify areas of collaboration with related AHRC projects. :int5, 2020-02-01, 2020-05-01
+		Recruit Project Researcher :crit, int6, 2020-08-01, 2020-10-01
+		Project Researcher In Post :crit, int7, 2020-10-01, 2022-04-01
 	section Workshops
 		Organise Workshop 1 :ws0, 2020-04-01, 2020-07-21
 		Workshop 1 - Showcase and discuss the current IIIF use and best practice :crit, active, ws1, 2020-07-21, 2020-07-22
@@ -81,7 +94,7 @@ gantt
 	section Reporting
 		Complete and Deliver final report :crit, active, rp0, 2021-10-01, 2021-11-01
 
-	</div><div class="foonote"><ul></ul></div></div><!--/span--></div><!--/row-->    <br/>
+	</div>	 <div class="foonote"><ul></ul></div></div><!--/span--></div><!--/row-->    <br/>
 			</div><!--/span-->
 			
 			
@@ -102,11 +115,105 @@ gantt
 	<script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script src="https://unpkg.com/tether@1.4.7/dist/js/tether.min.js"></script>
 	<script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="https://unpkg.com/mermaid@8.4.8/dist/mermaid.min.js"></script>
+	<script src="https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js"></script>
     <script>
 			
+var rectIDs = [];
+rectIDs["int0"] = "2019-11-01 - 2019-11-01";
+rectIDs["int1"] = "2020-02-01 - 2020-08-01";
+rectIDs["int2"] = "2020-10-01 - 2021-04-01";
+rectIDs["int3"] = "2020-02-01 - 2020-06-01";
+rectIDs["int4"] = "2020-02-01 - 2020-06-01";
+rectIDs["int5"] = "2020-02-01 - 2020-05-01";
+rectIDs["int6"] = "2020-08-01 - 2020-10-01";
+rectIDs["int7"] = "2020-10-01 - 2022-04-01";
+rectIDs["ws0"] = "2020-04-01 - 2020-07-21";
+rectIDs["ws1"] = "2020-07-21 - 2020-07-22";
+rectIDs["ws2"] = "2020-08-01 - 2020-11-01";
+rectIDs["ws3"] = "2020-11-01 - 2020-12-01";
+rectIDs["ws4"] = "2020-12-01 - 2021-08-01";
+rectIDs["ws5"] = "2021-08-01 - 2021-09-01";
+rectIDs["cr0"] = "2020-07-22 - 2020-09-01";
+rectIDs["cr1"] = "2020-04-01 - 2020-10-01";
+rectIDs["cr2"] = "2020-04-01 - 2021-10-01";
+rectIDs["cr3"] = "2020-12-01 - 2021-02-01";
+rectIDs["cr4"] = "2020-05-01 - 2020-12-01";
+rectIDs["cr5"] = "2020-12-01 - 2021-10-01";
+rectIDs["cr6"] = "2020-08-01 - 2020-12-01";
+rectIDs["cr7"] = "2020-12-01 - 2021-01-01";
+rectIDs["cr8"] = "2021-06-01 - 2021-08-01";
+rectIDs["cr9"] = "2021-09-01 - 2021-10-01";
+rectIDs["pl0"] = "2020-11-01 - 2021-07-01";
+rectIDs["pd0"] = "2021-09-01 - 2021-10-01";
+rectIDs["pd1"] = "2021-10-01 - 2021-11-01";
+rectIDs["rp0"] = "2021-10-01 - 2021-11-01";
+
+
+var ttdiv = false;
+	
+function showTooltip(evt, cid) {
+
+	if (!ttdiv)
+		{let div = document.createElement('div');
+		 div.id = "tooltip";
+		 div.display = "none";
+		 div.style = "position: absolute; display: none;";
+		 document.body.append(div);
+		 ttdiv = true;}	
+
+	var daterange = "Date Range";
+	if (cid in rectIDs)
+		{daterange = rectIDs[cid];}
+	
+				
+  let tooltip = document.getElementById("tooltip");
+  tooltip.innerHTML = daterange;
+  tooltip.style.display = "block";
+  tooltip.style.left = evt.pageX + 10 + 'px';
+  tooltip.style.top = evt.pageY + 10 + 'px';
+	}
+
+function hideTooltip() {
+  var tooltip = document.getElementById("tooltip");
+  tooltip.style.display = "none";
+	}
+
+// Select the node that will be observed for mutations
+const targetNode = document.getElementById('gantt');
+
+// Options for the observer (which mutations to observe)
+const config = { attributes: true, childList: true, subtree: true };
+
+// Callback function to execute when mutations are observed
+const callback = function(mutationsList, observer) {
+	// Use traditional 'for loops' for IE 11
+  for(let mutation of mutationsList) {
+		if (mutation.type === 'attributes' &&
+				mutation.attributeName == 'id' &&
+				mutation.target.tagName == 'rect') {			
+
+			$( "#"+mutation.target.id ).mousemove(function( event ) {
+				showTooltip(event, mutation.target.id);});
+			$( "#"+mutation.target.id ).mouseout(function( event ) {
+				hideTooltip();});
+				
+			$( "#"+mutation.target.id+"-text" ).mousemove(function( event ) {
+				showTooltip(event, mutation.target.id);});
+			$( "#"+mutation.target.id+"-text" ).mouseout(function( event ) {
+				hideTooltip();});					
+			}
+    }
+	};
+
+// Create an observer instance linked to the callback function
+const observer = new MutationObserver(callback);
+
+// Start observing the target node for configured mutations
+observer.observe(targetNode, config);
+	
 			function onLoad() {
 				
+	
 	mermaid.ganttConfig = {
     titleTopMargin:25,
     barHeight:20,
