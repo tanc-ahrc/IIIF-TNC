@@ -42,7 +42,7 @@ function extensionTimeline ($d, $pd)
 			}
 
 		$pd["extra_js_scripts"][] =
-			"https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js";
+			"https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js";
 		$pd["extra_onload"] .= "
 	
 	mermaid.ganttConfig = {
@@ -172,7 +172,7 @@ function dA ($v)
 	$a = explode(",", $v);
 	$m = intval($a[0]);
 	if(isset($a[1]))
-		{$d = intval($a[1]);}
+		{$d = intval($a[1]-1);}
 	else
 		{$d = 0;}
 	$date=new DateTime($start); // date object created.
