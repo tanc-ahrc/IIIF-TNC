@@ -1,0 +1,93 @@
+{
+	"groups": {
+		"Project Investigators": {
+			"comment": "",
+			"card": "image",
+			"config": {}
+		},
+		"Project Partners": {
+			"comment": "",
+			"card": "image",
+			"config": {}
+		}
+	},
+	"list": [{
+			"groups": ["Project Investigators"],
+			"ptitle": "The National Gallery",
+			"stitle": "Principal Investigator",
+			"comment": "",
+			"image": "graphics/NG Logo Black on Transparent 600.png",
+			"link": "https://www.nationalgallery.org.uk"
+		},
+		{
+			"groups": ["Project Investigators"],
+			"ptitle": "The National Portrait Gallery",
+			"stitle": "",
+			"comment": "",
+			"image": "graphics/NPG_logo_trans_black.png",
+			"link": "https://www.npg.org.uk/"
+		},
+		{
+			"groups": ["Project Investigators"],
+			"ptitle": "The University of Edinburgh",
+			"stitle": "",
+			"comment": "",
+			"image": "graphics/UoE_Centred Logo_CMYK_v1_160215.png",
+			"link": "https://www.ed.ac.uk/"
+		},
+		{
+			"groups": ["Project Investigators"],
+			"ptitle": "The British Library",
+			"stitle": "",
+			"comment": "",
+			"image": "graphics/BritishLibrary.svg_.png",
+			"link": "https://www.bl.uk/"
+		},
+		{
+			"groups": ["Project Partners"],
+			"ptitle": "The Royal Botanical Gardens Edinburgh",
+			"stitle": "",
+			"comment": "",
+			"image": "graphics/rbge_logo.png",
+			"link": "https://www.rbge.org.uk/"
+		},
+		{
+			"groups": ["Project Partners"],
+			"ptitle": "Digirati",
+			"stitle": "",
+			"comment": "",
+			"image": "graphics/cropped-digirati_logo1.png",
+			"link": "https://digirati.com/"
+		},
+		{
+			"groups": ["Project Partners"],
+			"ptitle": "Stanford University Library",
+			"stitle": "",
+			"comment": "",
+			"image": "graphics/sul.png",
+			"link": "https://library.stanford.edu/"
+		},
+		{
+			"ptitle": "Science Museum Group",
+			"stitle": "",
+			"comment": "",
+			"image": "graphics/1200px-Smg-logo.svg.png",
+			"link": "https://www.sciencemuseumgroup.org.uk/"
+		},
+		{
+			"ptitle": "The Victoria and Albert Museum",
+			"stitle": "",
+			"comment": "",
+			"image": "graphics/512px-Victoria_and_Albert_Museum_Logo.svg.png",
+			"link": "https://www.vam.ac.uk/"
+		},
+		{
+			"groups": ["Project Partners"],
+			"ptitle": "International Image Interoperability Framework (IIIF) Consortium",
+			"stitle": "",
+			"comment": "",
+			"image": "graphics/International_Image_Interoperability_Framework_logo.png",
+			"link": "https://iiif.io/community/consortium/"
+		}
+	]
+}

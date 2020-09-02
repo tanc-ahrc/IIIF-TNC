@@ -19,8 +19,8 @@
 			"stages": [
 				["Organise Workshop 1", "", "6,25", "9,6"],
 				["Workshop 1 - Showcase and discuss the current IIIF use and best practice", "crit, active", "9,6", "9,18"],
-				["Organise Workshop 2",	"", "6,25", "9,6"],
-				["Workshop 2 - Discuss the potential of shared IIIF services", "crit, active", "9,6", "9,18"],
+				["Organise Workshop 2",	"", 10, 12],
+				["Workshop 2 - Discuss the potential of shared IIIF services", "crit, active", 12, 13],
 				["Organise Workshop 3 – Document available resources and development ideas", "", 14, 22],
 				["Workshop 3 - Developing practical IIIF solutions", "crit, active", 22, 23],
 				["Organise Workshop 4 – Showcase of project work and discussion for the future", "", 20, 24],
@@ -30,7 +30,7 @@
 			"title": "Collaborative Research",
 			"stages": [
 				["Assessing the output of Workshop 1", "", "9,6", 11],
-				["Assessing the output of Workshop 2", "", "9,13", 12],
+				["Assessing the output of Workshop 2", "", 13, 14],
 				["Assessing the output of Workshop 3", "", 23, 24] ,
 				["Assessing the output of Workshop 4", "", 25, 26], 
 				["Define scope and selection of main IIIF demonstration/examples", "", 8, 14],

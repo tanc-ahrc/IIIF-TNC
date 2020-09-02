@@ -14,19 +14,35 @@
 	<link href="css/main.css" rel="stylesheet" type="text/css">
     <style>
     
-img.primary, img.secondary {
+.card-img {
+	width: auto;
+  max-width: 100%;
+  max-height:200px;
   display: block;
-  max-width:230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.card-img-top {
+	width: auto;
+  max-width: 100%;    
   max-height:128px;
-  width: auto;
-  height: auto;
-	border: 0px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.nodec:link, .nodec:visited, .nodec:hover, .nodec:active {
+	text-decoration: none;
+	color: inherit;
 	}
-	
-img.secondary{
-  max-width:192px;
-  max-height:96px;
-	}
+
+.card-hov:hover {
+	opacity: 0.7;
+}
+
     </style>
   </head>
 
@@ -53,57 +69,71 @@ img.secondary{
 			<div class="row ">				
 			 <div class="col-12 col-md-12">          
 				
-				<div class="jumbotron"><h2>Practical applications of IIIF - Contributors</h2></div><div class="row"><div class="col-12 col-lg-12"></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12"><p>This project is a Foundation project within the the <a href="https://ahrc.ukri.org/">AHRC</a> funded <a href="https://ahrc.ukri.org/research/fundedthemesandprogrammes/tanc-opening-uk-heritage-to-the-world/">Towards a National Collection Programme</a>.</p><h3>Project Investigators</h3><div class="row text-center text-lg-left">    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.nationalgallery.org.uk" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail primary mx-auto d-block"
-				  src="graphics/NG Logo Black on Transparent 600.png" alt="The National Gallery">
+				<div class="jumbotron"><h2>Practical applications of IIIF - Contributors</h2></div><div class="row"><div class="col-12 col-lg-12"></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12"><p>This project is a Foundation project within the the <a href="https://ahrc.ukri.org/">AHRC</a> funded <a href="https://ahrc.ukri.org/research/fundedthemesandprogrammes/tanc-opening-uk-heritage-to-the-world/">Towards a National Collection Programme</a>.</p><h3>Project Investigators</h3><p></p><div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">		
+  <div class="col mb-4">
+    <div class="card" title="The National Gallery">
+			<a href="https://www.nationalgallery.org.uk" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/NG Logo Black on Transparent 600.png" alt="The National Gallery">
       </a>
-    </div>    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.npg.org.uk/" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail primary mx-auto d-block"
-				  src="graphics/NPG_logo_trans_black.png" alt="The National Portrait Gallery">
+    </div>
+  </div>
+		
+  <div class="col mb-4">
+    <div class="card" title="The National Portrait Gallery">
+			<a href="https://www.npg.org.uk/" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/NPG_logo_trans_black.png" alt="The National Portrait Gallery">
       </a>
-    </div>    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.ed.ac.uk/" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail primary mx-auto d-block"
-				  src="graphics/UoE_Centred Logo_CMYK_v1_160215.png" alt="The University of Edinburgh">
+    </div>
+  </div>
+		
+  <div class="col mb-4">
+    <div class="card" title="The University of Edinburgh">
+			<a href="https://www.ed.ac.uk/" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/UoE_Centred Logo_CMYK_v1_160215.png" alt="The University of Edinburgh">
       </a>
-    </div>    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.bl.uk/" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail primary mx-auto d-block"
-				  src="graphics/BritishLibrary.svg_.png" alt="The British Library">
+    </div>
+  </div>
+		
+  <div class="col mb-4">
+    <div class="card" title="The British Library">
+			<a href="https://www.bl.uk/" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/BritishLibrary.svg_.png" alt="The British Library">
       </a>
-    </div></div><h3>Project Partners</h3><div class="row text-center text-lg-left">    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.rbge.org.uk/" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail secondary mx-auto d-block"
-				  src="graphics/rbge_logo.png" alt="The Royal Botanical Gardens Edinburgh">
+    </div>
+  </div>
+</div><br/><h3>Project Partners</h3><p></p><div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">		
+  <div class="col mb-4">
+    <div class="card" title="The Royal Botanical Gardens Edinburgh">
+			<a href="https://www.rbge.org.uk/" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/rbge_logo.png" alt="The Royal Botanical Gardens Edinburgh">
       </a>
-    </div>    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://digirati.com/" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail secondary mx-auto d-block"
-				  src="graphics/cropped-digirati_logo1.png" alt="Digirati">
+    </div>
+  </div>
+		
+  <div class="col mb-4">
+    <div class="card" title="Digirati">
+			<a href="https://digirati.com/" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/cropped-digirati_logo1.png" alt="Digirati">
       </a>
-    </div>    <div class="col-lg-3 col-md-4 col-6">
-      <a href="Stanford University Library" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail secondary mx-auto d-block"
-				  src="graphics/sul.png" alt="Stanford University Library">
+    </div>
+  </div>
+		
+  <div class="col mb-4">
+    <div class="card" title="Stanford University Library">
+			<a href="https://library.stanford.edu/" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/sul.png" alt="Stanford University Library">
       </a>
-    </div>    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.sciencemuseumgroup.org.uk/" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail secondary mx-auto d-block"
-				  src="graphics/1200px-Smg-logo.svg.png" alt="Science Museum Group">
+    </div>
+  </div>
+		
+  <div class="col mb-4">
+    <div class="card" title="International Image Interoperability Framework (IIIF) Consortium">
+			<a href="https://iiif.io/community/consortium/" class="stretched-link nodec">
+      <img class="card-img-top" src="graphics/International_Image_Interoperability_Framework_logo.png" alt="International Image Interoperability Framework (IIIF) Consortium">
       </a>
-    </div>    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://www.vam.ac.uk/" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail secondary mx-auto d-block"
-				  src="graphics/512px-Victoria_and_Albert_Museum_Logo.svg.png" alt="The Victoria and Albert Museum">
-      </a>
-    </div>    <div class="col-lg-3 col-md-4 col-6">
-      <a href="https://iiif.io/community/consortium/" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail secondary mx-auto d-block"
-				  src="graphics/International_Image_Interoperability_Framework_logo.png" alt="International Image Interoperability Framework (IIIF) Consortium">
-      </a>
-    </div></div><div class="foonote"><ul></ul></div></div><!--/span--></div><!--/row-->    <br/>
+    </div>
+  </div>
+</div><br/><div class="foonote"><ul></ul></div></div><!--/span--></div><!--/row-->    <br/>
 			</div><!--/span-->
 			
 			

@@ -14,8 +14,8 @@
 	"content right": ""		
 	},
 "about": {
-	"class": "gallery",
-	"file": "logos.json",
+	"class": "list",
+	"file": "logolist.json",
 	"title": "Practical applications of IIIF - Contributors",
 	"content": "<p>This project is a Foundation project within the the <a href=\"https://ahrc.ukri.org/\">AHRC</a> funded <a href=\"https://ahrc.ukri.org/research/fundedthemesandprogrammes/tanc-opening-uk-heritage-to-the-world/\">Towards a National Collection Programme</a>.</p>",
 	"footnotes": [],

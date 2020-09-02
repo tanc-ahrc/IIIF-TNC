@@ -28,7 +28,7 @@
 		 "level": "secondary"},
 	"Stanford University Library":
     {"logo":"graphics/sul.png",
-		 "link": "Stanford University Library",
+		 "link": "https://library.stanford.edu/",
 		 "level": "secondary"},
 	"Science Museum Group":
     {"logo":"graphics/1200px-Smg-logo.svg.png",
