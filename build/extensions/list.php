@@ -38,26 +38,39 @@ function extensionCards ($d, $pd)
 		{
 		$dets = getRemoteJsonDetails($d["file"], false, true);
 
-		// Check if a table of contents should be added.
-		if (!isset($dets["tableofcontents"])) {$dets["tableofcontents"] = false;}
-		if ($dets["tableofcontents"])
-			{$tb = buildContents ($dets["groups"]);}
-		else
-			{$tb = "";}
-
+		//prg(0, $dets["groups"]);
+		
 		foreach ($dets["list"] as $lno => $la)
 			{
 			//ensure each of the currently required fields a re present.
 			$la = array_merge($blank, $la);
 
 			// Testing
-			$la["comment"] = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+			//$la["comment"] = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
 
+			//if (!$la["groups"])
+			//	{prg(1, $la);}
+			
 			foreach ($la["groups"] as $k => $gnm)
 					{
-								
+					$c = false;
+					if (preg_match("/^Digital.+$/", $gnm, $m))
+						{$c = true;
+							//echo "CCCCCCCCCCCCCCCCC\n"; prg(0, $gnm);
+							}
+					else
+						{//echo "@@@".$gnm."@@@\n";
+							}
+										
+					if (!isset($dets["groups"] [$gnm] ))
+						{$dets["groups"] [$gnm]  = array(
+							"comment" => "",
+							"card" => "list",
+							"config" => array(),
+							);}
+														
 					if (!isset($dets["groups"] [$gnm] ["card"]))
-						{$dets["groups"] [$gnm] ["card"] = "simple";}
+						{$dets["groups"] [$gnm] ["card"] = "list";}
 
 					if (!function_exists("build".ucfirst($dets["groups"] [$gnm] ["card"])."Card"))
 						{$cfn = "buildSimpleCard";}
@@ -65,28 +78,13 @@ function extensionCards ($d, $pd)
 						{$cfn = "build".ucfirst($dets["groups"] [$gnm] ["card"])."Card";}
 					
 					if (!isset($dets["groups"] [$gnm] ["html"]))
-						{
-						$tag = urlencode(strtolower($gnm));
+						{//echo "########$gnm###############\n";
+							$dets["groups"] [$gnm] ["html"] = startGroupHtml (
+							$gnm, $dets["groups"] [$gnm] ["comment"],
+							$dets["groups"] [$gnm] ["card"], $dets["tableofcontents"]);
 
-						if ($dets["tableofcontents"])
-							{$anchor = "<a id=\"$tag\" class=\"anchor offsetanchor\" ".
-								"aria-hidden=\"true\" href=\"#${tag}-TBC\"></a>";
-							 $alink = "<a class=\"anchor nodec\" aria-hidden=\"true\" ".
-								"href=\"#${tag}-TBC\">$gnm</a>";}
-						else
-							{$anchor = "";
-							 $alink = "$gnm";}
-						
-						$gtop = "<h3>$anchor$alink</h3><p>".$dets["groups"] [$gnm] ["comment"]."</p>";
-						if (in_array($dets["groups"] [$gnm] ["card"], array("image")))
-							{$dets["groups"] [$gnm] ["html"] = "$gtop<div class=\"row row-cols-1 ".
-								"row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5\">";}						
-						else if (in_array($dets["groups"] [$gnm] ["card"], array("list")))
-							{$dets["groups"] [$gnm] ["html"] = "$gtop<ul>";}							
-						else if (in_array($dets["groups"] [$gnm] ["card"], array("full")))
-							{$dets["groups"] [$gnm] ["html"] = "$gtop<div class=\"card-column\">";}
-						else //if (in_array($dets["groups"] [$gnm] ["card"], array("simple"))) or anything else
-							{$dets["groups"] [$gnm] ["html"] = "$gtop<div class=\"card-deck\">";}
+							if ($c) {prg(0, $dets["groups"] [$gnm] );}
+			
 						}
 						
 					$dets["groups"] [$gnm] ["html"] .= call_user_func_array($cfn, array($la));					
@@ -95,6 +93,9 @@ function extensionCards ($d, $pd)
 
 		foreach ($dets["groups"] as $gnm => $ga)
 				{
+				/*if (!isset($ga["html"]))
+					{prg(0, $gnm);
+					 prg(0, $dets["groups"][$gnm]);}*/
 				 if (in_array($dets["groups"] [$gnm] ["card"], array("list")))
 					{$gcontent .= $ga ["html"]."</ul><br/>";}
 				else
@@ -138,6 +139,13 @@ function extensionCards ($d, $pd)
 
 ";
 
+		// Check if a table of contents should be added.
+		if (!isset($dets["tableofcontents"])) {$dets["tableofcontents"] = false;}
+		if ($dets["tableofcontents"])
+			{$tb = buildContents ($dets["groups"]);}
+		else
+			{$tb = "";}
+			
     $d["content"] = positionExtraContent ($d["content"], $tb.$gcontent);
 		}
 
@@ -241,15 +249,47 @@ END;
 		else
 				{$ltop= "";
 					$lbottom = "";}
+
+		if ($la["comment"])
+			{$la["comment"] = " - ".$la["comment"];}
 				
 		ob_start();			
 		echo <<<END
-<li>$ltop$la[ptitle]$lbottom - $la[comment].</li>
+<li>$ltop$la[ptitle]$lbottom$la[comment]</li>
 END;
 		$html = ob_get_contents();
 		ob_end_clean(); // Don't send output to client
 
 		return ($html);
 		}
+
+function startGroupHtml ($gnm, $comment, $card, $tbc)
+	{
+	$html = "";
+	$tag = urlencode(strtolower($gnm));
+
+	if ($tbc)
+		{$anchor = "<a id=\"$tag\" class=\"anchor offsetanchor\" ".
+				"aria-hidden=\"true\" href=\"#${tag}-TBC\"></a>";
+		 $alink = "<a class=\"anchor nodec\" aria-hidden=\"true\" ".
+				"href=\"#${tag}-TBC\">$gnm</a>";}
+	else
+		{$anchor = "";
+		 $alink = "$gnm";}
+
+	$gtop = "<h3>$anchor$alink</h3><p>".$comment."</p>";
+
+	if (in_array($card, array("image")))
+		{$html  = "$gtop<div class=\"row row-cols-1 ".
+			"row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5\">";}						
+	else if (in_array($card, array("list")))
+		{$html = "$gtop<ul>";}							
+	else if (in_array($card, array("full")))
+		{$html = "$gtop<div class=\"card-column\">";}
+	else //if (in_array($card, array("simple"))) or anything else
+		{$html = "$gtop<div class=\"card-deck\">";}
+
+	return ($html);
+	}
     
 ?>
