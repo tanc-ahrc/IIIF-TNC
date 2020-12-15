@@ -11,16 +11,16 @@
 				["Establish communications, collaborative environments and links with related interest groups",	"", 4, 8],
 				["Establish connections with related AHRC projects – PIDs, Linked data, etc", "", 4, 8],
 				["Identify areas of collaboration with related AHRC projects.", "", 4, 7],
-				["Recruit Project Researcher", "crit", 6, 9],
-				["Project Researcher In Post", "crit", 9, "26,30"]
+				["Recruit Project Researcher", "crit", 10, 13],
+				["Project Researcher In Post", "crit", 13, "26,30"]
 			]},
 		"ws": {
 			"title": "Workshops",
 			"stages": [
-				["Organise Workshop 1", "", "6,25", "9,6"],
-				["Workshop 1 - Showcase and discuss the current IIIF use and best practice", "crit, active", "9,6", "9,18"],
-				["Organise Workshop 2",	"", 10, 12],
-				["Workshop 2 - Discuss the potential of shared IIIF services", "crit, active", 12, 13],
+				["Organise Workshop 1", "", "10", "11,25"],
+				["Workshop 1 - Showcase and discuss the current IIIF use and best practice", "crit, active", "11,25", "12,5"],
+				["Organise Workshop 2",	"", 10, "12,22"],
+				["Workshop 2 - Discuss the potential of shared IIIF services", "crit, active", "12,22", "13,5"],
 				["Organise Workshop 3 – Document available resources and development ideas", "", 14, 22],
 				["Workshop 3 - Developing practical IIIF solutions", "crit, active", 22, 23],
 				["Organise Workshop 4 – Showcase of project work and discussion for the future", "", 20, 24],
@@ -29,22 +29,22 @@
 		"cr": {
 			"title": "Collaborative Research",
 			"stages": [
-				["Assessing the output of Workshop 1", "", "9,6", 11],
-				["Assessing the output of Workshop 2", "", 13, 14],
+				["Assessing the output of Workshop 1", "", "12,5", 13],
+				["Assessing the output of Workshop 2", "", "13,5", 14],
 				["Assessing the output of Workshop 3", "", 23, 24] ,
 				["Assessing the output of Workshop 4", "", 25, 26], 
-				["Define scope and selection of main IIIF demonstration/examples", "", 8, 14],
+				["Discuss the scope and selection of main IIIF demonstration/examples", "", 11, 14],
 				["Development work of main IIIF demonstration/examples", "", 2, 26],
-				["Explore available and potential future IIIF services and tools", "", 7, 14],
-				["Write recommendations for required IIIF services and related future proposals", "", 15, 25],
-				["IIIF Resource survey", "", 8, 14],
-				["Evaluate selection of identified IIIF Resources", "", 15, 12],
+				["Explore available and potential future IIIF services and tools", "", 14, 21],
+				["Write recommendations for required IIIF services and related future proposals", "", 19, 25],
+				["IIIF Resource survey", "", 8, 16],
+				["Evaluate selection of identified IIIF Resources", "", 14, 18],
 				["Refresh IIIF Resource List for Workshop 3", "", 20, 22]
 			]},
 		"pl": {
 			"title": "Placements",
 			"stages": [
-				["Secondments (some may be virtual) for researcher", "", 12, 23] 
+				["Secondments (some may be virtual) for researcher", "", 16, 23] 
 			]},
 		"pd": {
 			"title": "Public demonstrations",
