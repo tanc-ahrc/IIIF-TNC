@@ -1,0 +1,88 @@
+{
+  "defaultcard": "full",
+  "displaychecked": true,
+  "tableofcontents": false,
+  "groups": {},
+	"list": [{
+	"groups": ["Principal Investigator"],
+	"ptitle": "Joseph Padfield",
+	"stitle": "Principal Scientist at the National Gallery",
+	"comment": "Joseph Padfield is a conservation scientist at the National Gallery in London, with a degree in Chemistry from Edinburgh University, an MA in Easel Paintings Conservation from the University of Northumbria and a postgraduate diploma in the conservation of paintings at the Hamilton Kerr Institute. His main research interests include generating/sharing digital images, the semantic web, digital documentation and museum lighting.",
+	"image": "graphics/people/JosephPadfield.jpg",
+	"checked": "",
+	"link": "https:\/\/twitter.com\/JoePadfield"
+}, {
+	"groups": ["Co-Investigator"],
+	"ptitle": "Melissa Terras",
+	"stitle": "Professor of Digital Cultural Heritage, University of Edinburgh",
+	"comment": "Melissa Terras is the Professor of Digital Cultural Heritage at the University of Edinburgh‘s College of Arts, Humanities, and Social Sciences, leading digital aspects of CAHSS research as Director of the Edinburgh Centre for Data, Culture and Society, and is Director of Research in the Edinburgh Futures Institute. She previously directed UCL Centre for Digital Humanities in UCL Department of Information Studies, where she was employed from 2003-2017. She is a Fellow of the Alan Turing Institute, and Trustee of the National Library of Scotland. You can generally find her on twitter @melissaterras.",
+	"image": "graphics/people/MelissaTerras.jpg",
+	"checked": "",
+	"link": "https:\/\/twitter.com\/melissaterras"
+}, {
+	"groups": ["Co-Investigator"],
+	"ptitle": "Torsten Reimer",
+	"stitle": "Head of Research Services, British Library",
+	"comment": "Dr Torsten Reimer is Head of Research Services at the British Library. As a member of the Library's leadership team, he oversees the teams looking after the content and research services strategies, content acquisitions and processing, digital preservation and online and onsite services for researchers from all backgrounds. Before joining the Library, he worked at Imperial College London, Jisc, King's College London as well as the University of Munich in roles relating to digital humanities, scholarly communications and research infrastructure. Torsten's academic background is in history and scholarly communications.",
+	"image": "graphics/people/TorstenReimer.jpg",
+	"checked": "",
+	"link": "https:\/\/twitter.com\/torstenreimer"
+}, {
+	"groups": ["Co-Investigator"],
+	"ptitle": "Charlotte Bolland",
+	"stitle": "Senior Curator, Research and Sixteenth-Century Collections, National Portrait Gallery",
+	"comment": "Dr. Charlotte Bolland's role combines responsibility for the acquisition, research and interpretation of portraits dating from the sixteenth century, with co-ordination of research activity within the curatorial department. She manages the display of the collection in the Tudor galleries and at Montacute House in Somerset and also provides guidance on Tudor portraiture to statutory bodies and private individuals. She has co-curated a number of exhibitions at the Gallery, including The Real Tudors: Kings and Queens Rediscovered (2014) and The Encounter: Drawings from Leonardo to Rembrandt (2017). She is the Gallery’s main point of liaison with research institutions and funding bodies such as the Arts and Humanities Research Council.",
+	"image": "graphics/people/CharlotteBolland.jpg",
+	"checked": "",
+	"link": "https:\/\/www.npg.org.uk\/research\/staff-research-profiles\/charlotte-bolland"
+}, {
+	"groups": ["Project Partner"],
+	"ptitle": "Lorna Mitchell",
+	"stitle": "Head of Library, Archives & Publications, The Royal Botanic Garden Edinburgh",
+	"comment": "Lorna is responsible for the strategic management and day-to-day running of the Library, Archives and Publications at the Royal Botanic Garden Edinburgh (RBGE).",
+	"image": "graphics/people/LornaMitchell.jpg",
+	"checked": "",
+	"link": "https:\/\/www.rbge.org.uk\/about-us/organisational-structure/staff\/library-archives-and-publications\/#lorna"
+},{
+	"groups": ["Project Partner"],
+	"ptitle": "Tom Crane",
+	"stitle": "Technical Director, Digirati Ltd",
+	"comment": "",
+	"image": "graphics/people/Digirati.jpg",
+	"checked": "",
+	"link": "https:\/\/twitter.com\/tomofhernehill"
+},{
+	"groups": ["Project Partner"],
+	"ptitle": "Tom Cramer",
+	"stitle": "Chief Technology Strategist, Assistant University Librarian & Director, Digital Library Systems and Services, Stanford University Libraries.",
+	"comment": "",
+	"image": "graphics/people/TomCramer.jpg",
+	"checked": "",
+	"link": "https:\/\/twitter.com\/tcramer"
+},{
+	"groups": ["Project Partner"],
+	"ptitle": "Jamie Unwin",
+	"stitle": "Technical Architect, Collections Online, Science Museum Group",
+	"comment": "",
+	"image": "graphics/people/JamieUnwin.jpeg",
+	"checked": "",
+	"link": "https:\/\/twitter.com\/jamieunwin"
+},{
+	"groups": ["Project Partner"],
+	"ptitle": "Richard Palmer",
+	"stitle": "Technical Lead, Victoria and Albert Museum",
+	"comment": "",
+	"image": "graphics/people/RichardPalmer.png",
+	"checked": "",
+	"link": "https:\/\/twitter.com\/rd_palmer"
+}, {
+	"groups": ["Project Partner"],
+	"ptitle": "Glen Robson",
+	"stitle": "IIIF Technical Coordinator",
+	"comment": "In September Glen Robson started working for the IIIF Consortium as the IIIF Technical Coordinator giving training and assisting the community to implement IIIF. Before this he spent 13 years working at the National Library of Wales (NLW), latterly as the Head of Systems. Glen started working with the IIIF standard in 2013 and implemented the IIIF standard within the library on its Newspaper, Photograph, Archive, Map and Crowdsourcing Systems. He is the co-chair of the IIIF Newspaper Community group and has worked with Europeana and others looking at harvesting IIIF resources. Since starting the new role he has given a number of hands on IIIF workshops and assisted community members like the Library of Congress in implementing multispectral images in IIIF.",
+	"image": "graphics/people/GlenRobson.png",
+	"checked": "",
+	"link": "https:\/\/twitter.com\/glenrobson"
+}]
+	
+}

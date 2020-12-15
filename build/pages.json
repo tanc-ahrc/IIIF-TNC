@@ -5,6 +5,13 @@
 	"footnotes": [],
 	"content right": "<figure class=\"figure\"><img src=\"https://media.ng-london.org.uk/iiif/009-01DZ-0000/full/512,/0/default.jpg\" class=\"figure-img img-fluid rounded\" alt=\"Hans Holbein the Younger, Jean de Dinteville and Georges de Selve ('The Ambassadors').\"><figcaption class=\"figure-caption\">Hans Holbein the Younger, Jean de Dinteville and Georges de Selve ('The Ambassadors') \u00a9 The National Gallery, London. Bought, 1890. This image is licensed under [CC-BY-NC-ND 4.0|https://creativecommons.org/licenses/by-nc-nd/4.0/], presented via a IIIF server.</figcaption></figure><p>This project is a Foundation project within the the <a href=\"https://ahrc.ukri.org/\">AHRC</a> funded <a href=\"https://ahrc.ukri.org/research/fundedthemesandprogrammes/tanc-opening-uk-heritage-to-the-world/\">Towards a National Collection Programme</a>.</p>"
 	},
+"team": {
+    "class": "list",
+    "file": "team.json",
+	"title": "Project - Team",
+	"content": "[##]<h2>Contacts</h2><p>Please feel free to contact any of the investigators listed above or members of their teams</p>",
+	"content right": ""		
+	},
 "timeline": {
 	"class": "timeline",
 	"file": "timeline.json",
