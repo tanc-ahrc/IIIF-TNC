@@ -69,6 +69,7 @@
 			"link": "https://library.stanford.edu/"
 		},
 		{
+			"groups": ["Project Partners"],
 			"ptitle": "Science Museum Group",
 			"stitle": "",
 			"comment": "",
@@ -76,6 +77,7 @@
 			"link": "https://www.sciencemuseumgroup.org.uk/"
 		},
 		{
+			"groups": ["Project Partners"],
 			"ptitle": "The Victoria and Albert Museum",
 			"stitle": "",
 			"comment": "",
