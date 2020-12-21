@@ -8,4 +8,4 @@ This project aims to demonstrate the opportunities and benefits that IIIF offers
 
 This will be achieved through a series of targeted workshops and surveys, along with the creation of pilot demonstrators, to provide tangible examples of what can be achieved. This process will involve both technical and non-technical researchers in collaboratively building resources, to increase mutual understanding of the possibilities and requirements.
 
-This project is a Foundation project within the the [AHRC](https://ahrc.ukri.org/) funded [Towards a National Collection Programme](https://ahrc.ukri.org/research/fundedthemesandprogrammes/tanc-opening-uk-heritage-to-the-world/).
+This project is a Foundation project within the the [AHRC](https://ahrc.ukri.org/) funded [Towards a National Collection Programme](https://www.nationalcollection.org.uk/).
