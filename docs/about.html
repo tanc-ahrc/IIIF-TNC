@@ -15,7 +15,7 @@
     <style>
     
 .card-img {
-	width: auto;
+  width: auto;
   max-width: 100%;
   max-height:200px;
   display: block;
@@ -25,7 +25,7 @@
 }
 
 .card-img-top {
-	width: auto;
+  width: auto;
   max-width: 100%;    
   max-height:128px;
   display: block;
@@ -35,18 +35,34 @@
 }
 
 .nodec:link, .nodec:visited, .nodec:hover, .nodec:active {
-	text-decoration: none;
-	color: inherit;
-	}
+  text-decoration: none;
+  color: inherit;
+  }
 
 .card-hov:hover {
-	opacity: 0.7;
+  opacity: 0.7;
 }
 
 .offsetanchor {
-	position: relative;
+  position: relative;
   top: -75px;
 }
+
+.pcontainer {
+   position: relative;
+   width: 100%;
+   padding-top: 56.25%; /* 16:9 Aspect Ratio */
+	}
+	
+.preview {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+	}
 
 
     </style>
@@ -63,7 +79,7 @@
 				style="" alt="The National Gallery"/>
 		  </a>
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault"><ul class="navbar-nav">
-<li class="nav-item "><a class="nav-link" href="index.html">Home</a></li><li class="nav-item "><a class="nav-link" href="team.html">Team</a></li><li class="nav-item "><a class="nav-link" href="timeline.html">Timeline</a></li><li class="nav-item active"><a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a></li></ul></div>
+<li class="nav-item "><a class="nav-link" href="index.html">Home</a></li><!-- Dropdown Loop 1 --><li class="nav-item dropdown "><a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle" title="Click to open the Webinars menu" >Webinars</a><ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow"><li><a href="webinars.html" class="dropdown-item top-item" title="Click to open the Webinars page">Webinars</a></li><li class="dropdown-divider"></li><li><a href="webinar 01.html" class="dropdown-item">Webinar 01</a></li></ul></li><!-- End Loop 1 --><li class="nav-item "><a class="nav-link" href="team.html">Team</a></li><li class="nav-item "><a class="nav-link" href="timeline.html">Timeline</a></li><li class="nav-item active"><a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a></li></ul></div>
 			
     <span class="navbar-text">
       			<a href="https://github.com/tanc-ahrc/IIIF-TNC/">
@@ -75,82 +91,82 @@
 			<div class="row ">				
 			 <div class="col-12 col-md-12">          
 				
-				<div class="jumbotron"><h2>Practical applications of IIIF - Contributors</h2></div><div class="row"><div class="col-12 col-lg-12"></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12"><p>This project is a Foundation project within the the <a href="https://ahrc.ukri.org/">AHRC</a> funded <a href="https://www.nationalcollection.org.uk/">Towards a National Collection Programme</a>.</p><h3>Project Investigators</h3><p></p><div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">		
-  <div class="col mb-4 card-hov">
+				<div class="jumbotron"><h2>Practical applications of IIIF - Contributors</h2></div><div class="row"><div class="col-12 col-lg-12"></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12"><p>This project is a Foundation project within the the <a href="https://ahrc.ukri.org/">AHRC</a> funded <a href="https://www.nationalcollection.org.uk/">Towards a National Collection Programme</a>.</p><h3>Project Investigators</h3><p></p><div class="card-deck">    
+  <div class="col-4 mb-4 card-hov">
     <div class="card" title="The National Gallery">
-			<a href="https://www.nationalgallery.org.uk" class="stretched-link nodec">
+      <a href="https://www.nationalgallery.org.uk" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/NG Logo Black on Transparent 600.png" alt="The National Gallery">
       </a>
     </div>
   </div>
-		
-  <div class="col mb-4 card-hov">
+    
+  <div class="col-4 mb-4 card-hov">
     <div class="card" title="The National Portrait Gallery">
-			<a href="https://www.npg.org.uk/" class="stretched-link nodec">
+      <a href="https://www.npg.org.uk/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/NPG_logo_trans_black.png" alt="The National Portrait Gallery">
       </a>
     </div>
   </div>
-		
-  <div class="col mb-4 card-hov">
+    
+  <div class="col-4 mb-4 card-hov">
     <div class="card" title="The University of Edinburgh">
-			<a href="https://www.ed.ac.uk/" class="stretched-link nodec">
+      <a href="https://www.ed.ac.uk/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/UoE_Centred Logo_CMYK_v1_160215.png" alt="The University of Edinburgh">
       </a>
     </div>
   </div>
-		
-  <div class="col mb-4 card-hov">
+    
+  <div class="col-4 mb-4 card-hov">
     <div class="card" title="The British Library">
-			<a href="https://www.bl.uk/" class="stretched-link nodec">
+      <a href="https://www.bl.uk/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/BritishLibrary.svg_.png" alt="The British Library">
       </a>
     </div>
   </div>
-</div><br/><h3>Project Partners</h3><p></p><div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">		
-  <div class="col mb-4 card-hov">
+</div><br/><h3>Project Partners</h3><p></p><div class="card-deck">    
+  <div class="col-4 mb-4 card-hov">
     <div class="card" title="The Royal Botanical Gardens Edinburgh">
-			<a href="https://www.rbge.org.uk/" class="stretched-link nodec">
+      <a href="https://www.rbge.org.uk/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/rbge_logo.png" alt="The Royal Botanical Gardens Edinburgh">
       </a>
     </div>
   </div>
-		
-  <div class="col mb-4 card-hov">
+    
+  <div class="col-4 mb-4 card-hov">
     <div class="card" title="Digirati">
-			<a href="https://digirati.com/" class="stretched-link nodec">
+      <a href="https://digirati.com/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/cropped-digirati_logo1.png" alt="Digirati">
       </a>
     </div>
   </div>
-		
-  <div class="col mb-4 card-hov">
+    
+  <div class="col-4 mb-4 card-hov">
     <div class="card" title="Stanford University Library">
-			<a href="https://library.stanford.edu/" class="stretched-link nodec">
+      <a href="https://library.stanford.edu/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/sul.png" alt="Stanford University Library">
       </a>
     </div>
   </div>
-		
-  <div class="col mb-4 card-hov">
+    
+  <div class="col-4 mb-4 card-hov">
     <div class="card" title="Science Museum Group">
-			<a href="https://www.sciencemuseumgroup.org.uk/" class="stretched-link nodec">
+      <a href="https://www.sciencemuseumgroup.org.uk/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/1200px-Smg-logo.svg.png" alt="Science Museum Group">
       </a>
     </div>
   </div>
-		
-  <div class="col mb-4 card-hov">
+    
+  <div class="col-4 mb-4 card-hov">
     <div class="card" title="The Victoria and Albert Museum">
-			<a href="https://www.vam.ac.uk/" class="stretched-link nodec">
+      <a href="https://www.vam.ac.uk/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/512px-Victoria_and_Albert_Museum_Logo.svg.png" alt="The Victoria and Albert Museum">
       </a>
     </div>
   </div>
-		
-  <div class="col mb-4 card-hov">
+    
+  <div class="col-4 mb-4 card-hov">
     <div class="card" title="International Image Interoperability Framework (IIIF) Consortium">
-			<a href="https://iiif.io/community/consortium/" class="stretched-link nodec">
+      <a href="https://iiif.io/community/consortium/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/International_Image_Interoperability_Framework_logo.png" alt="International Image Interoperability Framework (IIIF) Consortium">
       </a>
     </div>
