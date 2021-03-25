@@ -1,7 +1,21 @@
 <?php
-//
-// simple array "extentionClassName => newFunctionName"
+
+// Last updated 04 Feb 2021
+
+// simple array "extentionClassName => newFunctionName" 
 $extensionList = array();
+$html_path = "../docs/";
+
+$default_scripts = array(
+	"js-scripts" => array (
+		"jquery" => "https://unpkg.com/jquery@3.4.1/dist/jquery.min.js",
+		"tether" => "https://unpkg.com/tether@1.4.7/dist/js/tether.min.js",
+		"bootstrap" => "https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"),
+	"css-scripts" => array(
+		"fontawesome" => "https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css",
+		"bootstrap" => "https://unpkg.com/bootstrap@4.4.1/dist/css/bootstrap.min.css",
+		"main" => "css/main.css"
+		));
 
 // In any available extension files
 // each one should add a value to the extensionList
@@ -18,8 +32,9 @@ $extensionList = array();
 
 $de = glob("extensions/*.php");
 foreach($de as $file){
-   require_once $file;
+  require_once $file;
 }
+
 
 $site = getRemoteJsonDetails("site.json", false, true);
 if (!is_array($site) or count($site) < 1)
@@ -31,6 +46,10 @@ if (is_file("sub-pages.json"))
 else
 	{$expages = array();}
 
+// Variable used to add additional code at the bottom of a page -
+// the main purpose of this is to append the json code when the
+// system is used to present demo pages.
+$extraHTML = "";
 	
 $pnames = array();	
 $pages = getRemoteJsonDetails("pages.json", false, true);
@@ -38,8 +57,6 @@ if (!is_array($pages) or count($pages) < 1)
 	{exit("\nERROR: Sorry your pages.json file has not been opened correctly please check you json formatting and try vaildating it using a web-site similar to https://jsonlint.com/\n\n");}
 else
 	{$pages = pagesCheck(array_merge($expages, $pages));}
-
-//$extensionPages = array("timeline", "mirador", "gallery");
 
 $menuList = array();
 $subpages = array();
@@ -53,6 +70,7 @@ $defaults = array(
 	"metaKeywords" => "GitHub, PHP, Javascript, Clone",
 	"metaAuthor" => "Me",
 	"metaTitle" => "Test Page",
+	"metaImage" => false,
 	"metaFavIcon" => "graphics/favicon.ico",
 	"extra_js_scripts" => array(), 
 	"extra_css_scripts" => array(),
@@ -66,11 +84,12 @@ $defaults = array(
 	"body" => "",
 	"fluid" => false,
 	"offcanvas" => false,
-	"footer" => "&copy; Me 2020</p>",
+	"footer" => "&copy; Me 2021</p>",
 	"footer2" => false,
 	"licence" => false,
 	"extra_logos" => array(),
-	"breadcrumbs" => false
+	"breadcrumbs" => false,
+	"GoogleAnalyticsID" => false
 	);
 				
 $gdp = array_merge ($defaults, $site);   
@@ -104,12 +123,22 @@ function prg($exit=false, $alt=false, $noecho=false)
 	else {$out = $alt;}
 	
 	ob_start();
-	//echo "<pre class=\"wrap\">";
+  
+  if (php_sapi_name() === 'cli')
+    {echo "\n";}
+  else
+    {echo "<pre class=\"wrap\">";}
+    
 	if (is_object($out))
 		{var_dump($out);}
 	else
 		{print_r ($out);}
-	echo "\n";//</pre>";
+
+  if (php_sapi_name() === 'cli') 
+    {echo "\n";}
+  else
+    {echo "</pre>";}
+    
 	$out = ob_get_contents();
 	ob_end_clean(); // Don't send output to client
   
@@ -138,9 +167,9 @@ function countFootNotes($matches) {
 
 function addLinks($matches) {
 	if (count($matches) > 1)
-		{$out = "<a href='$matches[2]'>$matches[1]</a>";}
+		{$out = "<a href='".str_replace(' ', '%20', $matches[2])."'>$matches[1]</a>";}
 	else
-		{$out = "<a href='$matches[0]'>$matches[0]</a>";}
+		{$out = "<a href='".str_replace(' ', '%20', $matches[0])."'>$matches[0]</a>";}
   return($out);
 }
 
@@ -211,13 +240,13 @@ function loopMenus ($str, $key, $arr, $no)
 	$str .= '<li class="dropdown-submenu">
    <a id="dropdownMenu'.$no.'" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle" title="Click to open the '.ucfirst($key).' menu">'.ucfirst($key).'</a>
 		<ul aria-labelledby="dropdownMenu'.$no.'" class="dropdown-menu border-0 shadow">'.
-		'<li><a href="'.$key.'.html" class="dropdown-item  top-item" title="Click to open the '.ucfirst($key).' page">'.ucfirst($key).'</a></li>'.
+		'<li><a href="'.str_replace(' ', '%20', $key).'.html" class="dropdown-item  top-item" title="Click to open the '.ucfirst($key).' page">'.ucfirst($key).'</a></li>'.
 		'<li class="dropdown-divider"></li>';
 
 	foreach ($arr as $k => $a)
 		{
 		if (!$a)
-			{$str .= '<li><a href="'.$k.'.html" class="dropdown-item">'.
+			{$str .= '<li><a href="'.str_replace(' ', '%20', $k).'.html" class="dropdown-item">'.
 				ucfirst($k).'</a></li>';}
 		else
 			{$str = loopMenus ($str, $k, $a, false, $no+1);}
@@ -241,7 +270,8 @@ function buildTopNav ($name, $bcs=false)
 	foreach ($pnames as $pname)
 		{if ($pname == "home") {$puse= "index";}
 		 else {$puse = $pname;}
-			 
+		 $puse = str_replace(' ', '%20', $puse);
+
 		 if ($pname == $name) {$a = $active;}
 		 else {$a = array("", "");}
 		 
@@ -256,7 +286,7 @@ function buildTopNav ($name, $bcs=false)
 			foreach ($menuList[$pname] as $k => $a)
 				{
 				if (!$a)
-					{$html .= '<li><a href="'.$k.'.html" class="dropdown-item">'.ucfirst($k).'</a></li>';}
+					{$html .= '<li><a href="'.str_replace(' ', '%20', $k).'.html" class="dropdown-item">'.ucfirst($k).'</a></li>';}
 				else
 					{$html = loopMenus ($html, $k, $a, $no+1);}
 				}
@@ -286,8 +316,7 @@ function loopBreadcrumbs ($name, $arr=array())
 	
 function buildExamplePages ()
 	{
-	global $gdp, $pages, $site, $raw_subpages, $subpages, $bcs,
-		$html_path, $menuList;
+	global $pages, $subpages, $html_path, $menuList;
 	
 	$files = glob($html_path."*.html");
 	
@@ -326,6 +355,7 @@ function buildBreadcrumbs ($arr)
 		foreach ($arr as $k => $v)
 			{
 			$V = ucfirst($v);
+			$v = str_replace(' ', '%20', $v);
 			$list .= "<li class=\"breadcrumb-item\"><a href=\"${v}.html\">$V</a></li>";
 			}
 	ob_start();			
@@ -356,13 +386,15 @@ function writeTSPage ()
 	
 function writePage ($name, $d)
 	{	
-	global $gdp, $menuList, $extensionList, $fcount, $footnotes;
+	global $gdp, $menuList, $extensionList, $fcount, $footnotes, $extraHTML;
 
+	$extraHTML = "";
 	$footnotes = array();	
-	$pd = $gdp;
-		
+	$pd = $gdp;	
+    
 	if ($name == "home") {$use= "index";}
 	else {$use = $name;}
+	$pd["page"] = "${use}.html";
 		
 	if ($d["parent"])
 		{$pd["topNavbar"] = buildTopNav ($d["bcs"][0]);
@@ -370,14 +402,14 @@ function writePage ($name, $d)
 	else
 		{$pd["topNavbar"] = buildTopNav ($name);
 		 $pd["breadcrumbs"] = "";}
-    
+
 	if (isset($d["class"]) and isset($extensionList[$d["class"]]))
 		{$ta = buildExtensionContent($d, $pd);
 		 $content = $ta[0];
 		 $pd = $ta[1];}
 	else
 		{$content = parseLinks ($d["content"], 1);}
-				
+
 	$pd["grid"] = array(
 		"topjumbotron" => "<h2>$d[title]</h2>",
 		"bottomjumbotron" => "",
@@ -395,11 +427,19 @@ function writePage ($name, $d)
 							
 	if ($d["content right"])
 		{$d["content right"] = parseLinks ($d["content right"], $fcount);
-		 $pd["grid"]["rows"][1][0]["class"] = "col-6 col-lg-6";
+		 $pd["grid"]["rows"][1][0]["class"] = "col-lg-6";
 		 $pd["grid"]["rows"][1][1] = 
 				array (
-					"class" => "col-6 col-lg-6",
+					"class" => "col-lg-6",
 					"content" => $d["content right"]);}
+
+	// Used to display the JSON used to create a given page for demos
+	if (isset($d["displaycode"]))
+		{unset($d["bcs"]);
+		 $extraHTML .= displayCode ($d, "Page JSON Object");
+		 $pd["grid"]["rows"][2] = array( array (
+					"class" => "col-12 col-lg-12",
+					"content" => $extraHTML));}
 					
 	$pd["body"] = buildSimpleBSGrid ($pd["grid"]);
 	$html = buildBootStrapNGPage ($pd);
@@ -410,16 +450,7 @@ function writePage ($name, $d)
 	
 function buildBootStrapNGPage ($pageDetails=array())
 	{
-	$default_scripts = array(
-	"js-scripts" => array (
-		"jquery" => "https://unpkg.com/jquery@3.4.1/dist/jquery.min.js",
-		"tether" => "https://unpkg.com/tether@1.4.7/dist/js/tether.min.js",
-		"bootstrap" => "https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"),
-	"css-scripts" => array(
-		"fontawesome" => "https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css",
-		"bootstrap" => "https://unpkg.com/bootstrap@4.4.1/dist/css/bootstrap.min.css",
-		"main" => "css/main.css"
-		));
+  global $default_scripts;
 
 	ob_start();			
 	echo <<<END
@@ -554,7 +585,26 @@ END;
   
   if($pageDetails["fluid"]) {$containerClass = "container-fluid";}
   else {$containerClass = "container";}
-  
+
+	if ($pageDetails["GoogleAnalyticsID"])
+		{
+		ob_start();			
+		echo <<<END
+<!-- Global site tag (gtag.js) - Google Analytics - Only added in if the 'GoogleAnalyticsID' i set in the site.json file-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=$pageDetails[GoogleAnalyticsID]"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', '$pageDetails[GoogleAnalyticsID]');
+	</script>
+END;
+		$GoogleAnalytics = ob_get_contents();
+		ob_end_clean(); // Don't send output to client
+		}  
+	else
+		{$GoogleAnalytics = false;}
+		
   $fn = "function"; 
 	ob_start();			
 	echo <<<END
@@ -566,12 +616,14 @@ END;
     <meta name="description" content="$pageDetails[metaDescription]" />
 		<meta name="keywords" content="$pageDetails[metaKeywords]" />
     <meta name="author" content="$pageDetails[metaAuthor]" />
+    <meta name="image" content="$pageDetails[metaImage]" />
     <link rel="icon" href="$pageDetails[metaFavIcon]">
     <title>$pageDetails[metaTitle]</title>
     $cssScripts
     <style>
     $pageDetails[extra_css]
     </style>
+    $GoogleAnalytics
   </head>
 
   <body onload="onLoad();">
@@ -617,22 +669,6 @@ function positionExtraContent ($str, $extra)
 	return ($str);	
 	}
 
-
-function listToManifest ($list)
-	{
-	$manifests = array();
-
-	foreach ($list as $k => $url)
-		{
-		$manifests[] = array(
-			"manifestUri" => $url,
-			"location" => "");
-		}
-
-	$manifests = json_encode($manifests);
-	
-	return($manifests);
-	}
 	
 function buildExtensionContent ($d, $pd)
 	{
@@ -642,6 +678,39 @@ function buildExtensionContent ($d, $pd)
   $content = parseLinks ($out["d"]["content"], 1);
 		
 	return (array($content, $out["pd"]));
+	}
+
+
+function displayCode ($array, $title=false, $format="json", $caption=false)
+	{		
+	if ($format == "json")
+		{$json = json_encode($array, JSON_PRETTY_PRINT);
+		 $json = htmlspecialchars ($json);
+		 $code = preg_replace('/[\\\\][\/]/', "/", $json);}
+	else
+		{$code = "";
+		 foreach($array as $value){
+     $code .= trim($value) . "<br>";}}
+
+  if ($title)
+		{$title = "<h3>$title</h3>";}
+
+	if (!$caption)
+		{$caption = "The complete JSON object used to define this content and layout of this page.";}
+    
+	ob_start();			
+	echo <<<END
+	<hr/>
+	$title
+	<figure>
+		<pre style="overflow-y: auto;overflow-x: hidden; border: 2px solid black;padding: 10px;max-height:400px;"><code>${code}</code></pre>
+		<figcaption class=\"figure-caption\">$caption</figcaption>
+	</figure>
+END;
+		$codeHTML = ob_get_contents();
+		ob_end_clean(); // Don't send output to client
+
+  return ($codeHTML);
 	}
 
 ?>
