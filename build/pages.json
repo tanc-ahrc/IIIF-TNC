@@ -7,7 +7,8 @@
 	},
 "webinars": {
 	"title": "Practical applications of IIIF - Webinars",
-	"content": "<p>Details of all of the project webinars will be linked below this page.</p>",
+	"content": "<div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Practical applications of IIIF - Webinar #1<\/h4><p>Presenting IIIF and some of the key areas of research in this AHRC funded project.</p><p>This Zoom Webinar took place on Friday 19<sup>th</sup> March 2021 at 16:00 – 18:30 GMT</p><\/div><h2>About this Event</h2><p>\"Practical applications of IIIF: as a building block towards a digital National Collection\", part of the AHRC funded \"Towards a National Collection\" programme, aims to highlight and demonstrate the opportunities and benefits that the International Image Interoperability Framework (IIIF) standard offers to a wide audience of heritage institutions and researchers looking to share, present and re-use high quality images and media on the web.<p/><p>This webinar will present several examples of how IIIF resources are currently being used for research and public engagement. Identifying some of the available resources/tools, and how they can be used in the future, ranging from presentation from large institutions, like the V&A to options available to individual researchers. This webinar, facilitated by the National Gallery, will be broken up into two sections, with an initial set of presentations showcasing how IIIF is being used now, followed by a second set of presentations focusing on some of the research that will be explored within the project.</p><h2>Presentations</h2>[##]",
+	"content right": ""		
 	"footnotes": [],
 	"content right": ""		
 	},
