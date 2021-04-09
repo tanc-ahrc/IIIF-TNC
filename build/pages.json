@@ -22,8 +22,7 @@
 "webinar 02": {
 	"parent": "webinars",
     "class": "list",
-	"label": "Front outside binding",
-	"title": "Showcasing the practical use of IIIF - update test",
+	"title": "Showcasing the practical use of IIIF",
 	"content": "<div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Practical applications of IIIF - Webinar #2<\/h4><p>Discuss the Potential of Shared IIIF Services.</p><p>Time TBC</p><\/div><h2>About this Event</h2><p>\"Practical applications of IIIF: as a building block towards a digital National Collection\", part of the AHRC funded \"Towards a National Collection\" programme, aims to highlight and demonstrate the opportunities and benefits that the International Image Interoperability Framework (IIIF) standard offers to a wide audience of heritage institutions and researchers looking to share, present and re-use high quality images and media on the web.<p/><p>Starting from the vision of seamless discovery of and access to a virtual collection, this webinar, facilitated by the British Library, will establish key requirements and assess the current IIIF capabilities to meet them. In advance of the workshop, project partners will develop a proposal for a virtual collection, brought together from materials hosted by different institutions. This will be shared with participants in advance, to allow them to critique it. During the workshop we will then assess current IIIF abilities to deliver this vision together with other existing standards, and establish requirements for further development of IIIF. These will be documented and shared with the wider IIIF community, to become part of the roadmap. The workshop will be hosted and facilitated by the British Library, inspired by strategic plans around facilitation of shared discovery and access solutions.</p>",
 	"content right": ""		
 	},
