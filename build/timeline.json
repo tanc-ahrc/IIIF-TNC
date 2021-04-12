@@ -1,7 +1,7 @@
 	{
 	"project": "Practical applications of IIIF as a building block towards a digital National Collection",
 	"start date": "2020-02-01",
-	"margin": -1,
+	"margin": -3,
 	"groups": {
 		"int": {
 			"title": "Administration",
