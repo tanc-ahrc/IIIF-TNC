@@ -7,11 +7,11 @@
 			"title": "Administration",
 			"stages" : [
 				["Project on hold due to Covid-19 ", "crit, done", 0, 6],
-				["Literature/website/software review", "", 9, 15],
+				["Literature/website/software review", "", 14, 15],
 				["Establish communications, collaborative environments and links with related interest groups",	"", 4, 8],
 				["Establish connections with related AHRC projects – PIDs, Linked data, etc", "", 4, 8],
 				["Identify areas of collaboration with related AHRC projects.", "", 4, 7],
-				["Recruit Project Researcher", "crit", 10, 13],
+				["Recruit Project Researcher", "crit", 11, 13],
 				["Project Researcher In Post", "crit", 13, "26,30"]
 			]},
 		"ws": {
