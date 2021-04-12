@@ -7,32 +7,32 @@
 			"title": "Administration",
 			"stages" : [
 				["Project on hold due to Covid-19 ", "crit, done", 0, 6],
-				["Literature/website/software review", "", 14, 15],
+				["Literature/website/software review", "", 14, 17],
 				["Establish communications, collaborative environments and links with related interest groups",	"", 4, 8],
 				["Establish connections with related AHRC projects – PIDs, Linked data, etc", "", 4, 8],
 				["Identify areas of collaboration with related AHRC projects.", "", 4, 7],
 				["Recruit Project Researcher", "crit", 11, 13],
-				["Project Researcher In Post", "crit", 13, "26,30"]
+				["Project Researcher In Post", "crit", 14, "26,30"]
 			]},
 		"ws": {
 			"title": "Workshops",
 			"stages": [
 				["Organise Workshop 1", "", "10", "11,25"],
-				["Workshop 1 - Showcase and discuss the current IIIF use and best practice", "crit, active", "11,25", "12,5"],
-				["Organise Workshop 2",	"", 10, "13,15"],
-				["Workshop 2 - Discuss the potential of shared IIIF services", "crit, active", "13,15", "13,26"],
-				["Organise Workshop 3 – Document available resources and development ideas", "", 14, 22],
-				["Workshop 3 - Developing practical IIIF solutions", "crit, active", 22, 23],
-				["Organise Workshop 4 – Showcase of project work and discussion for the future", "", 20, 24],
+				["Workshop 1 - Showcase and discuss the current IIIF use and best practice", "crit, active", "11,25", "12,25"],
+				["Organise Workshop 2",	"", 14, "17"],
+				["Workshop 2 - Discuss the potential of shared IIIF services", "crit, active", "17", "18"],
+				["Organise Workshop 3 – Document available resources and development ideas", "", 16, 21],
+				["Workshop 3 - Developing practical IIIF solutions", "crit, active", 21, 22],
+				["Organise Workshop 4 – Showcase of project work and discussion for the future", "", 20, 25],
 				["Workshop 4 - The IIIF-TNC project & the future", "crit, active", 24, 25]
 			]},
 		"cr": {
 			"title": "Collaborative Research",
 			"stages": [
 				["Assessing the output of Workshop 1", "", "12,5", 13],
-				["Assessing the output of Workshop 2", "", "13,26", "14,15"],
-				["Assessing the output of Workshop 3", "", 23, 24] ,
-				["Assessing the output of Workshop 4", "", 25, 26], 
+				["Assessing the output of Workshop 2", "", "17,25", "18,25"],
+				["Assessing the output of Workshop 3", "", "21,25", "22,25"] ,
+				["Assessing the output of Workshop 4", "", "24,25", "25,25"], 
 				["Discuss the scope and selection of main IIIF demonstration/examples", "", 11, 14],
 				["Development work of main IIIF demonstration/examples", "", 2, 26],
 				["Explore available and potential future IIIF services and tools", "", "14,15", 21],
