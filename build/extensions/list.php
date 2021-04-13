@@ -217,42 +217,6 @@ END;
     return ($html);
     }
 
-function buildPresentationCardOLD ($la)
-  {   
-  if ($la["link"])
-    {$ltop= "<a href=\"$la[link]\" class=\"stretched-link nodec\">";
-      $lbottom = "</a>";
-      $hclass =  "card-hov";}
-  else
-    {$ltop= "";
-     $lbottom = "";
-     $hclass =  "";}
-        
-  ob_start();      
-  echo <<<END
-
-<div class="card mb-3 $hclass" style="width: 100%;">
-  $ltop<div class="row no-gutters">
-    <div class="col-md-4  my-auto" >
-      <img src="$la[image]" class="card-img" alt="$la[ptitle]">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h4 class="card-title">$la[ptitle]</h4>
-        <h5 class="card-title">$la[stitle]</h5>
-        <p class="card-text">$la[comment]</p>
-      </div>
-    </div>
-  </div>$lbottom
-</div>
-
-END;
-    $html = ob_get_contents();
-    ob_end_clean(); // Don't send output to client
-
-    return ($html);
-    }
-
 function buildPresentationCard ($la)
   {   
   if ($la["link"])
