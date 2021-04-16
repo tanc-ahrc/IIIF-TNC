@@ -18,7 +18,7 @@
 			"title": "Workshops",
 			"stages": [
 				["Organise Workshop 1", "", "10", "11,25"],
-				["Workshop 1 - Showcase and discuss the current IIIF use and best practice", "crit, active", "11,19", "11,19"],
+				["Workshop 1 - Showcase and discuss the current IIIF use and best practice", "crit, active", "11,18", "11,20"],
 				["Organise Workshop 2",	"", 14, "17"],
 				["Workshop 2 - Discuss the potential of shared IIIF services", "crit, active", "17", "18"],
 				["Organise Workshop 3 – Document available resources and development ideas", "", 17, 21],
