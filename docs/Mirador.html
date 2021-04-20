@@ -96,16 +96,7 @@ details[open] summary {
 		<figcaption class=\"figure-caption\">The complete JSON object used to define this content and layout of this page.</figcaption>
 	</figure>		<h3>Extra extension file</h3>
 	<figure>
-		<pre style="overflow-y: auto;overflow-x: hidden; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
-    &quot;manifests&quot;: {
-        &quot;https://media.ng-london.org.uk/iiif/001-0145-0000/manifest.json&quot;: {
-            &quot;provider&quot;: &quot;The National Gallery, London&quot;
-        },
-        &quot;https://media.nga.gov/public/manifests/nga_highlights.json&quot;: {
-            &quot;provider&quot;: &quot;National Gallery of Art&quot;
-        }
-    }
-}</code></pre>
+		<pre style="overflow-y: auto;overflow-x: hidden; border: 2px solid black;padding: 10px;max-height:400px;"><code>null</code></pre>
 		<figcaption class=\"figure-caption\">The complete extension file used to define extra content included in this page.</figcaption>
 	</figure>	
 	</details></div><!--/span--></div><!--/row-->    <br/>
@@ -135,10 +126,8 @@ details[open] summary {
 
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
-       windows: [{
-					"manifestId": "https://media.ng-london.org.uk/iiif/001-0145-0000/manifest.json"
-					}],
-       manifests: {"https:\/\/media.ng-london.org.uk\/iiif\/001-0145-0000\/manifest.json":{"provider":"The National Gallery, London"},"https:\/\/media.nga.gov\/public\/manifests\/nga_highlights.json":{"provider":"National Gallery of Art"}},
+       windows: ,
+       manifests: [],
        
        
        });     
