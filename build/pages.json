@@ -70,21 +70,14 @@
 	"content right": ""		
 	},
  "Zoom of the Week": {
-	"class": "list",
+	"class": "mirador",
 	"title": "<b>The Zoom of the Week",
-	"content": "<p>Each week of the project we'll be highlighting a deep zoom image from one of our project partners' collections. On this site you can explore the full image via the [IIIF|https:\/\/iiif.io] image viewer [Mirador|https:\/\/projectmirador.org\/], find links to related IIIF content and additional information about the image selected each week. </p><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 1, April 22<sup>nd</sup> 2021</h4><p>Hans Holbein the Younger's <i>The Ambassadors</i>.</p></div>",
+	"file": "mirador-simple.json",
+	"content": "<p>Each week of the project we'll be highlighting a deep zoom image from one of our project partners' collections. On this site you can explore the full image via the [IIIF|https:\/\/iiif.io] image viewer [Mirador|https:\/\/projectmirador.org\/], find links to related IIIF content and additional information about the image selected each week. </p><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 1, April 22<sup>nd</sup> 2021</h4><p>Hans Holbein the Younger's <i>The Ambassadors</i>.</p></div><h2>Viewer</h2>[##]",
 	"content right": "",
 	"displaycode": true
 	},
-"Zoom01": {
-	"parent": "Zoom of the Week",
-	"displayName": "Hans Holbein the Younger | The Ambassadors",
-    	"class": "mirador",
-	"file": "mirador-simple.json",
-	"title": "Hans Holbein the Younger | The Ambassadors",
-	"content": "<div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Webinar: IIIF Services and Tools<\/h4><p>Discuss the Potential of Shared IIIF Services.</p><p>Time TBC</p><\/div><h2>About this Event</h2><p>\"Practical applications of IIIF: as a building block towards a digital National Collection\", part of the AHRC funded \"Towards a National Collection\" programme, aims to highlight and demonstrate the opportunities and benefits that the International Image Interoperability Framework (IIIF) standard offers to a wide audience of heritage institutions and researchers looking to share, present and re-use high quality images and media on the web.<p/><p>Starting from the vision of seamless discovery of and access to a virtual collection, this webinar, facilitated by the British Library, will establish key requirements and assess the current IIIF capabilities to meet them. In advance of the workshop, project partners will develop a proposal for a virtual collection, brought together from materials hosted by different institutions. This will be shared with participants in advance, to allow them to critique it. During the workshop we will then assess current IIIF abilities to deliver this vision together with other existing standards, and establish requirements for further development of IIIF. These will be documented and shared with the wider IIIF community, to become part of the roadmap. The workshop will be hosted and facilitated by the British Library, inspired by strategic plans around facilitation of shared discovery and access solutions.</p>",
-	"content right": ""		
-	},
+
 "about": {
 	"class": "list",
 	"file": "logolist.json",
