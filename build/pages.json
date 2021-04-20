@@ -70,14 +70,21 @@
 	"content right": ""		
 	},
  "Zoom of the Week": {
-	"class": "mirador",
+	"class": "list",
 	"title": "<b>The Zoom of the Week",
-	"file": "mirador-simple.json",
-	"content": "<p>Each week of the project we'll be highlighting a deep zoom image from one of our project partners' collections. On this site you can explore the full image via the [IIIF|https:\/\/iiif.io] image viewer [Mirador|https:\/\/projectmirador.org\/], find links to related IIIF content and additional information about the image selected each week. </p><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 1, April 22<sup>nd</sup> 2021</h4><p>Hans Holbein the Younger's <i>The Ambassadors</i>.</p></div><h2>Viewer</h2>[##]",
+	"content": "<p>Each week of the project we'll be highlighting a deep zoom image from one of our project partners' collections. On this site you can explore the full image via the [IIIF|https:\/\/iiif.io] image viewer [Mirador|https:\/\/projectmirador.org\/], find links to related IIIF content and additional information about the image selected each week. </p><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 1, April 22<sup>nd</sup> 2021</h4><p>Hans Holbein the Younger's <i>The Ambassadors</i>.</p></div>",
 	"content right": "",
 	"displaycode": true
 	},
-
+"zoom01": {
+	"parent": "Zoom of the Week",
+	"aliases": "webinar 01",
+	"displayName": "Hans Holbein | The Ambassadors",
+    "class": "mirador",
+    "file": "mirador-simple.json",
+	"title": "Hans Holbein | The Ambassadors",
+	"content": "<div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Webinar: Practical applications of IIIF<\/h4><p>Presenting IIIF and some of the key areas of research in this AHRC funded project.</p><p>This Zoom Webinar took place on Friday 19<sup>th</sup> March 2021 at 16:00 – 18:30 GMT</p><\/div><h2>About this Event</h2><p>\"Practical applications of IIIF: as a building block towards a digital National Collection\", part of the AHRC funded \"Towards a National Collection\" programme, aims to highlight and demonstrate the opportunities and benefits that the International Image Interoperability Framework (IIIF) standard offers to a wide audience of heritage institutions and researchers looking to share, present and re-use high quality images and media on the web.<p/><p>This webinar will present several examples of how IIIF resources are currently being used for research and public engagement. Identifying some of the available resources/tools, and how they can be used in the future, ranging from presentation from large institutions, like the V&A to options available to individual researchers. This webinar, facilitated by the National Gallery, will be broken up into two sections, with an initial set of presentations showcasing how IIIF is being used now, followed by a second set of presentations focusing on some of the research that will be explored within the project.</p><h2>Presentations</h2>[##]",
+	"content right": ""
 "about": {
 	"class": "list",
 	"file": "logolist.json",
