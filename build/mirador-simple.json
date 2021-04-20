@@ -1,8 +1,7 @@
 {
 	"manifests": {
-		"https://media.ng-london.org.uk/iiif/001-0145-0000/manifest.json": {
-			"provider": "The National Gallery, London"},
-		"https://media.nga.gov/public/manifests/nga_highlights.json": {
-			"provider": "National Gallery of Art"}		
+		"https://dms-data.stanford.edu/data/manifests/Parker/nm203xw8381/manifest.json": {
+			"provider": "The Parker Library, Corpus Christi College, Cambridge"},
+			
 		}
 	}
