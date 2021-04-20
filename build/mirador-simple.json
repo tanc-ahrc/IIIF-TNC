@@ -1,7 +1,8 @@
 {
 	"manifests": {
-		"https://round4.ng-london.org.uk/ex/data/0CWR-0001-0000-0000.json": {
+		"https://media.ng-london.org.uk/iiif/0CWR-0001-0000-0000/manifest.json": {
 			"provider": "The National Gallery, London UK"}
+		"
 			
 		}
 	}
