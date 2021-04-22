@@ -1,6 +1,6 @@
 <?php
 
-// Last update 24 Mar 2021
+// Last update 22 Apr 2021
 
 $extensionList["list"] = "extensionCards";
 $blank = array("groups" => array(), "ptitle" => "",
@@ -125,7 +125,6 @@ function extensionCards ($d, $pd)
   margin-right: auto;
   padding: 10px;
 }
-
 .card-img-top {
   width: auto;
   max-width: 100%;    
@@ -135,21 +134,17 @@ function extensionCards ($d, $pd)
   margin-right: auto;
   padding: 10px;
 }
-
 .nodec:link, .nodec:visited, .nodec:hover, .nodec:active {
   text-decoration: none;
   color: inherit;
   }
-
 .card-hov:hover {
   opacity: 0.7;
 }
-
 .offsetanchor {
   position: relative;
   top: -75px;
 }
-
 .pcontainer {
    position: relative;
    width: 100%;
@@ -165,7 +160,6 @@ function extensionCards ($d, $pd)
    width: 100%;
    height: 100%;
 	}
-
 ";
 
     // Check if a table of contents should be added.
@@ -175,7 +169,7 @@ function extensionCards ($d, $pd)
     else
       {$tb = "";}
       
-    $d["content"] = positionExtraContent ($d["content"], $tb.$gcontent);
+    $d = positionExtraContent ($d, $tb.$gcontent);
     }
 
   return (array("d" => $d, "pd" => $pd));
@@ -194,7 +188,6 @@ function buildFullCard ($la)
         
   ob_start();      
   echo <<<END
-
 <div class="card mb-3 $hclass" style="width: 100%;">
   $ltop<div class="row no-gutters">
     <div class="col-md-4  my-auto" >
@@ -209,7 +202,6 @@ function buildFullCard ($la)
     </div>
   </div>$lbottom
 </div>
-
 END;
     $html = ob_get_contents();
     ob_end_clean(); // Don't send output to client
@@ -274,7 +266,6 @@ function buildPresentationCard ($la)
     </div>
   </div>
 </div>
-
 END;
     $html = ob_get_contents();
     ob_end_clean(); // Don't send output to client
@@ -320,7 +311,6 @@ function buildSimpleCard ($la) {
       </div>
     </div>
   </div>
-
 END;
     $html = ob_get_contents();
     ob_end_clean(); // Don't send output to client
@@ -352,7 +342,6 @@ function buildImageCard ($la) {
       $lbottom
     </div>
   </div>
-
 END;
     $html = ob_get_contents();
     ob_end_clean(); // Don't send output to client
