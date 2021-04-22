@@ -20,7 +20,6 @@ g a {
 	
 #int0-text {
 	display:none;}
-
 #tooltip {
   background: cornsilk;
   border: 1px solid black;
@@ -28,7 +27,6 @@ g a {
   padding: 2px 5px 2px 5px;
   font-size: 0.75em;
   font-weight: bold;}
-
 
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics - Only added in if the 'GoogleAnalyticsID' i set in the site.json file-->
@@ -129,8 +127,7 @@ gantt
 	<script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js"></script>
     <script>
-			
-var rectIDs = [];
+			var rectIDs = [];
 rectIDs["int0"] = "2019-11-01 - 2019-11-01";
 rectIDs["int1"] = "2020-02-01 - 2020-08-01";
 rectIDs["int2"] = "2021-04-01 - 2021-07-01";
@@ -163,11 +160,9 @@ rectIDs["pd0"] = "2022-02-01 - 2022-04-01";
 rectIDs["pd1"] = "2022-03-01 - 2022-04-30";
 rectIDs["rp0"] = "2022-02-01 - 2022-04-30";
 
-
 var ttdiv = false;
 	
 function showTooltip(evt, cid) {
-
 	if (!ttdiv)
 		{let div = document.createElement('div');
 		 div.id = "tooltip";
@@ -175,7 +170,6 @@ function showTooltip(evt, cid) {
 		 div.style = "position: absolute; display: none;";
 		 document.body.append(div);
 		 ttdiv = true;}	
-
 	var daterange = "Date Range";
 	if (cid in rectIDs)
 		{daterange = rectIDs[cid];}
@@ -187,18 +181,14 @@ function showTooltip(evt, cid) {
   tooltip.style.left = evt.pageX + 10 + 'px';
   tooltip.style.top = evt.pageY + 10 + 'px';
 	}
-
 function hideTooltip() {
   var tooltip = document.getElementById("tooltip");
   tooltip.style.display = "none";
 	}
-
 // Select the node that will be observed for mutations
 const targetNode = document.getElementById('gantt');
-
 // Options for the observer (which mutations to observe)
 const config = { attributes: true, childList: true, subtree: true };
-
 // Callback function to execute when mutations are observed
 const callback = function(mutationsList, observer) {
 	// Use traditional 'for loops' for IE 11
@@ -206,7 +196,6 @@ const callback = function(mutationsList, observer) {
 		if (mutation.type === 'attributes' &&
 				mutation.attributeName == 'id' &&
 				mutation.target.tagName == 'rect') {			
-
 			$( "#"+mutation.target.id ).mousemove(function( event ) {
 				showTooltip(event, mutation.target.id);});
 			$( "#"+mutation.target.id ).mouseout(function( event ) {
@@ -219,10 +208,8 @@ const callback = function(mutationsList, observer) {
 			}
     }
 	};
-
 // Create an observer instance linked to the callback function
 const observer = new MutationObserver(callback);
-
 // Start observing the target node for configured mutations
 observer.observe(targetNode, config);
 	
