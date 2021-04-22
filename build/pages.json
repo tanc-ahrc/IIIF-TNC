@@ -71,7 +71,7 @@
 	"footnotes": [],
 	"content right": ""		
 	},
- "Zoom of the Week": {
+ "Detail of the Week": {
 	"class": "mirador",
 	"title": "<b>The Zoom of the Week",
 	"file": "mirador-simple01.json",
@@ -79,8 +79,8 @@
 	"content right": "",
 	"displaycode": false
 	},
-"zoom01": {
-	"parent": "Zoom of the Week",
+"detail01": {
+	"parent": "Detail of the Week",
 	"displayName": "Hans Holbein | The Ambassadors",
    	"class": "mirador",
    	"file": "mirador-simple01.json",
