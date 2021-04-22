@@ -3,7 +3,7 @@
 // Updated to Mirador V3 18/03/2021
 // Adding extra manifests in the Text example as the catalog rather than a manifest variable
 
-// Last updated 13 Apr 2021
+// Last updated 22 Apr 2021
 
 $extensionList["mirador"] = "extensionMirador";
 
@@ -59,7 +59,6 @@ function extensionMirador ($d, $pd)
 	ob_start();			
 	echo <<<END
 	$(function() {
-
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
        windows: $wo,
@@ -72,7 +71,7 @@ END;
 	$pd["extra_js"] .= ob_get_contents();
 	ob_end_clean(); // Don't send output to client
 
-	$d["content"] = positionExtraContent ($d["content"], '<div class="row" style="padding-left:16px;padding-right:16px;"><div class="col-12 col-lg-12"><div style="height:500px;" id="mirador"></div></div></div>'.$codeHTML);
+	$d = positionExtraContent ($d, '<div class="row" style="padding-left:16px;padding-right:16px;"><div class="col-12 col-lg-12"><div style="height:500px;" id="mirador"></div></div></div>'.$codeHTML);
 
   return (array("d" => $d, "pd" => $pd));
   }
