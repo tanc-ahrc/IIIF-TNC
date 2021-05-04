@@ -94,7 +94,26 @@ details[open] summary {
 		<figcaption class=\"figure-caption\">The complete JSON object used to define this content and layout of this page.</figcaption>
 	</figure>		<h3>Extra extension file</h3>
 	<figure>
-		<pre style="overflow-y: auto;overflow-x: hidden; border: 2px solid black;padding: 10px;max-height:400px;"><code>{<br>"manifests": {<br>"https://data.ng-london.org.uk/iiif/0CWR-0001-0000-0000/manifest": {<br>"provider": "The National Gallery"<br>},<br>"https://iiif.vam.ac.uk/collections/O18966/manifest.json": {<br>"provider": "The Victoria and Albert Museum"<br>}<br>},<br>"windows": [{<br>"manifestId": "https://data.ng-london.org.uk/iiif/0CWR-0001-0000-0000/manifest",<br>"canvasIndex": 0<br>},<br>{<br>"manifestId": "https://iiif.vam.ac.uk/collections/O18966/manifest.json",<br>"canvasIndex": 1<br>}<br></code></pre>
+		<pre style="overflow-y: auto;overflow-x: hidden; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
+    &quot;manifests&quot;: {
+        &quot;https://data.ng-london.org.uk/iiif/0CWR-0001-0000-0000/manifest&quot;: {
+            &quot;provider&quot;: &quot;The National Gallery&quot;
+        },
+        &quot;https://iiif.vam.ac.uk/collections/O18966/manifest.json&quot;: {
+            &quot;provider&quot;: &quot;The Victoria and Albert Museum&quot;
+        }
+    },
+    &quot;windows&quot;: [
+        {
+            &quot;manifestId&quot;: &quot;https://data.ng-london.org.uk/iiif/0CWR-0001-0000-0000/manifest&quot;,
+            &quot;canvasIndex&quot;: 0
+        },
+        {
+            &quot;manifestId&quot;: &quot;https://iiif.vam.ac.uk/collections/O18966/manifest.json&quot;,
+            &quot;canvasIndex&quot;: 1
+        }
+    ]
+}</code></pre>
 		<figcaption class=\"figure-caption\">The complete extension file used to define extra content included in this page.</figcaption>
 	</figure>	
 	</details></div><!--/span--></div><!--/row-->    <br/>
@@ -123,8 +142,8 @@ details[open] summary {
 				$(function() {
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
-       windows: ,
-       manifests: [],
+       windows: [{"manifestId":"https:\/\/data.ng-london.org.uk\/iiif\/0CWR-0001-0000-0000\/manifest","canvasIndex":0},{"manifestId":"https:\/\/iiif.vam.ac.uk\/collections\/O18966\/manifest.json","canvasIndex":1}],
+       manifests: {"https:\/\/data.ng-london.org.uk\/iiif\/0CWR-0001-0000-0000\/manifest":{"provider":"The National Gallery"},"https:\/\/iiif.vam.ac.uk\/collections\/O18966\/manifest.json":{"provider":"The Victoria and Albert Museum"}},
        
        
        });     
