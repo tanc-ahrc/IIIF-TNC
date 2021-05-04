@@ -1,0 +1,13 @@
+  {
+	"manifests": {
+		"https://iiif.vam.ac.uk/collections/O18966/manifest.json": {
+			"provider": "The Victoria and Albert Museum"
+		}
+	},
+	"windows": [
+		{
+			"manifestId": "https://iiif.vam.ac.uk/collections/O18966/manifest.json",
+			"canvasIndex": 1
+		}
+	]
+}
