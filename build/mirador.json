@@ -1,19 +1,18 @@
+  
   {
 	"manifests": {
-		"https://iiif.harvardartmuseums.org/manifests/object/299843": {
-			"provider": "Harvard University"
+		"https://data.ng-london.org.uk/iiif/0CWR-0001-0000-0000/manifest": {
+			"provider": "The National Gallery"
 		},
-		"https://media.nga.gov/public/manifests/nga_highlights.json": {
-			"provider": "National Gallery of Art"
+		"https://iiif.vam.ac.uk/collections/O18966/manifest.json": {
+			"provider": "The Victoria and Albert Museum"
 		}
 	},
 	"windows": [{
-			"manifestId": "https://media.nga.gov/public/manifests/nga_highlights.json",
+			"manifestId": "https://data.ng-london.org.uk/iiif/0CWR-0001-0000-0000/manifest",
 			"canvasIndex": 0
 		},
 		{
-			"manifestId": "https://iiif.harvardartmuseums.org/manifests/object/299843",
-			"canvasIndex": 3
+			"manifestId": "https://iiif.vam.ac.uk/collections/O18966/manifest.json",
+			"canvasIndex": 1
 		}
-	]
-}
