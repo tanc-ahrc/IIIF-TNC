@@ -79,8 +79,10 @@
 				$(function() {
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
-       windows: ,
-       manifests: [],
+       windows: [{
+					"manifestId": "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co124260/manifest"
+					}],
+       manifests: {"https:\/\/collection.sciencemuseumgroup.org.uk\/iiif\/objects\/co124260\/manifest":{"provider":"The Science Museum Group"}},
        
        
        });     
