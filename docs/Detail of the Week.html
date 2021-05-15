@@ -102,7 +102,7 @@ details[open] summary {
         &quot;https://iiif.vam.ac.uk/collections/O18966/manifest.json&quot;: {
             &quot;provider&quot;: &quot;The Victoria and Albert Museum&quot;
         },
-        &quot;https://collection.sciencemuseumgroup.org.uk/iiif/objects/co124260/manifest&quot;: {
+        &quot;https://collection.sciencemuseumgroup.org.uk/iiif/objects/co124260/manifest.json&quot;: {
             &quot;provider&quot;: &quot;The Science Museum Group&quot;
         }
     },
@@ -119,7 +119,7 @@ details[open] summary {
         },
         {
             &quot;id&quot;: &quot;c&quot;,
-            &quot;manifestId&quot;: &quot;https://collection.sciencemuseumgroup.org.uk/iiif/objects/co124260/manifest&quot;,
+            &quot;manifestId&quot;: &quot;https://collection.sciencemuseumgroup.org.uk/iiif/objects/co124260/manifest.json&quot;,
             &quot;canvasIndex&quot;: 0
         }
     ],
@@ -164,8 +164,8 @@ details[open] summary {
 				$(function() {
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
-       windows: [{"id":"a","manifestId":"https:\/\/data.ng-london.org.uk\/iiif\/0CWR-0001-0000-0000\/manifest","canvasIndex":0},{"id":"b","manifestId":"https:\/\/iiif.vam.ac.uk\/collections\/O18966\/manifest.json","canvasIndex":1},{"id":"c","manifestId":"https:\/\/collection.sciencemuseumgroup.org.uk\/iiif\/objects\/co124260\/manifest","canvasIndex":0}],
-       manifests: {"https:\/\/data.ng-london.org.uk\/iiif\/0CWR-0001-0000-0000\/manifest":{"provider":"The National Gallery"},"https:\/\/iiif.vam.ac.uk\/collections\/O18966\/manifest.json":{"provider":"The Victoria and Albert Museum"},"https:\/\/collection.sciencemuseumgroup.org.uk\/iiif\/objects\/co124260\/manifest":{"provider":"The Science Museum Group"}},
+       windows: [{"id":"a","manifestId":"https:\/\/data.ng-london.org.uk\/iiif\/0CWR-0001-0000-0000\/manifest","canvasIndex":0},{"id":"b","manifestId":"https:\/\/iiif.vam.ac.uk\/collections\/O18966\/manifest.json","canvasIndex":1},{"id":"c","manifestId":"https:\/\/collection.sciencemuseumgroup.org.uk\/iiif\/objects\/co124260\/manifest.json","canvasIndex":0}],
+       manifests: {"https:\/\/data.ng-london.org.uk\/iiif\/0CWR-0001-0000-0000\/manifest":{"provider":"The National Gallery"},"https:\/\/iiif.vam.ac.uk\/collections\/O18966\/manifest.json":{"provider":"The Victoria and Albert Museum"},"https:\/\/collection.sciencemuseumgroup.org.uk\/iiif\/objects\/co124260\/manifest.json":{"provider":"The Science Museum Group"}},
        
        workspace: {"layout":{"direction":"row","first":"a","second":{"first":"b","second":"c","direction":"row"},"splitPercentage":33.33}}
        });     
