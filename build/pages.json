@@ -75,7 +75,7 @@
 	"class": "mirador",
 	"title": "<b>The Detail of the Week",
 	"file": "mirador-complex.json",
-	"content": "<p>Each week of the project we'll be highlighting a deep zoom image from one of our project partners' collections. On this site you can explore the full image via the [IIIF|https:\/\/iiif.io] image viewer [Mirador|https:\/\/projectmirador.org\/], find links to related IIIF content and additional information about the image selected each week. </p><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 1,  April 26<sup>th</sup> 2021</h4><p>Hans Holbein the Younger's <i>The Ambassadors</i>.</p></div><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 2,  May 4<sup>th</sup> 2021</h4><p>Hans Holbein the Younger's <i>Portrait of Anne of Cleves set in a turned ivory box</i>.</p></div><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 3,  May 14<sup>th</sup> 2021</h4><i>Two Packs of Playing Cards</i>.</p></div><h2>Viewer</h2>[##]",
+	"content": "<p>Each week of the project we'll be highlighting a deep zoom image from one of our project partners' collections. On this site you can explore the full image via the [IIIF|https:\/\/iiif.io] image viewer [Mirador|https:\/\/projectmirador.org\/], find links to related IIIF content and additional information about the image selected each week. </p><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 1,  April 26<sup>th</sup> 2021</h4><p>Hans Holbein the Younger's <i>The Ambassadors</i>.</p></div><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 2,  May 4<sup>th</sup> 2021</h4><p>Hans Holbein the Younger's <i>Portrait of Anne of Cleves set in a turned ivory box</i>.</p></div><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 3,  May 14<sup>th</sup> 2021</h4><i>Two Packs of Playing Cards</i>.</p></div><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 4,  May 21<sup>st</sup> 2021</h4><i> Rhododendron sperabile var. weihsiense</i> speciman from the RBGE.</p></div><h2>Viewer</h2>[##]",
 	"content right": "",
 	"displaycode": false
 	},
@@ -106,6 +106,15 @@
 	"content": "<h2>About this Object</h2><p>This weeks object comes from the Science Museum Group Collections where it is described as 'Two groups of playing cards, possibly two separate packs, motifs printed in black, decorated on reverse, Canton, Chinese, 1801-1830'. A transcription of the label on the lid is given as 'For Mrs Geo. Pearse .Ano 1840/From the 37th M.N.S./ very good & interesting/CHinese Playiong cards/From Canton/of the beginning XIX Centry: AD/About'<p> See this item on the [Science Museum Group Website|https:\/\/collection.sciencemuseumgroup.org.uk/objects/co124260/two-packs-of-playing-cards-playing-cards].</p> <p>Connection to last weeks item: The Anne of Cleves portait is backed with a playing card.</p><h2>Viewer</h2>[##]<p>  </p><p>  </p><p>  </p>",
 	"content right": ""
 	},
+"detail04": {
+	"parent": "Detail of the Week",
+	"displayName": "<i>Rhododendron sperabile var. weihsiense</i> speciman from the RBGE",
+   	"class": "mirador",
+   	"file": "mirador-simple04.json",
+	"title": "Rhododendron sperabile var. weihsiense",
+	"content": "<h2>About this Object</h2><p>This specimen was collected as part of Greorge Forrest's (1873 - 1932) expedition to Yunnan, China in May 1924 and subsequently donated to the Royal Botanic Garden Edinburgh (RBGE). The presence of the Chinese label suggests that the sample was collected by one of Forrest's local collaborators, rather than Forrest himself likely in the area of the Mekong/Salween divide. <figure class=\"figure\"><img src=\"https://raw.githubusercontent.com/tanc-ahrc/IIIF-TNC/master/docs/graphics/Yunnan%20China.JPG\" class=\"figure-img img-fluid rounded\" alt=\"Map of Yunnan, China with a pin dropped at Latitude: 27° 12' N, Longitude: 99° 2' E when the specimen was collected.\"></figure> Growning in cliffs and on rocky slopes, the shurb is approximately four feet tall with crimson flowers and black markings at the base. To see the record for this specimen at the Royal Botanic Garden Edinbourgh webiste, please click [here|https:\/\/data.rbge.org.uk/search/herbarium/?cfg=fulldetails.cfg&specimen_num=11122], to browse the other 9347 specimens that Forrest donated from his Chinese expeditions, please click [here|https:\/\/data.rbge.org.uk/search/herbarium/?family=&genus=+&species=&coll_name=forrest%2C+george&coll_num=&barcode=&country_name=China&region=&major_taxon=&cfg=vherb.cfg&keywords=] <p>.</p> <p>Connection to last weeks item: The Chinese playing cards were likely printed 100 years prior to the date this item was collected in China.</p><h2>Viewer</h2>[##]<p>  </p><p>  </p><p>  </p>",
+	"content right": ""
+	},	
 "about": {
 	"class": "list",
 	"file": "logolist.json",
