@@ -37,10 +37,10 @@
     "workspace": {
         "layout": {
             "direction": "row",
-            "first": "b",
+            "first": "d",
             "second": {
                 "first": "c",
-                "second": "d",
+                "second": "b",
                 "direction": "row"
                                 },
             "splitPercentage": 33.33
