@@ -94,56 +94,7 @@ details[open] summary {
 		<figcaption class=\"figure-caption\">The complete JSON object used to define this content and layout of this page.</figcaption>
 	</figure>		<h3>Extra extension file</h3>
 	<figure>
-		<pre style="overflow-y: auto;overflow-x: hidden; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
-    &quot;manifests&quot;: {
-        &quot;https://data.ng-london.org.uk/iiif/0CWR-0001-0000-0000/manifest&quot;: {
-            &quot;provider&quot;: &quot;The National Gallery&quot;
-        },
-        &quot;https://iiif.vam.ac.uk/collections/O18966/manifest.json&quot;: {
-            &quot;provider&quot;: &quot;The Victoria and Albert Museum&quot;
-        },
-        &quot;https://collection.sciencemuseumgroup.org.uk/iiif/objects/co124260/manifest&quot;: {
-            &quot;provider&quot;: &quot;The Science Museum Group&quot;
-        },
-        &quot;https://iiif.rbge.org.uk/herb/iiif/E00001143/manifest&quot;: {
-            &quot;provider&quot;: &quot;The Royal Botanic Garden Edinburgh&quot;
-        }
-    },
-    &quot;windows&quot;: [
-        {
-            &quot;id&quot;: &quot;a&quot;,
-            &quot;manifestId&quot;: &quot;https://data.ng-london.org.uk/iiif/0CWR-0001-0000-0000/manifest&quot;,
-            &quot;canvasIndex&quot;: 0
-        },
-        {
-            &quot;id&quot;: &quot;b&quot;,
-            &quot;manifestId&quot;: &quot;https://iiif.vam.ac.uk/collections/O18966/manifest.json&quot;,
-            &quot;canvasIndex&quot;: 1
-        },
-        {
-            &quot;id&quot;: &quot;c&quot;,
-            &quot;manifestId&quot;: &quot;https://collection.sciencemuseumgroup.org.uk/iiif/objects/co124260/manifest&quot;,
-            &quot;canvasIndex&quot;: 0
-        },
-        {
-            &quot;id&quot;: &quot;d&quot;,
-            &quot;manifestID&quot;: &quot;https://iiif.rbge.org.uk/herb/iiif/E00001143/manifest&quot;,
-            &quot;canvasIndex&quot;: 0
-        }
-    ],
-    &quot;workspace&quot;: {
-        &quot;layout&quot;: {
-            &quot;direction&quot;: &quot;row&quot;,
-            &quot;first&quot;: &quot;d&quot;,
-            &quot;second&quot;: {
-                &quot;first&quot;: &quot;c&quot;,
-                &quot;second&quot;: &quot;b&quot;,
-                &quot;direction&quot;: &quot;row&quot;
-            },
-            &quot;splitPercentage&quot;: 33.33
-        }
-    }
-}</code></pre>
+		<pre style="overflow-y: auto;overflow-x: hidden; border: 2px solid black;padding: 10px;max-height:400px;"><code>{<br>"manifests": {<br>"https://data.ng-london.org.uk/iiif/0CWR-0001-0000-0000/manifest": {<br>"provider": "The National Gallery"<br>},<br>"https://iiif.vam.ac.uk/collections/O18966/manifest.json": {<br>"provider": "The Victoria and Albert Museum"<br>},<br>"https://collection.sciencemuseumgroup.org.uk/iiif/objects/co124260/manifest": {<br>"provider": "The Science Museum Group"<br>},<br>"https://iiif.rbge.org.uk/herb/iiif/E00001143/manifest": {<br>"provider": "The Royal Botanic Garden Edinburgh"<br>}<br>},<br>"windows": [{<br>"id": "a",<br>"manifestId": "https://data.ng-london.org.uk/iiif/0CWR-0001-0000-0000/manifest",<br>"canvasIndex": 0<br>},<br>{<br>"id": "b",<br>"manifestId": "https://iiif.vam.ac.uk/collections/O18966/manifest.json",<br>"canvasIndex": 1<br>},<br>{<br>"id": "c",<br>"manifestId": "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co124260/manifest",<br>"canvasIndex": 0<br>},<br>{<br>"id": "d",<br>"manifestID": "https://iiif.rbge.org.uk/herb/iiif/E00001143/manifest",<br>}<br>],<br>"workspace": {<br>"layout": {<br>"direction": "row",<br>"first": "d",<br>"second": {<br>"first": "c",<br>"second": "b",<br>"direction": "row"<br>},<br>"splitPercentage": 33.33<br>}<br>}<br>}<br></code></pre>
 		<figcaption class=\"figure-caption\">The complete extension file used to define extra content included in this page.</figcaption>
 	</figure>	
 	</details></div><!--/span--></div><!--/row-->    <br/>
@@ -172,10 +123,10 @@ details[open] summary {
 				$(function() {
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
-       windows: [{"id":"a","manifestId":"https:\/\/data.ng-london.org.uk\/iiif\/0CWR-0001-0000-0000\/manifest","canvasIndex":0},{"id":"b","manifestId":"https:\/\/iiif.vam.ac.uk\/collections\/O18966\/manifest.json","canvasIndex":1},{"id":"c","manifestId":"https:\/\/collection.sciencemuseumgroup.org.uk\/iiif\/objects\/co124260\/manifest","canvasIndex":0},{"id":"d","manifestID":"https:\/\/iiif.rbge.org.uk\/herb\/iiif\/E00001143\/manifest","canvasIndex":0}],
-       manifests: {"https:\/\/data.ng-london.org.uk\/iiif\/0CWR-0001-0000-0000\/manifest":{"provider":"The National Gallery"},"https:\/\/iiif.vam.ac.uk\/collections\/O18966\/manifest.json":{"provider":"The Victoria and Albert Museum"},"https:\/\/collection.sciencemuseumgroup.org.uk\/iiif\/objects\/co124260\/manifest":{"provider":"The Science Museum Group"},"https:\/\/iiif.rbge.org.uk\/herb\/iiif\/E00001143\/manifest":{"provider":"The Royal Botanic Garden Edinburgh"}},
+       windows: ,
+       manifests: [],
        
-       workspace: {"layout":{"direction":"row","first":"d","second":{"first":"c","second":"b","direction":"row"},"splitPercentage":33.33}}
+       
        });     
      });
 			function onLoad() {
