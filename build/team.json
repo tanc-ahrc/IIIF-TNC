@@ -43,22 +43,14 @@
 	"image": "graphics/people/CharlotteBolland.jpg",
 	"checked": "",
 	"link": "https:\/\/www.npg.org.uk\/research\/staff-research-profiles\/charlotte-bolland"
-}, {
-	"groups": ["Project Partner"],
-	"ptitle": "Lorna Mitchell",
-	"stitle": "Head of Library, Archives & Publications, The Royal Botanic Garden Edinburgh",
-	"comment": "Lorna is responsible for the strategic management and day-to-day running of the Library, Archives and Publications at the Royal Botanic Garden Edinburgh (RBGE).",
-	"image": "graphics/people/LornaMitchell.jpg",
-	"checked": "",
-	"link": "https:\/\/www.rbge.org.uk\/about-us/organisational-structure/staff\/library-archives-and-publications\/#lorna"
 },{
 	"groups": ["Project Partner"],
-	"ptitle": "Tom Crane",
-	"stitle": "Technical Director, Digirati Ltd",
-	"comment": "",
-	"image": "graphics/people/Digirati.jpg",
+	"ptitle": "Luca Carini",
+	"stitle": "Senior Web Developer, The Victoria and Albert Museum.",
+	"comment": "Specialising in user interface development; focused on optimised code, web standards, usability, and accessibility.",
+	"image": "graphics/people/LucaCarini.jpg",
 	"checked": "",
-	"link": "https:\/\/twitter.com\/tomofhernehill"
+	"link": "https:\/\/twitter.com\/methodog"
 },{
 	"groups": ["Project Partner"],
 	"ptitle": "Tom Cramer",
@@ -69,12 +61,36 @@
 	"link": "https:\/\/twitter.com\/tcramer"
 },{
 	"groups": ["Project Partner"],
-	"ptitle": "Jamie Unwin",
-	"stitle": "Technical Architect, Collections Online, Science Museum Group",
+	"ptitle": "Tom Crane",
+	"stitle": "Technical Director, Digirati Ltd",
 	"comment": "",
-	"image": "graphics/people/JamieUnwin.jpeg",
+	"image": "graphics/people/Digirati.jpg",
 	"checked": "",
-	"link": "https:\/\/twitter.com\/jamieunwin"
+	"link": "https:\/\/twitter.com\/tomofhernehill"
+},{	
+	"groups": ["Project Partner"],
+	"ptitle": "Neil Fitzgerald",
+	"stitle": "Head of Digital Research, The British Library",
+	"comment": "Neil Fitzgerald leads the Digital Research Team that works across the organisation to ensure the Library’s collections, systems, policies, and processes meet the emerging needs of those who want to deeply integrate digital content, data, and methods, into their work. He is a digital cultural heritage professional with extensive practical and management experience across the international cultural heritage and higher education sectors. A member of a number of advisory boards in the fields of digital humanities and digital cultural heritage. He has also been accountable for the successful delivery of a number of major digital initiatives in the UK and internationally. Before joining the Library, he worked in the commercial sector.",
+	"image": "graphics/people/NeilFitzgerald.jpg",
+	"checked": "",
+	"link": "https:\/\/twitter.com\/N_Fitzgerald"
+},{	
+	"groups": ["Project Partner"],
+	"ptitle": "Roger Hyam",
+	"stitle": "Digital Information Officer, The Royal Botanic Garden Edinburgh",
+	"comment": "Roger trained as a botanist but has been a software and data person for the last twenty years. At RBGE he is responsible for external data publication as well a number of internals systems. He is currently IIIF Consortium Ambassador to the Natural History Community.",
+	"image": "graphics/people/RogerHyam.jpg",
+	"checked": "",
+	"link": "https:\/\/orcid.org\/0000-0003-4581-1379"
+}, {
+	"groups": ["Project Partner"],
+	"ptitle": "Lorna Mitchell",
+	"stitle": "Head of Library, Archives & Publications, The Royal Botanic Garden Edinburgh",
+	"comment": "Lorna is responsible for the strategic management and day-to-day running of the Library, Archives and Publications at the Royal Botanic Garden Edinburgh (RBGE).",
+	"image": "graphics/people/LornaMitchell.jpg",
+	"checked": "",
+	"link": "https:\/\/www.rbge.org.uk\/about-us/organisational-structure/staff\/library-archives-and-publications\/#lorna"
 },{
 	"groups": ["Project Partner"],
 	"ptitle": "Richard Palmer",
@@ -91,6 +107,14 @@
 	"image": "graphics/people/GlenRobson.png",
 	"checked": "",
 	"link": "https:\/\/twitter.com\/glenrobson"
+},{
+	"groups": ["Project Partner"],
+	"ptitle": "Jamie Unwin",
+	"stitle": "Technical Architect, Collections Online, Science Museum Group",
+	"comment": "",
+	"image": "graphics/people/JamieUnwin.jpeg",
+	"checked": "",
+	"link": "https:\/\/twitter.com\/jamieunwin"
 }]
 	
 }
