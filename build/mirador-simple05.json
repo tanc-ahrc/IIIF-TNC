@@ -7,7 +7,7 @@
 	"windows": [
 		{
 			"manifestId": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100059906235.0x000001/manifest.json",
-			"canvasIndex": 95
+			"canvasIndex": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100059907886.0x000061"
 		}
 	]
 }
