@@ -85,7 +85,7 @@ details[open] summary {
 		<pre style="overflow-y: auto;overflow-x: hidden; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
     &quot;parent&quot;: &quot;&quot;,
     &quot;class&quot;: &quot;mirador&quot;,
-    &quot;file&quot;: &quot;mirador.json&quot;,
+    &quot;file&quot;: &quot;mirador-complex.json&quot;,
     &quot;title&quot;: &quot;&lt;b&gt;The Detail of the Week&quot;,
     &quot;content&quot;: &quot;&lt;p&gt;Each week of the project we'll be highlighting a deep zoom image from one of our project partners' collections. On this site you can explore the full image via the [IIIF|https://iiif.io] image viewer [Mirador|https://projectmirador.org/], find links to related IIIF content and additional information about the image selected each week. &lt;/p&gt;&lt;div class=\&quot;alert alert-info\&quot; role=\&quot;alert\&quot;&gt;&lt;h4 class=\&quot;alert-heading\&quot;&gt;Week 1,  April 26&lt;sup&gt;th&lt;/sup&gt; 2021&lt;/h4&gt;&lt;p&gt;Hans Holbein the Younger's &lt;i&gt;The Ambassadors&lt;/i&gt;.&lt;/p&gt;&lt;/div&gt;&lt;div class=\&quot;alert alert-info\&quot; role=\&quot;alert\&quot;&gt;&lt;h4 class=\&quot;alert-heading\&quot;&gt;Week 2,  May 4&lt;sup&gt;th&lt;/sup&gt; 2021&lt;/h4&gt;&lt;p&gt;Hans Holbein the Younger's &lt;i&gt;Portrait of Anne of Cleves set in a turned ivory box&lt;/i&gt;.&lt;/p&gt;&lt;/div&gt;&lt;div class=\&quot;alert alert-info\&quot; role=\&quot;alert\&quot;&gt;&lt;h4 class=\&quot;alert-heading\&quot;&gt;Week 3,  May 14&lt;sup&gt;th&lt;/sup&gt; 2021&lt;/h4&gt;&lt;i&gt;Two Packs of Playing Cards&lt;/i&gt;.&lt;/p&gt;&lt;/div&gt;&lt;div class=\&quot;alert alert-info\&quot; role=\&quot;alert\&quot;&gt;&lt;h4 class=\&quot;alert-heading\&quot;&gt;Week 4,  May 21&lt;sup&gt;st&lt;/sup&gt; 2021&lt;/h4&gt;&lt;i&gt; Rhododendron sperabile var. weihsiense&lt;/i&gt; speciman from the RBGE.&lt;/p&gt;&lt;/div&gt;&lt;h2&gt;Viewer&lt;/h2&gt;&lt;div class=\&quot;row\&quot; style=\&quot;padding-left:16px;padding-right:16px;\&quot;&gt;&lt;div class=\&quot;col-12 col-lg-12\&quot;&gt;&lt;div style=\&quot;height:500px;\&quot; id=\&quot;mirador\&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&quot;,
     &quot;content right&quot;: &quot;&quot;,
@@ -94,26 +94,7 @@ details[open] summary {
 		<figcaption class=\"figure-caption\">The complete JSON object used to define this content and layout of this page.</figcaption>
 	</figure>		<h3>Extra extension file</h3>
 	<figure>
-		<pre style="overflow-y: auto;overflow-x: hidden; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
-    &quot;manifests&quot;: {
-        &quot;https://collection.sciencemuseumgroup.org.uk/iiif/objects/co124260/manifest&quot;: {
-            &quot;provider&quot;: &quot;The Science Museum Group&quot;
-        },
-        &quot;https://iiif.rbge.org.uk/herb/iiif/E00001143/manifest&quot;: {
-            &quot;provider&quot;: &quot;The Royal Botanic Garden Edinburgh&quot;
-        }
-    },
-    &quot;windows&quot;: [
-        {
-            &quot;manifestId&quot;: &quot;https://collection.sciencemuseumgroup.org.uk/iiif/objects/co124260/manifest&quot;,
-            &quot;canvasIndex&quot;: 0
-        },
-        {
-            &quot;manifestId&quot;: &quot;https://iiif.rbge.org.uk/herb/iiif/E00001143/manifest&quot;,
-            &quot;canvasIndex&quot;: 0
-        }
-    ]
-}</code></pre>
+		<pre style="overflow-y: auto;overflow-x: hidden; border: 2px solid black;padding: 10px;max-height:400px;"><code>{<br>"manifests": {<br>"https://collection.sciencemuseumgroup.org.uk/iiif/objects/co124260/manifest": {<br>"provider": "The Science Museum Group"<br>},<br>"https://iiif.rbge.org.uk/herb/iiif/E00001143/manifest": {<br>"provider": "The Royal Botanic Garden Edinburgh"<br>},<br>"https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100059906235.0x000001/manifest.json": {<br>"provider": "The British Library"<br>},<br>"windows": [{<br>"id": "a",<br>"manifestId": "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co124260/manifest",<br>"canvasIndex": 0<br>},<br>{<br>"id": "b",<br>"manifestId": "https://iiif.rbge.org.uk/herb/iiif/E00001143/manifest",<br>"canvasIndex": 0<br>},<br>{<br>"id": "c",<br>"manifestId": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100059906235.0x000001/manifest.json",<br>"canvasIndex": 95<br>}<br>],<br>"workspace": {<br>"layout": {<br>"direction": "row",<br>"first": "a",<br>"second": {<br>"first": "b",<br>"second": "c",<br>"direction": "row"<br>},<br>"splitPercentage": 33.33<br>}<br>}<br>}<br></code></pre>
 		<figcaption class=\"figure-caption\">The complete extension file used to define extra content included in this page.</figcaption>
 	</figure>	
 	</details></div><!--/span--></div><!--/row-->    <br/>
@@ -142,8 +123,8 @@ details[open] summary {
 				$(function() {
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
-       windows: [{"manifestId":"https:\/\/collection.sciencemuseumgroup.org.uk\/iiif\/objects\/co124260\/manifest","canvasIndex":0},{"manifestId":"https:\/\/iiif.rbge.org.uk\/herb\/iiif\/E00001143\/manifest","canvasIndex":0}],
-       manifests: {"https:\/\/collection.sciencemuseumgroup.org.uk\/iiif\/objects\/co124260\/manifest":{"provider":"The Science Museum Group"},"https:\/\/iiif.rbge.org.uk\/herb\/iiif\/E00001143\/manifest":{"provider":"The Royal Botanic Garden Edinburgh"}},
+       windows: ,
+       manifests: [],
        
        
        });     
