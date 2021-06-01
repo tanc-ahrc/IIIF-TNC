@@ -8,10 +8,10 @@
 		}
 	},
 	"windows": [{
-			"manifestId": "https://iiif.rbge.org.uk/herb/iiif/E00001143/manifest",
+			"manifestId": "https://iiif.rbge.org.uk/herb/iiif/E00001143/manifest"
 		},
 		{
-			"manifestId": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100059906235.0x000001/manifest.json",
+			"manifestId": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100059906235.0x000001/manifest.json"
 		}
 	]	    
 		    
