@@ -10,8 +10,8 @@
     <link rel="icon" href="https://www.ukri.org/ukri/includes/themes/ukri/images/favicon.ico">
     <title>TANC - IIIF - about</title>
     
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="https://unpkg.com/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" integrity="sha256-BNdodQbWHpU3HT8xGhkEusT4ch4HEjvwzcbDcVuHR+E=" crossorigin="anonymous" rel="stylesheet" type="text/css">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
     <style>
     
@@ -24,6 +24,7 @@
   margin-right: auto;
   padding: 10px;
 }
+
 .card-img-top {
   width: auto;
   max-width: 100%;    
@@ -33,17 +34,21 @@
   margin-right: auto;
   padding: 10px;
 }
+
 .nodec:link, .nodec:visited, .nodec:hover, .nodec:active {
   text-decoration: none;
   color: inherit;
   }
+
 .card-hov:hover {
   opacity: 0.7;
 }
+
 .offsetanchor {
   position: relative;
   top: -75px;
 }
+
 .pcontainer {
    position: relative;
    width: 100%;
@@ -60,6 +65,7 @@
    height: 100%;
 	}
 
+
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics - Only added in if the 'GoogleAnalyticsID' i set in the site.json file-->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5RYMG8S3P0"></script>
@@ -74,15 +80,41 @@
   <body onload="onLoad();">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+<div class="container-fluid">
+      <button 
+				class="navbar-toggler navbar-toggler-right" 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#navbarsExampleDefault" 
+				aria-controls="navbarsExampleDefault" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button>    
       <a class="navbar-brand"  href="./">
   		<img id="page-logo" class="logo" title="Logo" src="graphics/github-iiif.png" 
 				style="" alt="The National Gallery"/>
 		  </a>
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault"><ul class="navbar-nav">
-<li class="nav-item "><a class="nav-link" href="index.html">Home</a></li><!-- Dropdown Loop 1 --><li class="nav-item dropdown "><a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle" title="Click to open the &ldquo;Events&rdquo; menu" >Events</a><ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow"><li><a href="events.html" class="dropdown-item top-item" title="Click to open the &ldquo;Events&rdquo; page">Events</a></li><li class="dropdown-divider"></li><li><a href="webinar01.html" class="dropdown-item">Webinar: Practical applications of IIIF</a></li><li><a href="webinar02.html" class="dropdown-item">Webinar: IIIF Services and Tools</a></li><li><a href="workshop01.html" class="dropdown-item">Workshop: Building Solutions with IIIF</a></li><li><a href="webinar03.html" class="dropdown-item">Webinar: Project Results</a></li><li><a href="seminar01.html" class="dropdown-item">Seminar: Image Registration and IIIF</a></li></ul></li><!-- End Loop 1 --><li class="nav-item "><a class="nav-link" href="team.html">Team</a></li><li class="nav-item "><a class="nav-link" href="timeline.html">Timeline</a></li><!-- Dropdown Loop 1 --><li class="nav-item dropdown "><a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle" title="Click to open the &ldquo;Detail of the Week&rdquo; menu" >Detail of the Week</a><ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow"><li><a href="Detail%20of%20the%20Week.html" class="dropdown-item top-item" title="Click to open the &ldquo;Detail of the Week&rdquo; page">Detail of the Week</a></li><li class="dropdown-divider"></li><li><a href="detail01.html" class="dropdown-item">Hans Holbein | The Ambassadors</a></li><li><a href="detail02.html" class="dropdown-item">Hans Holbein | Portrait of Anne of Cleves set in a turned ivory box</a></li><li><a href="detail03.html" class="dropdown-item">Two Packs of Playing Cards</a></li><li><a href="detail04.html" class="dropdown-item"><i>Rhododendron sperabile var. weihsiense</i> speciman from the RBGE</a></li><li><a href="detail05.html" class="dropdown-item">Cotton MS Vitellius C III</a></li><li><a href="detail06.html" class="dropdown-item">Joseph Wright 'of Derby' | An Experiment on a Bird in the Air Pump</a></li></ul></li><!-- End Loop 1 --><li class="nav-item active"><a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a></li></ul></div>
+<li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item dropdown ">
+<!-- Dropdown Loop 1 -->
+<div class="btn-group">
+  <a href="events.html"><button type="button" class="btn nav-link" title="Click to open the &ldquo;Events&rdquo; page">
+  Events</button></a>
+  <button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"  title="Click to open the &ldquo;Events&rdquo; menu">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu"><li><a href="webinar01.html" class="dropdown-item">Webinar: Practical applications of IIIF</a></li><li><a href="webinar02.html" class="dropdown-item">Webinar: IIIF Services and Tools</a></li><li><a href="workshop01.html" class="dropdown-item">Workshop: Building Solutions with IIIF</a></li><li><a href="webinar03.html" class="dropdown-item">Webinar: Project Results</a></li><li><a href="seminar01.html" class="dropdown-item">Seminar: Image Registration and IIIF</a></li></ul></li><!-- End Loop 1 --><li class="nav-item "><a class="nav-link" href="team.html">Team</a></li><li class="nav-item "><a class="nav-link" href="timeline.html">Timeline</a></li>
+<li class="nav-item dropdown ">
+<!-- Dropdown Loop 1 -->
+<div class="btn-group">
+  <a href="Detail%20of%20the%20Week.html"><button type="button" class="btn nav-link" title="Click to open the &ldquo;Detail of the Week&rdquo; page">
+  Detail of the Week</button></a>
+  <button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"  title="Click to open the &ldquo;Detail of the Week&rdquo; menu">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu"><li><a href="detail01.html" class="dropdown-item">Hans Holbein | The Ambassadors</a></li><li><a href="detail02.html" class="dropdown-item">Hans Holbein | Portrait of Anne of Cleves set in a turned ivory box</a></li><li><a href="detail03.html" class="dropdown-item">Two Packs of Playing Cards</a></li><li><a href="detail04.html" class="dropdown-item"><i>Rhododendron sperabile var. weihsiense</i> speciman from the RBGE</a></li><li><a href="detail05.html" class="dropdown-item">Cotton MS Vitellius C III</a></li><li><a href="detail06.html" class="dropdown-item">Joseph Wright 'of Derby' | An Experiment on a Bird in the Air Pump</a></li></ul></li><!-- End Loop 1 --><li class="nav-item active"><a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a></li></ul></div></li>
 			
     <span class="navbar-text">
       			<a href="https://github.com/tanc-ahrc/IIIF-TNC/">
@@ -90,81 +122,93 @@
 				style="" alt="GitHub TANC - IIIF"/>
 		  </a>
     </span>
+</div>
     </nav>
 			<div class="row ">				
 			 <div class="col-12 col-md-12">          
 				
-				<div class="jumbotron"><h2>Practical applications of IIIF - Contributors</h2></div><div class="row"><div class="col-12 col-lg-12"></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12"><p>This project is a Foundation project within the the <a href="https://ahrc.ukri.org/">AHRC</a> funded <a href="https://www.nationalcollection.org.uk/">Towards a National Collection Programme</a>.</p><h3>Project Investigators</h3><p></p><div class="card-deck">    
-  <div class="col-4 mb-4 card-hov">
+				<div class="p-2 bg-light border rounded-3 jumbotron">
+      <div class="container-fluid py-4"><h3>Practical applications of IIIF - Contributors</h3></div></div><div class="row"><div class="col-12 col-lg-12"></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12"><p>This project is a Foundation project within the the <a href="https://ahrc.ukri.org/">AHRC</a> funded <a href="https://www.nationalcollection.org.uk/">Towards a National Collection Programme</a>.</p><h3>Project Investigators</h3><p></p><div class="row">    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
     <div class="card" title="The National Gallery">
       <a href="https://www.nationalgallery.org.uk" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/NG Logo Black on Transparent 600.png" alt="The National Gallery">
       </a>
     </div>
-  </div>    
-  <div class="col-4 mb-4 card-hov">
+  </div>
+    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
     <div class="card" title="The National Portrait Gallery">
       <a href="https://www.npg.org.uk/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/NPG_logo_trans_black.png" alt="The National Portrait Gallery">
       </a>
     </div>
-  </div>    
-  <div class="col-4 mb-4 card-hov">
+  </div>
+    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
     <div class="card" title="The University of Edinburgh">
       <a href="https://www.ed.ac.uk/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/UoE_Centred Logo_CMYK_v1_160215.png" alt="The University of Edinburgh">
       </a>
     </div>
-  </div>    
-  <div class="col-4 mb-4 card-hov">
+  </div>
+    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
     <div class="card" title="The British Library">
       <a href="https://www.bl.uk/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/BritishLibrary.svg_.png" alt="The British Library">
       </a>
     </div>
-  </div></div><br/><h3>Project Partners</h3><p></p><div class="card-deck">    
-  <div class="col-4 mb-4 card-hov">
+  </div>
+</div><br/><h3>Project Partners</h3><p></p><div class="row">    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
     <div class="card" title="The Royal Botanical Gardens Edinburgh">
       <a href="https://www.rbge.org.uk/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/rbge_logo.png" alt="The Royal Botanical Gardens Edinburgh">
       </a>
     </div>
-  </div>    
-  <div class="col-4 mb-4 card-hov">
+  </div>
+    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
     <div class="card" title="Digirati">
       <a href="https://digirati.com/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/cropped-digirati_logo1.png" alt="Digirati">
       </a>
     </div>
-  </div>    
-  <div class="col-4 mb-4 card-hov">
+  </div>
+    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
     <div class="card" title="Stanford University Library">
       <a href="https://library.stanford.edu/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/sul.png" alt="Stanford University Library">
       </a>
     </div>
-  </div>    
-  <div class="col-4 mb-4 card-hov">
+  </div>
+    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
     <div class="card" title="Science Museum Group">
       <a href="https://www.sciencemuseumgroup.org.uk/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/1200px-Smg-logo.svg.png" alt="Science Museum Group">
       </a>
     </div>
-  </div>    
-  <div class="col-4 mb-4 card-hov">
+  </div>
+    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
     <div class="card" title="The Victoria and Albert Museum">
       <a href="https://www.vam.ac.uk/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/512px-Victoria_and_Albert_Museum_Logo.svg.png" alt="The Victoria and Albert Museum">
       </a>
     </div>
-  </div>    
-  <div class="col-4 mb-4 card-hov">
+  </div>
+    
+  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
     <div class="card" title="International Image Interoperability Framework (IIIF) Consortium">
       <a href="https://iiif.io/community/consortium/" class="stretched-link nodec">
       <img class="card-img-top" src="graphics/International_Image_Interoperability_Framework_logo.png" alt="International Image Interoperability Framework (IIIF) Consortium">
       </a>
     </div>
-  </div></div><br/><div class="foonote"><ul></ul></div></div><!--/span--></div><!--/row-->    <br/>
+  </div>
+</div><br/><div class="foonote"><ul></ul></div></div><!--/span--></div><!--/row-->    <br/>
 			</div><!--/span-->
 			
 			
@@ -182,9 +226,9 @@
     </div><!--/.container-->
     
     
-	<script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
-	<script src="https://unpkg.com/tether@1.4.7/dist/js/tether.min.js"></script>
-	<script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/tether@2.0.0/dist/js/tether.min.js" integrity="sha256-cExSEm1VrovuDNOSgLk0xLue2IXxIvbKV1gXuCqKPLE=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha256-d+FygkWgwt59CFkWPuCB4RE6p1/WiUYCy16w1+c5vKk=" crossorigin="anonymous"></script>
     <script>
 			
 			function onLoad() {

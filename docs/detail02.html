@@ -10,8 +10,8 @@
     <link rel="icon" href="https://www.ukri.org/ukri/includes/themes/ukri/images/favicon.ico">
     <title>TANC - IIIF - detail02</title>
     
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="https://unpkg.com/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" integrity="sha256-BNdodQbWHpU3HT8xGhkEusT4ch4HEjvwzcbDcVuHR+E=" crossorigin="anonymous" rel="stylesheet" type="text/css">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
     <style>
     .fixed-top {z-index:1111;}
@@ -29,15 +29,41 @@
   <body onload="onLoad();">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+<div class="container-fluid">
+      <button 
+				class="navbar-toggler navbar-toggler-right" 
+				type="button" 
+				data-bs-toggle="collapse" 
+				data-bs-target="#navbarsExampleDefault" 
+				aria-controls="navbarsExampleDefault" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button>    
       <a class="navbar-brand"  href="./">
   		<img id="page-logo" class="logo" title="Logo" src="graphics/github-iiif.png" 
 				style="" alt="The National Gallery"/>
 		  </a>
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault"><ul class="navbar-nav">
-<li class="nav-item "><a class="nav-link" href="index.html">Home</a></li><!-- Dropdown Loop 1 --><li class="nav-item dropdown "><a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle" title="Click to open the &ldquo;Events&rdquo; menu" >Events</a><ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow"><li><a href="events.html" class="dropdown-item top-item" title="Click to open the &ldquo;Events&rdquo; page">Events</a></li><li class="dropdown-divider"></li><li><a href="webinar01.html" class="dropdown-item">Webinar: Practical applications of IIIF</a></li><li><a href="webinar02.html" class="dropdown-item">Webinar: IIIF Services and Tools</a></li><li><a href="workshop01.html" class="dropdown-item">Workshop: Building Solutions with IIIF</a></li><li><a href="webinar03.html" class="dropdown-item">Webinar: Project Results</a></li><li><a href="seminar01.html" class="dropdown-item">Seminar: Image Registration and IIIF</a></li></ul></li><!-- End Loop 1 --><li class="nav-item "><a class="nav-link" href="team.html">Team</a></li><li class="nav-item "><a class="nav-link" href="timeline.html">Timeline</a></li><!-- Dropdown Loop 1 --><li class="nav-item dropdown active"><a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle" title="Click to open the &ldquo;Detail of the Week&rdquo; menu" >Detail of the Week<span class="sr-only">(current)</span></a><ul aria-labelledby="dropdownMenu1" class="dropdown-menu border-0 shadow"><li><a href="Detail%20of%20the%20Week.html" class="dropdown-item top-item" title="Click to open the &ldquo;Detail of the Week&rdquo; page">Detail of the Week</a></li><li class="dropdown-divider"></li><li><a href="detail01.html" class="dropdown-item">Hans Holbein | The Ambassadors</a></li><li><a href="detail02.html" class="dropdown-item">Hans Holbein | Portrait of Anne of Cleves set in a turned ivory box</a></li><li><a href="detail03.html" class="dropdown-item">Two Packs of Playing Cards</a></li><li><a href="detail04.html" class="dropdown-item"><i>Rhododendron sperabile var. weihsiense</i> speciman from the RBGE</a></li><li><a href="detail05.html" class="dropdown-item">Cotton MS Vitellius C III</a></li><li><a href="detail06.html" class="dropdown-item">Joseph Wright 'of Derby' | An Experiment on a Bird in the Air Pump</a></li></ul></li><!-- End Loop 1 --><li class="nav-item "><a class="nav-link" href="about.html">About</a></li></ul></div>
+<li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item dropdown ">
+<!-- Dropdown Loop 1 -->
+<div class="btn-group">
+  <a href="events.html"><button type="button" class="btn nav-link" title="Click to open the &ldquo;Events&rdquo; page">
+  Events</button></a>
+  <button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"  title="Click to open the &ldquo;Events&rdquo; menu">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu"><li><a href="webinar01.html" class="dropdown-item">Webinar: Practical applications of IIIF</a></li><li><a href="webinar02.html" class="dropdown-item">Webinar: IIIF Services and Tools</a></li><li><a href="workshop01.html" class="dropdown-item">Workshop: Building Solutions with IIIF</a></li><li><a href="webinar03.html" class="dropdown-item">Webinar: Project Results</a></li><li><a href="seminar01.html" class="dropdown-item">Seminar: Image Registration and IIIF</a></li></ul></li><!-- End Loop 1 --><li class="nav-item "><a class="nav-link" href="team.html">Team</a></li><li class="nav-item "><a class="nav-link" href="timeline.html">Timeline</a></li>
+<li class="nav-item dropdown active">
+<!-- Dropdown Loop 1 -->
+<div class="btn-group">
+  <a href="Detail%20of%20the%20Week.html"><button type="button" class="btn nav-link" title="Click to open the &ldquo;Detail of the Week&rdquo; page">
+  Detail of the Week<span class="sr-only">(current)</span></button></a>
+  <button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"  title="Click to open the &ldquo;Detail of the Week&rdquo; menu">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu"><li><a href="detail01.html" class="dropdown-item">Hans Holbein | The Ambassadors</a></li><li><a href="detail02.html" class="dropdown-item">Hans Holbein | Portrait of Anne of Cleves set in a turned ivory box</a></li><li><a href="detail03.html" class="dropdown-item">Two Packs of Playing Cards</a></li><li><a href="detail04.html" class="dropdown-item"><i>Rhododendron sperabile var. weihsiense</i> speciman from the RBGE</a></li><li><a href="detail05.html" class="dropdown-item">Cotton MS Vitellius C III</a></li><li><a href="detail06.html" class="dropdown-item">Joseph Wright 'of Derby' | An Experiment on a Bird in the Air Pump</a></li></ul></li><!-- End Loop 1 --><li class="nav-item "><a class="nav-link" href="about.html">About</a></li></ul></div></li>
 			
     <span class="navbar-text">
       			<a href="https://github.com/tanc-ahrc/IIIF-TNC/">
@@ -45,15 +71,19 @@
 				style="" alt="GitHub TANC - IIIF"/>
 		  </a>
     </span>
+</div>
     </nav>
 			<div class="row ">				
 			 <div class="col-12 col-md-12">          
 				
-				<div class="jumbotron"><h2>Hans Holbein | Portrait of Anne of Cleves, set in a turned ivory box</h2></div><div class="row"><div class="col-12 col-lg-12">		<nav aria-label="breadcrumb">
+				<div class="p-2 bg-light border rounded-3 jumbotron">
+      <div class="container-fluid py-4"><h3>Hans Holbein | Portrait of Anne of Cleves, set in a turned ivory box</h3></div></div><div class="row"><div class="col-12 col-lg-12">		<div class="alert alert-light" role="alert" style="padding-bottom: 0px;border-color:#dee2e6;">
+		<nav  style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="Detail%20of%20the%20Week.html">Detail of the Week</a></li>
+				<li class="breadcrumb-item"><a href="Detail%20of%20the%20Week.html">Detail of the Week</a></li><li class="breadcrumb-item active" aria-current="page">Hans Holbein | Portrait of Anne of Cleves set in a turned ivory box</li>
 			</ol>
-		</nav></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12"><h2>About this Painting</h2><p>The art of painting miniatures in watercolour was introduced to England in the 1520s by the Flemish artist Gerard Horenbout. When Hans Holbein came to England from Switzerland in 1532 to work for Henry VIII, he was an established painter in oil on panel. But miniatures had become an established court art and Holbein clearly found it advisable to learn this new watercolour art. <p> In 1539 it became politically necessary for Henry to form an alliance with Protestant Germany and it was suggested that Henry marry one of the daughters of the Duke of Cleves. Henry needed to judge whether to proceed with the marriage treaty and Holbein was despatched to paint Anne and her sister Amelia. When Anne arrived in England, Henry thought her 'nothing so fair as had been reported', but the marriage still took place, in 1540. A few months later Henry decided the alliance was no longer necessary and the marriage was declared null. He designated Anne 'King's sister' and she settled down to life in England. </p><p>The ivory box is difficult to date, but is likely to post-date the miniature. It was turned on a lathe. Paint losses at the edge of the miniature, and the lack of a gold edge line on it, imply that it was trimmed to fit into the box. Such skilled turning of ivory was unknown in England at this date but was common in Germany. It could have been made by a German ivory turner, either in Britain or on the Continent. Collections of virtuoso turned ivories were being formed in Dresden and Munich at the time. However the box probably dates from the late sixteenth century, and as such is one of the earliest and most important post-medieval ivories in the collection.</p><p>More information about this object is available on <a href='https://collections.vam.ac.uk/item/O18966/portrait-miniature-of-anne-of-portrait-miniature-hans-holbein//'>The V&A Website</a>.</p><h2>Viewer</h2><div class="row" style="padding-left:16px;padding-right:16px;"><div class="col-12 col-lg-12"><div style="height:500px;" id="mirador"></div></div></div><div class="foonote"><ul></ul></div></div><!--/span--></div><!--/row-->    <br/>
+		</nav>
+		</div></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12"><h2>About this Painting</h2><p>The art of painting miniatures in watercolour was introduced to England in the 1520s by the Flemish artist Gerard Horenbout. When Hans Holbein came to England from Switzerland in 1532 to work for Henry VIII, he was an established painter in oil on panel. But miniatures had become an established court art and Holbein clearly found it advisable to learn this new watercolour art. <p> In 1539 it became politically necessary for Henry to form an alliance with Protestant Germany and it was suggested that Henry marry one of the daughters of the Duke of Cleves. Henry needed to judge whether to proceed with the marriage treaty and Holbein was despatched to paint Anne and her sister Amelia. When Anne arrived in England, Henry thought her 'nothing so fair as had been reported', but the marriage still took place, in 1540. A few months later Henry decided the alliance was no longer necessary and the marriage was declared null. He designated Anne 'King's sister' and she settled down to life in England. </p><p>The ivory box is difficult to date, but is likely to post-date the miniature. It was turned on a lathe. Paint losses at the edge of the miniature, and the lack of a gold edge line on it, imply that it was trimmed to fit into the box. Such skilled turning of ivory was unknown in England at this date but was common in Germany. It could have been made by a German ivory turner, either in Britain or on the Continent. Collections of virtuoso turned ivories were being formed in Dresden and Munich at the time. However the box probably dates from the late sixteenth century, and as such is one of the earliest and most important post-medieval ivories in the collection.</p><p>More information about this object is available on <a href='https://collections.vam.ac.uk/item/O18966/portrait-miniature-of-anne-of-portrait-miniature-hans-holbein//'>The V&A Website</a>.</p><h2>Viewer</h2><div class="row" style="padding-left:16px;padding-right:16px;"><div class="col-12 col-lg-12"><div style="height:500px;position:relative" id="mirador"></div></div></div><div class="foonote"><ul></ul></div></div><!--/span--></div><!--/row-->    <br/>
 			</div><!--/span-->
 			
 			
@@ -71,12 +101,13 @@
     </div><!--/.container-->
     
     
-	<script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
-	<script src="https://unpkg.com/tether@1.4.7/dist/js/tether.min.js"></script>
-	<script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="https://unpkg.com/mirador@3.0.0/dist/mirador.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/tether@2.0.0/dist/js/tether.min.js" integrity="sha256-cExSEm1VrovuDNOSgLk0xLue2IXxIvbKV1gXuCqKPLE=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha256-d+FygkWgwt59CFkWPuCB4RE6p1/WiUYCy16w1+c5vKk=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mirador@3.1.1/dist/mirador.min.js" integrity="sha256-kgsl88ooIyFxWsB8GWBeWDt+qbAklTRuCD0rT7w14p0=" crossorigin="anonymous"></script>
     <script>
 				$(function() {
+
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
        windows: [{"manifestId":"https:\/\/iiif.vam.ac.uk\/collections\/O18966\/manifest.json","canvasIndex":1}],
