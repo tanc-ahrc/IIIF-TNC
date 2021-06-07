@@ -1,6 +1,7 @@
 <?php
 
-//Last update 22 Apr 2021
+// Last update 07 June 2021
+
 $extensionList["timeline"] = "extensionTimeline";
 $start = false;
 	
@@ -43,7 +44,7 @@ function extensionTimeline ($d, $pd)
 			}
 
 		$pd["extra_js_scripts"][] =
-			"https://unpkg.com/mermaid@8.7.0/dist/mermaid.min.js";
+			"https://cdn.jsdelivr.net/npm/mermaid@8.10.1/dist/mermaid.min.js\" integrity=\"sha256-aQCGsx3/OLAXwNyOUrAedielIQAjIrMFkcWdXMlIkGc=\" crossorigin=\"anonymous";
 		$pd["extra_onload"] .= "
 	
 	mermaid.ganttConfig = {
@@ -61,10 +62,13 @@ function extensionTimeline ($d, $pd)
 
 	ob_start();
 		echo <<<END
+
 $jsstr
+
 var ttdiv = false;
 	
 function showTooltip(evt, cid) {
+
 	if (!ttdiv)
 		{let div = document.createElement('div');
 		 div.id = "tooltip";
@@ -72,6 +76,7 @@ function showTooltip(evt, cid) {
 		 div.style = "position: absolute; display: none;";
 		 document.body.append(div);
 		 ttdiv = true;}	
+
 	var daterange = "Date Range";
 	if (cid in rectIDs)
 		{daterange = rectIDs[cid];}
@@ -83,14 +88,18 @@ function showTooltip(evt, cid) {
   tooltip.style.left = evt.pageX + 10 + 'px';
   tooltip.style.top = evt.pageY + 10 + 'px';
 	}
+
 function hideTooltip() {
   var tooltip = document.getElementById("tooltip");
   tooltip.style.display = "none";
 	}
+
 // Select the node that will be observed for mutations
 const targetNode = document.getElementById('gantt');
+
 // Options for the observer (which mutations to observe)
 const config = { attributes: true, childList: true, subtree: true };
+
 // Callback function to execute when mutations are observed
 const callback = function(mutationsList, observer) {
 	// Use traditional 'for loops' for IE 11
@@ -98,6 +107,7 @@ const callback = function(mutationsList, observer) {
 		if (mutation.type === 'attributes' &&
 				mutation.attributeName == 'id' &&
 				mutation.target.tagName == 'rect') {			
+
 			$( "#"+mutation.target.id ).mousemove(function( event ) {
 				showTooltip(event, mutation.target.id);});
 			$( "#"+mutation.target.id ).mouseout(function( event ) {
@@ -110,8 +120,10 @@ const callback = function(mutationsList, observer) {
 			}
     }
 	};
+
 // Create an observer instance linked to the callback function
 const observer = new MutationObserver(callback);
+
 // Start observing the target node for configured mutations
 observer.observe(targetNode, config);
 	
@@ -125,6 +137,7 @@ g a {
 	
 #".$first."0-text {
 	display:none;}
+
 #tooltip {
   background: cornsilk;
   border: 1px solid black;
@@ -132,6 +145,7 @@ g a {
   padding: 2px 5px 2px 5px;
   font-size: 0.75em;
   font-weight: bold;}
+
 ";
 
 		ob_start();
