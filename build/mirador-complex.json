@@ -1,29 +1,29 @@
 {
     "manifests": {
-            "https://iiif.rbge.org.uk/herb/iiif/E00001143/manifest": {
-		"provider": "The Royal Botanic Garden Edinburgh"
-            },
-	    "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100059906235.0x000001/manifest.json": {
+              "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100059906235.0x000001/manifest.json": {
 		 "provider": "The British Library" 
-	    },
-	    "https://media.ng-london.org.uk/ng/NG725": {
+            },
+	  "https://media.ng-london.org.uk/ng/NG725": {
 		 "provider": "The National Gallery, London UK"
+	    },
+	    "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co8361073": {
+		 "provider": "The Science Museum Group, UK"
 	    }
     },
     "windows": [{
                 "id": "a",
-                "manifestId": "https://iiif.rbge.org.uk/herb/iiif/E00001143/manifest",
-                "canvasIndex": 0
-            },
-            {
-                "id": "b",
                 "manifestId": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100059906235.0x000001/manifest.json",
                 "canvasIndex": 39
             },
             {
-                "id": "c",
-                "manifestId": "https://media.ng-london.org.uk/ng/NG725",
+                "id": "b",
+           	"manifestId": "https://media.ng-london.org.uk/ng/NG725",
                 "canvasIndex": 0
+            },
+            {
+                "id": "c",
+                "manifestId": "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co8361057/manifest",
+                "canvasIndex": 1
             }
     ],
      "workspace": {
