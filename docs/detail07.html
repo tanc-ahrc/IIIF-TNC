@@ -8,64 +8,13 @@
     <meta name="author" content="Joseph Padfield| joseph.padfield@ng-london.org.uk |National Gallery | London UK | joseph.padfield@ng-london.org.uk |www.nationalgallery.org.uk" />
     <meta name="image" content="" />
     <link rel="icon" href="https://www.ukri.org/ukri/includes/themes/ukri/images/favicon.ico">
-    <title>TANC - IIIF - about</title>
+    <title>TANC - IIIF - detail07</title>
     
 	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous" rel="stylesheet" type="text/css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" integrity="sha256-BNdodQbWHpU3HT8xGhkEusT4ch4HEjvwzcbDcVuHR+E=" crossorigin="anonymous" rel="stylesheet" type="text/css">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
     <style>
-    
-.card-img {
-  width: auto;
-  max-width: 100%;
-  max-height:200px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-}
-
-.card-img-top {
-  width: auto;
-  max-width: 100%;    
-  max-height:128px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-}
-
-.nodec:link, .nodec:visited, .nodec:hover, .nodec:active {
-  text-decoration: none;
-  color: inherit;
-  }
-
-.card-hov:hover {
-  opacity: 0.7;
-}
-
-.offsetanchor {
-  position: relative;
-  top: -75px;
-}
-
-.pcontainer {
-   position: relative;
-   width: 100%;
-   padding-top: 56.25%; /* 16:9 Aspect Ratio */
-	}
-	
-.preview {
-   position: absolute;
-   top: 0;
-   left: 0;
-   bottom: 0;
-   right: 0;
-   width: 100%;
-   height: 100%;
-	}
-
-
+    .fixed-top {z-index:1111;}
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics - Only added in if the 'GoogleAnalyticsID' i set in the site.json file-->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5RYMG8S3P0"></script>
@@ -106,15 +55,15 @@
     <span class="visually-hidden">Toggle Dropdown</span>
   </button>
   <ul class="dropdown-menu"><li><a href="webinar01.html" class="dropdown-item">Webinar: Practical applications of IIIF</a></li><li><a href="webinar02.html" class="dropdown-item">Webinar: IIIF Services and Tools</a></li><li><a href="workshop01.html" class="dropdown-item">Workshop: Building Solutions with IIIF</a></li><li><a href="webinar03.html" class="dropdown-item">Webinar: Project Results</a></li><li><a href="seminar01.html" class="dropdown-item">Seminar: Image Registration and IIIF</a></li></ul></li><!-- End Loop 1 --><li class="nav-item "><a class="nav-link" href="team.html">Team</a></li><li class="nav-item "><a class="nav-link" href="timeline.html">Timeline</a></li>
-<li class="nav-item dropdown ">
+<li class="nav-item dropdown active">
 <!-- Dropdown Loop 1 -->
 <div class="btn-group">
   <a href="Detail%20of%20the%20Week.html"><button type="button" class="btn nav-link" title="Click to open the &ldquo;Detail of the Week&rdquo; page">
-  Detail of the Week</button></a>
+  Detail of the Week<span class="sr-only">(current)</span></button></a>
   <button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"  title="Click to open the &ldquo;Detail of the Week&rdquo; menu">
     <span class="visually-hidden">Toggle Dropdown</span>
   </button>
-  <ul class="dropdown-menu"><li><a href="detail01.html" class="dropdown-item">Hans Holbein | The Ambassadors</a></li><li><a href="detail02.html" class="dropdown-item">Hans Holbein | Portrait of Anne of Cleves set in a turned ivory box</a></li><li><a href="detail03.html" class="dropdown-item">Two Packs of Playing Cards</a></li><li><a href="detail04.html" class="dropdown-item"><i>Rhododendron sperabile var. weihsiense</i> speciman from the RBGE</a></li><li><a href="detail05.html" class="dropdown-item">Cotton MS Vitellius C III</a></li><li><a href="detail06.html" class="dropdown-item">Joseph Wright 'of Derby' | An Experiment on a Bird in the Air Pump</a></li><li><a href="detail07.html" class="dropdown-item">Windsor Castle, Round Tower</a></li></ul></li><!-- End Loop 1 --><li class="nav-item active"><a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a></li></ul></div></li>
+  <ul class="dropdown-menu"><li><a href="detail01.html" class="dropdown-item">Hans Holbein | The Ambassadors</a></li><li><a href="detail02.html" class="dropdown-item">Hans Holbein | Portrait of Anne of Cleves set in a turned ivory box</a></li><li><a href="detail03.html" class="dropdown-item">Two Packs of Playing Cards</a></li><li><a href="detail04.html" class="dropdown-item"><i>Rhododendron sperabile var. weihsiense</i> speciman from the RBGE</a></li><li><a href="detail05.html" class="dropdown-item">Cotton MS Vitellius C III</a></li><li><a href="detail06.html" class="dropdown-item">Joseph Wright 'of Derby' | An Experiment on a Bird in the Air Pump</a></li><li><a href="detail07.html" class="dropdown-item">Windsor Castle, Round Tower</a></li></ul></li><!-- End Loop 1 --><li class="nav-item "><a class="nav-link" href="about.html">About</a></li></ul></div></li>
 			
     <span class="navbar-text">
       			<a href="https://github.com/tanc-ahrc/IIIF-TNC/">
@@ -128,87 +77,13 @@
 			 <div class="col-12 col-md-12">          
 				
 				<div class="p-2 bg-light border rounded-3 jumbotron">
-      <div class="container-fluid py-4"><h3>Practical applications of IIIF - Contributors</h3></div></div><div class="row"><div class="col-12 col-lg-12"></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12"><p>This project is a Foundation project within the the <a href="https://ahrc.ukri.org/">AHRC</a> funded <a href="https://www.nationalcollection.org.uk/">Towards a National Collection Programme</a>.</p><h3>Project Investigators</h3><p></p><div class="row">    
-  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
-    <div class="card" title="The National Gallery">
-      <a href="https://www.nationalgallery.org.uk" class="stretched-link nodec">
-      <img class="card-img-top" src="graphics/NG Logo Black on Transparent 600.png" alt="The National Gallery">
-      </a>
-    </div>
-  </div>
-    
-  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
-    <div class="card" title="The National Portrait Gallery">
-      <a href="https://www.npg.org.uk/" class="stretched-link nodec">
-      <img class="card-img-top" src="graphics/NPG_logo_trans_black.png" alt="The National Portrait Gallery">
-      </a>
-    </div>
-  </div>
-    
-  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
-    <div class="card" title="The University of Edinburgh">
-      <a href="https://www.ed.ac.uk/" class="stretched-link nodec">
-      <img class="card-img-top" src="graphics/UoE_Centred Logo_CMYK_v1_160215.png" alt="The University of Edinburgh">
-      </a>
-    </div>
-  </div>
-    
-  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
-    <div class="card" title="The British Library">
-      <a href="https://www.bl.uk/" class="stretched-link nodec">
-      <img class="card-img-top" src="graphics/BritishLibrary.svg_.png" alt="The British Library">
-      </a>
-    </div>
-  </div>
-</div><br/><h3>Project Partners</h3><p></p><div class="row">    
-  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
-    <div class="card" title="The Royal Botanical Gardens Edinburgh">
-      <a href="https://www.rbge.org.uk/" class="stretched-link nodec">
-      <img class="card-img-top" src="graphics/rbge_logo.png" alt="The Royal Botanical Gardens Edinburgh">
-      </a>
-    </div>
-  </div>
-    
-  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
-    <div class="card" title="Digirati">
-      <a href="https://digirati.com/" class="stretched-link nodec">
-      <img class="card-img-top" src="graphics/cropped-digirati_logo1.png" alt="Digirati">
-      </a>
-    </div>
-  </div>
-    
-  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
-    <div class="card" title="Stanford University Library">
-      <a href="https://library.stanford.edu/" class="stretched-link nodec">
-      <img class="card-img-top" src="graphics/sul.png" alt="Stanford University Library">
-      </a>
-    </div>
-  </div>
-    
-  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
-    <div class="card" title="Science Museum Group">
-      <a href="https://www.sciencemuseumgroup.org.uk/" class="stretched-link nodec">
-      <img class="card-img-top" src="graphics/1200px-Smg-logo.svg.png" alt="Science Museum Group">
-      </a>
-    </div>
-  </div>
-    
-  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
-    <div class="card" title="The Victoria and Albert Museum">
-      <a href="https://www.vam.ac.uk/" class="stretched-link nodec">
-      <img class="card-img-top" src="graphics/512px-Victoria_and_Albert_Museum_Logo.svg.png" alt="The Victoria and Albert Museum">
-      </a>
-    </div>
-  </div>
-    
-  <div class="col-lg-4  col-md-6 col-sm-12  col-xs-12 mb-4 card-hov">
-    <div class="card" title="International Image Interoperability Framework (IIIF) Consortium">
-      <a href="https://iiif.io/community/consortium/" class="stretched-link nodec">
-      <img class="card-img-top" src="graphics/International_Image_Interoperability_Framework_logo.png" alt="International Image Interoperability Framework (IIIF) Consortium">
-      </a>
-    </div>
-  </div>
-</div><br/><div class="foonote"><ul></ul></div></div><!--/span--></div><!--/row-->    <br/>
+      <div class="container-fluid py-4"><h3>Windsor Castle, Round Tour</h3></div></div><div class="row"><div class="col-12 col-lg-12">		<div class="alert alert-light" role="alert" style="padding-bottom: 0px;border-color:#dee2e6;">
+		<nav  style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="Detail%20of%20the%20Week.html">Detail of the Week</a></li><li class="breadcrumb-item active" aria-current="page">Windsor Castle, Round Tower</li>
+			</ol>
+		</nav>
+		</div></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12"><h2>About this Object</h2><p>This week's object is a Calotype from the Science Museum Group Collections depicting the Round Tower at Windsor Castle. It was taken by William Henry Fox Talbot, one of the pioneers of British photography in the 1840s. AD/About'<p> See this item on the <a href='https://collection.sciencemuseumgroup.org.uk/objects/co8361073/windsor-castle-round-tower-calotype-negative'>Science Museum Group Website</a>.</p> <p>Connection to last week's item: Robert Boyle had expanded upon experiments first done in thirteenth century Albertus Magnus (c. 1200-1280) that had noted that silver nitrate, when exposed to light, darkens. Boyle examined the phenomenon more carefully and reported his findings in his 1663 publication <i>Experiments and Considerations Touching Colours</i>. Calotype negatives this property of silver nitrate to record the image.</p><h2>Viewer</h2><div class="row" style="padding-left:16px;padding-right:16px;"><div class="col-12 col-lg-12"><div style="height:500px;position:relative" id="mirador"></div></div></div><p>  </p><p>  </p><p>  </p><div class="foonote"><ul></ul></div></div><!--/span--></div><!--/row-->    <br/>
 			</div><!--/span-->
 			
 			
@@ -229,8 +104,20 @@
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/tether@2.0.0/dist/js/tether.min.js" integrity="sha256-cExSEm1VrovuDNOSgLk0xLue2IXxIvbKV1gXuCqKPLE=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha256-d+FygkWgwt59CFkWPuCB4RE6p1/WiUYCy16w1+c5vKk=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mirador@3.1.1/dist/mirador.min.js" integrity="sha256-kgsl88ooIyFxWsB8GWBeWDt+qbAklTRuCD0rT7w14p0=" crossorigin="anonymous"></script>
     <script>
-			
+				$(function() {
+
+var myMiradorInstance = Mirador.viewer({
+       id: "mirador",
+       windows: [{
+					"manifestId": "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co8361073"
+					}],
+       manifests: {"https:\/\/collection.sciencemuseumgroup.org.uk\/iiif\/objects\/co8361073":{"provider":"The Science Museum Group"}},
+       
+       
+       });     
+     });
 			function onLoad() {
 				$(function() {
   // ------------------------------------------------------- //
