@@ -1,29 +1,29 @@
 {
     "manifests": {
-              "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100059906235.0x000001/manifest.json": {
-		 "provider": "The British Library" 
-            },
-	  "https://media.ng-london.org.uk/ng/NG725": {
+              "https://media.ng-london.org.uk/ng/NG725": {
 		 "provider": "The National Gallery, London UK"
+            },
+	  "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co8361057/manifest": {
+		 "provider": "The Science Museum Group"
 	    },
-	    "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co8361057/manifest": {
-		 "provider": "The Science Museum Group, UK"
+	    "https://npg-digital.github.io/NPG-IIIF/manifests/NPGAx131392.json": {
+		 "provider": "The National Portrait Gallery, London UK"
 	    }
     },
     "windows": [{
                 "id": "a",
-                "manifestId": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100059906235.0x000001/manifest.json",
-                "canvasIndex": 39
-            },
-            {
-                "id": "b",
-           	"manifestId": "https://media.ng-london.org.uk/ng/NG725",
+                "manifestId": "https://media.ng-london.org.uk/ng/NG725",
                 "canvasIndex": 0
             },
             {
-                "id": "c",
-                "manifestId": "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co8361057/manifest",
+                "id": "b",
+           	"manifestId": "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co8361057/manifest",
                 "canvasIndex": 1
+            },
+            {
+                "id": "c",
+                "manifestId": "https://npg-digital.github.io/NPG-IIIF/manifests/NPGAx131392.json",
+                "canvasIndex": 0
             }
     ],
      "workspace": {
