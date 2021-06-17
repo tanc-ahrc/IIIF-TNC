@@ -1,0 +1,484 @@
+00:09
+um
+00:10
+okay so uh welcome everybody to
+00:13
+today's webinar um showcasing the
+00:16
+practical use of
+00:17
+aaaf it is the first webinar
+00:20
+uh of our project practical applications
+00:23
+of triple f is a building block towards
+00:25
+a digital national collection
+00:27
+which is part of a uh the larger towards
+00:30
+a national collection program
+00:34
+we will have a series of presentations
+00:36
+today uh in two sessions
+00:38
+uh the first session uh is about
+00:41
+existing triple
+00:41
+f work that's been done in three
+00:43
+different areas
+00:45
+which will then be followed by a break
+00:47
+um because obviously we don't want to
+00:48
+sit here for two and a half hours all in
+00:49
+one go
+00:50
+um break for 15 minutes and
+00:53
+then we'll have a another session of a
+00:55
+set of
+00:56
+talks about our actual project and the
+00:58
+work that we're hoping to do
+00:59
+or we are going to do as the project
+01:01
+progresses um each of the talks will be
+01:03
+about sort of 12 15 minutes or so long
+01:05
+um the idea is that we'll have a time
+01:09
+for
+01:09
+questions at the end of each session
+01:13
+but if you can if you do have burning
+01:15
+questions you want to ask as the talks
+01:17
+are going on you can drop them into the
+01:19
+q a section and we'll try and then
+01:22
+uh get to them during the question
+01:25
+period
+01:26
+um i should say that if as there are
+01:28
+quite a lot of you 187 now
+01:30
+uh if you all start asking questions we
+01:32
+probably won't be able to answer them
+01:33
+all
+01:34
+uh during the actual time allotted but
+01:36
+we'll try and capture them all
+01:38
+and then see if we can answer questions
+01:40
+and put them up on the project website
+01:41
+which yeah you can see the url therefore
+01:44
+on the page
+01:45
+in front of you um and then we'll try
+01:48
+and answer those questions later on
+01:50
+um okay so today
+01:53
+um we are going to have uh
+01:56
+i we had up to sort of over 330 people
+01:59
+actually registered
+02:00
+it peaked at 350 so um if we can
+02:03
+actually have 200 people
+02:04
+who actually connect to the the webinar
+02:07
+itself that would be really really good
+02:09
+um today as i said for representing
+02:11
+examples of how triple f is used for
+02:12
+public engagement
+02:13
+uh and then followed by a session of um
+02:16
+the
+02:17
+work and the planned work for our actual
+02:19
+project
+02:20
+um i don't know if you can spot your
+02:22
+cities i've used the uh
+02:24
+cities of all of the people who have
+02:25
+registered and dropped into the triple f
+02:27
+logo there
+02:28
+on the right um to uh sort of show
+02:31
+the the very wide spread of people we've
+02:33
+got here so uh welcome to you all
+02:36
+um and thank you very much to those of
+02:37
+you from rather
+02:39
+different time zones um we have people
+02:42
+from
+02:42
+right the way across america and uh even
+02:45
+some people from japan
+02:47
+and seoul so thank you very much for
+02:50
+attending today now just to begin with
+02:54
+i'm pretty sure most of you will know
+02:56
+what trip life is as you signed up for
+02:58
+this webinar but to give
+02:59
+just to reiterate um triple f
+03:03
+is the international image
+03:04
+interoperability framework
+03:06
+um it's an international standard for
+03:08
+sharing high resolution
+03:09
+images on the web um and that's also
+03:11
+extended to audio visual material
+03:14
+and they're also working on 3d although
+03:18
+that's not part of the standard at the
+03:19
+moment some very very good work being
+03:21
+done
+03:21
+and i wholeheartedly recommend that you
+03:23
+have a little look at their website and
+03:25
+the
+03:25
+community as a whole for triple a f
+03:27
+there's a lot of very good work being
+03:28
+done
+03:30
+now to give you a very brief idea of how
+03:33
+triple f works
+03:34
+um very quickly um if we have an
+03:37
+instance here where we have the national
+03:38
+gallery um
+03:39
+uh where i work the
+03:42
+we have an image store and triple f
+03:44
+server within the national gallery
+03:46
+and an internal triple f viewer we can
+03:48
+view lots of images now i'll come back
+03:49
+to that
+03:50
+more in more detail later in full
+03:52
+presentation
+03:53
+but if we also have the yale center for
+03:55
+british art
+03:57
+who are presenting images and have a
+03:58
+triple f server and actually have a
+04:00
+public
+04:01
+openc dragon viewer available for people
+04:03
+to explore their images
+04:05
+you can take the triple f manifest which
+04:07
+is a description which i'm sure we'll go
+04:08
+through a couple of times today
+04:11
+of the images and all of the metadata
+04:13
+required to
+04:14
+work with the images and then drop that
+04:16
+into a viewer
+04:18
+within the national gallery so the
+04:20
+triple f standard allows
+04:22
+workers within one institution to view
+04:24
+and
+04:25
+explore images from another institution
+04:27
+without actually copying the images
+04:29
+so a store wants to make use of in lots
+04:32
+of different places
+04:34
+so that's the general concept um very
+04:36
+very briefly
+04:37
+we'll be going over this in a number of
+04:39
+the talks today
+04:40
+but just to highlight that um i know
+04:43
+obviously at scale
+04:44
+uh if we think within our project if we
+04:46
+extend that
+04:47
+example to the portrait gallery dna the
+04:49
+british library the science museum group
+04:51
+and many others
+04:52
+um if we're all sharing things using the
+04:54
+same standards
+04:55
+we can actually look at some fairly
+04:58
+sizable cross collection and
+04:59
+cross-domain sort of outputs and
+05:03
+solutions there and there's a lot of
+05:05
+work we can do but you can also look at
+05:07
+closed commercial issues for apps and
+05:09
+potentially as i'm going to talk about
+05:11
+later
+05:12
+issues you can work on within an
+05:13
+institution to make use of your own
+05:15
+triple f
+05:16
+sources now our project as a whole aims
+05:19
+to highlight and demonstrate
+05:21
+opportunities and benefits
+05:22
+of the triple life standard i'm going to
+05:24
+examine its potential for
+05:26
+virtually connecting collections from
+05:28
+different organizations
+05:30
+uh document lists of existing trip live
+05:33
+systems and tools
+05:35
+and contribute to the work that's going
+05:36
+on in the triple f consortium
+05:39
+and identify what additional tools and
+05:42
+services might be needed
+05:43
+the digital tools and services will be
+05:44
+sort of covered in a future
+05:46
+webinar this is the team um several of
+05:49
+the team members are here
+05:51
+today myself joseph hadfield i'm the pi
+05:55
+of the project and i work in the
+05:57
+national gallery
+05:58
+but co-eyes on this ahrc-funded project
+06:02
+also include torsten river for the
+06:04
+british library charlotte bowling from
+06:06
+the national portrait gallery melissa
+06:07
+terrace from edmond university
+06:09
+and we also have a a white sort of
+06:12
+collection of project partners
+06:14
+uh lorna tom tom uh
+06:17
+jamie richard and glenn so it's it's
+06:19
+from the
+06:20
+royal botanical gardens did your rt bna
+06:22
+stanford library science museum group
+06:24
+and the triple f consortium there is an
+06:27
+interim
+06:27
+project uh sort of report for our our
+06:31
+project
+06:32
+um that was out in december 2020 and you
+06:34
+can actually download that from
+06:35
+the uh triple f website uh not sorry the
+06:39
+the towards the national collection
+06:41
+website um you can get that from there
+06:44
+um and uh that will be available we'll
+06:47
+drop some links
+06:48
+uh into but i'll drop some links into
+06:50
+the the chat
+06:52
+after i finish this introduction uh for
+06:54
+the things i've mentioned here
+06:56
+uh this is the first webinar as i said
+06:58
+we will be carrying out at least two
+06:59
+other
+07:00
+uh main web webinars for this project um
+07:03
+the next one will be discussing the
+07:04
+potential shared trip life services
+07:06
+and the third one developing practical
+07:08
+solutions um
+07:09
+actually more practical workshop uh
+07:11
+we'll also be looking at developing
+07:14
+these sort of four demonstrator areas or
+07:16
+exploring what work has already been
+07:17
+done within the field
+07:19
+to answer these issues so specifically
+07:21
+creating a data set of 16th century
+07:23
+british portraits which we'll be talking
+07:25
+about later
+07:26
+how we can support publications looking
+07:30
+at
+07:31
+working with triple f uh manifests uh
+07:33
+which will be uh described a lot by tom
+07:35
+later
+07:36
+and uh exploring new use cases and
+07:38
+particularly looking at user feedback
+07:40
+and user evaluation
+07:41
+of the work that we're doing so um
+07:44
+to move on to the session as a whole i'm
+07:46
+going to stop talking now and hand over
+07:48
+to
+07:49
+uh luca from bna who will be
+07:52
+talking about the raffle cartoons so i
+07:55
+will stop
+07:56
+sharing luca if you want to share your
+07:59
+screen
+08:01
+i'll do that
