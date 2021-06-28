@@ -1,7 +1,14 @@
 {
 	"manifests": {
-		"https://https://rct.resourcespace.com/iiif/970580/": {
+		"https://rct.resourcespace.com/iiif/970580/": {
 			"provider": "The Royal Collection Trust, UK"}
 			
 		}
-	}
+		},
+	"windows": [
+		{
+			"manifestId": "https://rct.resourcespace.com/iiif/970580/",
+			"canvasIndex": 23
+		}
+	]
+}
