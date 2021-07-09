@@ -17,6 +17,7 @@
 	"comment": "",
 	"video": "https://www.youtube.com/embed/nDuJuPdsooQ",
 	"slides": "files/IIIF TaNC Webinar1 - S01 01 - Jpadfield -  Introduction.pdf",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar02_S01_00_Intoduction_JPadfield_otter.ai.txt", 	
 	"link": "https:\/\/twitter.com\/JoePadfield"
 }, {
 	"groups": ["Session 01"],
@@ -24,7 +25,8 @@
 	"stitle": "Tom Crane",
 	"video": "https://www.youtube.com/embed/LVnwVvfqfJ0",
 	"slides": "files/IIIF TaNC Webinar 2 - S01 - 01 - TCrane.pptx",
-  "comment": "What goes into providing IIIF for millions of items? Or even a National Collection? Tom Crane looks at large-scale IIIF implementation, with particular focus on Wellcome Collection.",
+        "comment": "What goes into providing IIIF for millions of items? Or even a National Collection? Tom Crane looks at large-scale IIIF implementation, with particular focus on Wellcome Collection.",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar02_S01_01_TCrane_otter.ai.txt",
 	"link": "https:\/\/twitter.com\/tomofhernehill"
 },{
 	"groups": ["Session 01"],
@@ -32,6 +34,7 @@
 	"stitle": "Abira Hussein",
 	"video": "https://www.youtube.com/embed/D3WlBohzCrY",
 	"comment": "Abira Hussein will be exploring the challenges faced, and the potential for IIIF to support more independent community-based archives to exist digitally and sustainability online.",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar02_S01_02_AHussein_otter.ai.txt", 
 	"link": "https:\/\/twitter.com\/AbiraHussein"
 },{
 	"groups": ["Session 01"],
@@ -40,6 +43,7 @@
 	"video": "https://www.youtube.com/embed/9Eod2hMxQgo",
 	"comment": "Andrew Davis  will present a paper centred around  how focusing on small-scale, tangible benefits set The Royal Collection Trust on the path to IIIF adoption.",
 	"slides": "files/IIIF TaNC Webinar 2 - S01 - 03 - ADavis.pdf",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar02_S01_03_ADavis_otter.ai.txt", 
 	"link": ""
 },{
   "groups": ["Session 01"],
@@ -48,6 +52,7 @@
 	"video": "https://www.youtube.com/embed/m7nC7772if4",
 	"comment": "Jason Evans will present details of how IIIF has facilitated larger endeavours at the National Library of Wales.",
 	"slides": "files/IIIF TaNC Webinar 2 - S01 - 04 - JEvans.pdf",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar02_S01_04_JEvans_otter.ai.txt", 
 	"link": "https:\/\/twitter.com\/WIKI_NLW"
 },{
 	"groups": ["Session 01"],
@@ -55,6 +60,7 @@
 	"stitle": "Panel Discussion",
 	"video": "https://www.youtube.com/embed/xxKK5ubngWc",
 	"comment": "",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar02_S01_05_Questions_otter.ai.txt",
 	"link": ""
 }, {
 	"groups": ["Session 02"],
@@ -62,6 +68,7 @@
 	"stitle": "Anne McLaughlin",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/nDuJuPdsooQ",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar02_S02_00_Introduction_AMcLaughlin_otter.ai.txt", 
 	"link": "https:\/\/twitter.com\/anmcl001"
 }, {
 	"groups": ["Session 02"],
@@ -70,13 +77,15 @@
 	"comment": "",
 	"video": "https://www.youtube.com/embed/XilvB5iaSWo",
 	"slides": "files/IIIF TaNC Webinar 2 - S02 - 01 - DVerbeke.pptx",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar02_S02_01_DVerbeke_otter.ai.txt", 
 	"link": ""
 }, {
 	"groups": ["Session 02"],
 	"ptitle": "Andrew Prescott (Univeristy of Glasgow) - IIIF Manuscripts and Archives ",
 	"stitle": "Panellist Introduction",
-	"comment": "",
+	"comment": "files/transcripts/PracticalIIIF_Webinar02_S02_02_APrescott_otter.ai.txt",
 	"video": "https://www.youtube.com/embed//i-Fopdw3GEk",
+	"transcript": "", 
 	"link": "https://twitter.com/Ajprescott"
 }, {
 	"groups": ["Session 02"],
@@ -84,6 +93,7 @@
 	"stitle": "Panellist Introduction",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/-IHQJYJUYVs",
+	"transcript": "", 
 	"link": "https://twitter.com/mia_out"
 }, {
 	"groups": ["Session 02"],
@@ -91,6 +101,7 @@
 	"stitle": "Panellist Introduction",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/Ui7YRI8zcvk",
+	"transcript": "files/transcripts/PracticalIIIf_Webinar02_S02_03_MAConstantine_otter.ai.txt", 
 	"link": ""
 }, {
   "groups": ["Session 02"],
@@ -98,6 +109,7 @@
 	"stitle": "Panellist Introduction",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/jytAP_fbwNg",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar02_S02_04_PEckhart_otter.ai.txt", 
 	"link": "https:\/\/twitter.com\/pi_eckh"
 }, {
   "groups": ["Session 02"],
@@ -105,12 +117,14 @@
 	"stitle": "Panellist Introduction",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/9vlZ9pvYGGY",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar02_S02_05_BBakelaar_otter.ai.txt", 
 	"link": "https:\/\/twitter.com\/benbyben"
 }, {
 	"groups": ["Session 02"],
 	"ptitle": "IIIF Services and Tools Session 2",
 	"stitle": "Panel Discussion",
 	"comment": "",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar02_S02_07_Discussion_otter.ai.txt", 
 	"video": "https://www.youtube.com/embed/bDKfkUf6fVs"
 } ]
 	
