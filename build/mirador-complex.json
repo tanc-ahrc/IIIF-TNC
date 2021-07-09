@@ -1,30 +1,30 @@
 
 {
     "manifests": {
-	  "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co8361057/manifest": {
-		 "provider": "The Science Museum Group"
-	    },
 	    "https://npg-digital.github.io/NPG-IIIF/manifests/NPGAx131392.json": {
 		 "provider": "The National Portrait Gallery, London UK"
      	    },
 	    "https://rct.resourcespace.com/iiif/970580/": {
 		    "provider": "The Royal Collection Trust, UK"
+	    },
+	    "https://media.ng-london.org.uk/ng/NG6703": {
+		 "provider": "The National Gallery, London UK"
 	    }
     },
     "windows": [{
                 "id": "a",
-                "manifestId": "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co8361057/manifest",
-                "canvasIndex": 1
+                "manifestId": "https://npg-digital.github.io/NPG-IIIF/manifests/NPGAx131392.json",
+                "canvasIndex": 0
             },
             {
                 "id": "b",
-           	"manifestId": "https://npg-digital.github.io/NPG-IIIF/manifests/NPGAx131392.json",
+           	"manifestId": "https://rct.resourcespace.com/iiif/970580/",
                 "canvasIndex": 0
             },
             {
                 "id": "c",
-                "manifestId": "https://rct.resourcespace.com/iiif/970580/",
-                "canvasIndex": 23
+                "manifestId": "https://media.ng-london.org.uk/ng/NG6703",
+                "canvasIndex": 0
             }
     ],
      "workspace": {
