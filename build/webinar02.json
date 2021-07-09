@@ -23,7 +23,7 @@
 	"ptitle": "IIIF all the Things",
 	"stitle": "Tom Crane",
 	"video": "https://www.youtube.com/embed/LVnwVvfqfJ0",
-	"slides": "",
+	"slides": "files/IIIF TaNC Webinar 2 - S01 - 01 - TCrane.pptx",
   "comment": "What goes into providing IIIF for millions of items? Or even a National Collection? Tom Crane looks at large-scale IIIF implementation, with particular focus on Wellcome Collection.",
 	"link": "https:\/\/twitter.com\/tomofhernehill"
 },{
@@ -39,7 +39,7 @@
 	"stitle": "Andrew Davis",
 	"video": "https://www.youtube.com/embed/9Eod2hMxQgo",
 	"comment": "Andrew Davis  will present a paper centred around  how focusing on small-scale, tangible benefits set The Royal Collection Trust on the path to IIIF adoption.",
-	"slides": "files/IIIF TaNC Webinar1 - S01 04 - Jpadfield -  Re-using IIIF resources.pdf",
+	"slides": "files/IIIF TaNC Webinar 2 - S01 - 03 - ADavis.pdf",
 	"link": ""
 },{
   "groups": ["Session 01"],
@@ -47,7 +47,7 @@
 	"stitle": "Jason Evans",
 	"video": "https://www.youtube.com/embed/m7nC7772if4",
 	"comment": "Jason Evans will present details of how IIIF has facilitated larger endeavours at the National Library of Wales.",
-	"slides": "files/IIIF TaNC Webinar1 - S01 04 - Jpadfield -  Re-using IIIF resources.pdf",
+	"slides": "files/IIIF TaNC Webinar 2 - S01 - 04 - JEvans.pdf",
 	"link": "https:\/\/twitter.com\/WIKI_NLW"
 },{
 	"groups": ["Session 01"],
@@ -69,7 +69,7 @@
 	"stitle": "Panellist Introduction",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/XilvB5iaSWo",
-	"slides": "files/IIIF TaNC Webinar1 - S02 01 - CBolland -  Tudor Portrait Demonstrator​.pdf",
+	"slides": "files/IIIF TaNC Webinar 2 - S02 - 01 - DVerbeke.pptx",
 	"link": ""
 }, {
 	"groups": ["Session 02"],
