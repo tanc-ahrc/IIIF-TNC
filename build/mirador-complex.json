@@ -7,7 +7,7 @@
 	    "https://rct.resourcespace.com/iiif/970580/": {
 		    "provider": "The Royal Collection Trust, UK"
 	    },
-	    "https://media.ng-london.org.uk/ng/NG6703": {
+	    "https://media.ng-london.org.uk/ng/NG6307": {
 		 "provider": "The National Gallery, London UK"
 	    }
     },
@@ -23,7 +23,7 @@
             },
             {
                 "id": "c",
-                "manifestId": "https://media.ng-london.org.uk/ng/NG6703",
+                "manifestId": "https://media.ng-london.org.uk/ng/NG6307",
                 "canvasIndex": 0
             }
     ],
