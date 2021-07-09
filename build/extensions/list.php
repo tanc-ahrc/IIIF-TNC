@@ -248,6 +248,9 @@ function buildPresentationCard ($la)
 			
 		if (isset($la["slides"])) 
 			{$extra .= "<p>The slides for this presentation can be downloaded <a href=\"$la[slides]\">here</a></p>";}
+	  
+	 	if (isset($la["transcript"])) 
+			{$extra .= "<p>The transcript for this presentation can be downloaded <a href=\"$la[transcript]\">here</a></p>";}
 		}
 	else if (isset($la["slides"]))
 		{$prev = '<div class="pcontainer"><iframe class="preview-iframe preview" id="preview-iframe" '.
