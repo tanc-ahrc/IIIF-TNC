@@ -1,29 +1,29 @@
 
 {
     "manifests": {
-	    "https://npg-digital.github.io/NPG-IIIF/manifests/NPGAx131392.json": {
-		 "provider": "The National Portrait Gallery, London UK"
-     	    },
 	    "https://rct.resourcespace.com/iiif/970580/": {
 		    "provider": "The Royal Collection Trust, UK"
 	    },
 	    "https://media.ng-london.org.uk/ng/NG6307": {
 		 "provider": "The National Gallery, London UK"
+	    },
+	      "https://media.ng-london.org.uk/ng/NG27": {
+		 "provider": "The National Gallery, London UK"
 	    }
     },
     "windows": [{
                 "id": "a",
-                "manifestId": "https://npg-digital.github.io/NPG-IIIF/manifests/NPGAx131392.json",
-                "canvasIndex": 0
-            },
-            {
-                "id": "b",
-           	"manifestId": "https://rct.resourcespace.com/iiif/970580/",
+                "manifestId": "https://rct.resourcespace.com/iiif/970580/",
                 "canvasIndex": 23
             },
             {
+                "id": "b",
+           	"manifestId": "https://media.ng-london.org.uk/ng/NG6307",
+                "canvasIndex": 0
+            },
+            {
                 "id": "c",
-                "manifestId": "https://media.ng-london.org.uk/ng/NG6307",
+                "manifestId": "https://media.ng-london.org.uk/ng/NG27",
                 "canvasIndex": 0
             }
     ],
