@@ -1,29 +1,29 @@
 
 {
     "manifests": {
-	    "https://rct.resourcespace.com/iiif/970580/": {
-		    "provider": "The Royal Collection Trust, UK"
-	    },
 	    "https://media.ng-london.org.uk/ng/NG6307": {
 		 "provider": "The National Gallery, London UK"
 	    },
 	      "https://media.ng-london.org.uk/ng/NG27": {
 		 "provider": "The National Gallery, London UK"
+	    },
+	     "https://iiif.vam.ac.uk/collections/O102006/manifest.json": {
+		    "provider": "The Victoria and Albert Museum, UK"
 	    }
     },
     "windows": [{
                 "id": "a",
-                "manifestId": "https://rct.resourcespace.com/iiif/970580/",
-                "canvasIndex": 23
+                "manifestId": "https://media.ng-london.org.uk/ng/NG6307",
+                "canvasIndex": 0
             },
             {
                 "id": "b",
-           	"manifestId": "https://media.ng-london.org.uk/ng/NG6307",
+           	"manifestId": "https://media.ng-london.org.uk/ng/NG27",
                 "canvasIndex": 0
             },
             {
                 "id": "c",
-                "manifestId": "https://media.ng-london.org.uk/ng/NG27",
+                "manifestId": "https://iiif.vam.ac.uk/collections/O102006/manifest.json",
                 "canvasIndex": 0
             }
     ],
