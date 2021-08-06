@@ -124,31 +124,31 @@ details[open] summary {
 	<figure>
 		<pre style="overflow-y: auto;overflow-x: hidden; border: 2px solid black;padding: 10px;max-height:400px;"><code>{
     &quot;manifests&quot;: {
-        &quot;https://media.ng-london.org.uk/ng/NG6307&quot;: {
-            &quot;provider&quot;: &quot;The National Gallery, London UK&quot;
-        },
         &quot;https://media.ng-london.org.uk/ng/NG27&quot;: {
             &quot;provider&quot;: &quot;The National Gallery, London UK&quot;
         },
         &quot;https://iiif.vam.ac.uk/collections/O102006/manifest.json&quot;: {
             &quot;provider&quot;: &quot;The Victoria and Albert Museum, UK&quot;
+        },
+        &quot;https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100056056799.0x000001/manifest.json&quot;: {
+            &quot;provider&quot;: &quot;The British Library, London UK&quot;
         }
     },
     &quot;windows&quot;: [
         {
             &quot;id&quot;: &quot;a&quot;,
-            &quot;manifestId&quot;: &quot;https://media.ng-london.org.uk/ng/NG6307&quot;,
-            &quot;canvasIndex&quot;: 0
-        },
-        {
-            &quot;id&quot;: &quot;b&quot;,
             &quot;manifestId&quot;: &quot;https://media.ng-london.org.uk/ng/NG27&quot;,
             &quot;canvasIndex&quot;: 0
         },
         {
-            &quot;id&quot;: &quot;c&quot;,
+            &quot;id&quot;: &quot;b&quot;,
             &quot;manifestId&quot;: &quot;https://iiif.vam.ac.uk/collections/O102006/manifest.json&quot;,
             &quot;canvasIndex&quot;: 0
+        },
+        {
+            &quot;id&quot;: &quot;c&quot;,
+            &quot;manifestId&quot;: &quot;https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100056056799.0x000001/manifest.json&quot;,
+            &quot;canvasIndex&quot;: 142
         }
     ],
     &quot;workspace&quot;: {
@@ -193,8 +193,8 @@ details[open] summary {
 
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
-       windows: [{"id":"a","manifestId":"https:\/\/media.ng-london.org.uk\/ng\/NG6307","canvasIndex":0},{"id":"b","manifestId":"https:\/\/media.ng-london.org.uk\/ng\/NG27","canvasIndex":0},{"id":"c","manifestId":"https:\/\/iiif.vam.ac.uk\/collections\/O102006\/manifest.json","canvasIndex":0}],
-       manifests: {"https:\/\/media.ng-london.org.uk\/ng\/NG6307":{"provider":"The National Gallery, London UK"},"https:\/\/media.ng-london.org.uk\/ng\/NG27":{"provider":"The National Gallery, London UK"},"https:\/\/iiif.vam.ac.uk\/collections\/O102006\/manifest.json":{"provider":"The Victoria and Albert Museum, UK"}},
+       windows: [{"id":"a","manifestId":"https:\/\/media.ng-london.org.uk\/ng\/NG27","canvasIndex":0},{"id":"b","manifestId":"https:\/\/iiif.vam.ac.uk\/collections\/O102006\/manifest.json","canvasIndex":0},{"id":"c","manifestId":"https:\/\/api.bl.uk\/metadata\/iiif\/ark:\/81055\/vdc_100056056799.0x000001\/manifest.json","canvasIndex":142}],
+       manifests: {"https:\/\/media.ng-london.org.uk\/ng\/NG27":{"provider":"The National Gallery, London UK"},"https:\/\/iiif.vam.ac.uk\/collections\/O102006\/manifest.json":{"provider":"The Victoria and Albert Museum, UK"},"https:\/\/api.bl.uk\/metadata\/iiif\/ark:\/81055\/vdc_100056056799.0x000001\/manifest.json":{"provider":"The British Library, London UK"}},
        
        workspace: {"layout":{"direction":"row","first":"a","second":{"first":"b","second":"c","direction":"row"},"splitPercentage":33.33}}
        });     
