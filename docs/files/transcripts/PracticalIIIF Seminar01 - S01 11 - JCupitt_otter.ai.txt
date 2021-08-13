@@ -1,0 +1,10 @@
+John Cupitt  0:03  
+Hello everyone, I'm John Cupitt and. Well I started the National Gallery, long time ago, and spent 15 years working on scientific and technical imaging of paintings. I also was an image processing library, while I was there, which I think some of you are probably using, Libvips, and then since 2005, I've been as Imperial while I've been doing medical imaging, a variety of different things but most recently, neonatal and foetal MRI brain scans. I got it also kept up some conservation imaging work with Joanne, who spoke earlier. And I done a bit of work on IIIF as well. I don't know: do I have a second slide, Anne
+
+Anne McLaughlin  0:50  
+ No you don't.
+
+John Cupitt  0:51  
+ Okay, that's fine, I'll stop there. Thank you.
+
+

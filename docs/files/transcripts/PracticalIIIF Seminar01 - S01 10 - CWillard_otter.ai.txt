@@ -1,0 +1,10 @@
+Charles Willard  0:03  
+Hi there, can you hear me
+
+Joe Padfield  0:07  
+Yes I can.
+
+Charles Willard  0:10  
+So yeah, I'm Adam's, one of Adam's PhD students at UCL and my main focus is on hyperspectral imaging. But I've also done some work with image registration on a couple of case studies, so I've got an example of that in the next slide. So this is a case study we did a couple of years ago now, with the Guildhall Art Gallery in London. And I have this painting by Poynter of Israel and Egypt, and there are reports in the Illustrated London News that the composition was changed after is was purchased, which was after its first exhibition. And we wanted to image it to see if we could see in the under drawings or anything in the infrared, which would make that easy to identify. So on the bottom left you can see, there's a RGB image, which was taken with a DSLR camera, and that was done with image mosaicing using PTGui as well. And then in the bottom left. It's the same as a DSLR camera, but it was modified so we removed the infrared filter from the camera and the same kind of pipeline of imaging. So I think there were six images taken across that the painting, stitched together. And then, in the top right image, you can see, that's the Illustrated London News copy, so that's from the British Museum archives, and we think that was printed using a wood engraving. And then in the bottom right, there's an image from the Osiris infrared reflectography camera. So we had, we took that with us, and we kind of got, we got one fairly low-resolution overview image of the painting. And then we got a few high-resolution areas and mosaiced them together, and the kind of the mosaicing of that at different resolutions was quite challenging. And then we also registered all of those images just together. Then high-resolution images together, which was a bit more straightforward. And then there's kind of an interactive view, which looks like that, specially that's a screenshot of the interactive viewer is in the bottom left, but it's not it's not quite as nice as Rob's Curtain Viewer, but they're all synchronised together.
+
+

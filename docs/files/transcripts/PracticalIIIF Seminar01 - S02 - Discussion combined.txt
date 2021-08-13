@@ -1,0 +1,288 @@
+Joe Padfield  0:04  
+We'd like to move on to more of a general discussion. So, as I said, initially we had those general themes of how people are doing things, and what systems are being used, and why people are doing registration, and we've had a number of examples of that. And then thinking about the future. So again, we've had a few examples of that. So I'm going to allow the panellists, if any of you have any questions for each other, or things you would like to raise, based on those introductions, or just in general related to image registration. I would ask you to join in, we can begin a discussion. We have the chat is open for members of the audience, and you are more than welcome to put in questions in the chat, and obviously if all 150 of you drop in a chair question at the same time we may not be able to get to all of the questions during the time we have another sort of 15 minutes or so of meeting, and we will try and look at questions if there are additional questions we'll try and look at seeing if we can provide answers to them on the project website after the fact. So, would anyone like to volunteer? We have one hand up, Rob, I'm just going to open up my panellists window Rob if you'd like to start, please go ahead. 
+
+Rob Erdmann  1:27  
+Sure, and just a comment about the question of how, how precise do we need, how good is good enough. The reason for this seemingly insane obsession with sub-pixel registration. In my case, is that I'm trying to think about the future in which we have stacks of images so we would have a so called 'deep image', you might, you might call it so you can put your finger on a location and really know what every imaging technique, said about that point, and then to use this with machine learning and things like this and then the problem is that if there's even a slight mis-registration between these pairs of modalities, then you have a bunch of garbage pixels around the edge of something, for example, you know you have a brush stroke. That's in two different imaging techniques and they're misaligned, then the pixels that are that are in one brushstroke on the edge will be in the brush stroke in one image and outside of the brushstroke in the other image, and then this will give you a huge amount of garbage pixels when it when we talk about glueing together for example hyperspectral and macro X-ray fluorescence and other techniques. So it's not that we need it now, I think, but having registration techniques that can go to sub-pixel precision I think will be necessary to take this data to the next level.
+
+Joe Padfield  2:50  
+Thanks Rob, how would you see that in relation to non-exact matches then? So a few of the examples that were presented we're looking at, say from the V&A looking at a cartoon in relation to a tapestry in relation to that, that changed over time. So would you see these more advanced processes that you're using, being appropriate for that type of process as well, or how would you handle the fact that there isn't an exact match?
+
+Rob Erdmann  3:21  
+Well It very much depends on the downstream use. You know this the semantic match that I showed for the Nightwatch and the copy of the Nightwatch is something that I used to train the neural network that you know hallucinated the missing parts around the Nightwatch. So in that case it was good enough to have them approximately registered, but I don't think we can even define well what it means to have sub-pixel registration when you have two completely different renditions of the same semantic concept, so it's a well defined problem I would say.
+
+Joe Padfield  3:54  
+So you say that the techniques could provide useful solutions, but you wouldn't be looking for an exact match because obviously there isn't one. 
+
+Rob Erdmann  4:02  
+Yeah, that's right. 
+
+Joe Padfield  4:03  
+Yeah. Okay. Would anyone else like to comment on this, or bring in another question. Yes, John, go ahead.
+
+John Cupitt  4:10  
+I was very interested in your, your talk Rob. One thing that struck me from you mentioned, sub-pixel accuracy. One thing that struck me is that this is very important for simple image stitching as well, even fora  human observer. If a half pixel error along the seam will be quite visible and you'll see a loss in focus, along the along the join. So it's really important even for basic things like that. And right now, I think.
+
+Rob Erdmann  4:38  
+Yeah, I agree. And in fact, this is the motivation for why I do stitching differently than most people I think so. The typical way, as I understand it is that you take a bunch of images that have overlap and then you use the overlap features to make the relative positioning. But then the problem of this is simple. Imagine that you have images, A B C D and E that are all in a, in a strip, then a slight misplacement in image B propagates downstream because then C hangs on B and D hangs on C and so on. So this, you wouldn't notice it until you do this with two separate imaging modalities, you do this with infrared and it's got its own errors and you do this in visible and it's got its own errors and then you try to register those two and it doesn't work. So instead, the strategy that I use is that I always request that our photographers take a single overview photo at the highest resolution possible but in a single capture. And then the high resolution images are hung on that, so they may have their own errors but they're uncorrelated from each other. And this then means that you can, let's say register the high resolution visible to a low-res visible and you can register the infrared to a low-res visible and then they will be co-registered with each other because they both share this common anchor. And in my experience that works much better, especially when it comes time to do the co-registration after the fact. 
+
+John Cupitt  6:09  
+You must still be examining the overlap so I suppose because you will be able to get some accuracy from an overview. 
+
+Rob Erdmann  6:16  
+Well, the overview actually works quite well I'm using scale space theory that basically provides a, it's a mathematical theory I'm sure you're familiar with it, it sort of provides a mathematical structure for embedding images of different resolutions in a kind of common continuous space. And then, if you do your correlations, very carefully and then you do, you know, quadratic estimation and so on, you can see tiny tiny flaws, for example, when the Orisis camera, which is a scanning head. When it moves down one scan you can see that it's moved, you know, .2 pixels too far or you can see that the vertical head is off by .03 degrees and things like this. So, in practice, it works quite well without looking at overlaps. And then the secondary benefit of this is that there's a huge number of radiographs historically collected that has been cut down. So, you know, they were, they were taken with overlap but then they have the edges cut off so that they can be put on a Lightboard, so that they can be inspected before this was computerised. And this then allows those to be placed properly, even when there is no overlap.
+
+Joe Padfield  7:31  
+Can I just say, I have a few follow up questions to that Rob, but we have some questions, from three questions now. I think the first question from Kurt in the question and answers, relates to what you've just said, I think: how important is registering a measured ground truth. I think you've, you've kind of answered that question. Someone is asking if somebody's new to image registration, I mean, you've you've expressed rather complex things there Rob, so if somebody is new to registration; What tools should people begin with? What do people think? And my follow on to that, perhaps we'll come back to you, Rob is then how would someone progress towards using the techniques that you're commenting on. So, where should people begin what sort of tools would people recommend for registration to begin with?
+
+Rob Erdmann  8:24  
+Yeah, I'm not a user of, I mean I'm writing my own software so I'm not necessarily the, the deepest expert in this, but my, my perception is that there is a wide array of array of choices. First Photoshop if your resolutions aren't too huge. That works great and it's very convenient in terms of the user interface, then you have things like Nip2, which, for you know two point matches and things like that works great. There's Hugin or Hugin I'm not sure how it's pronounced, which is a free mosaic stitcher, but you can also beat it into shape to doing flat images instead of spherical images and then PT GUI is one that I hear a lot of people using. I shouldn't. I should also say that a huge amount of my own stack, well it's certainly the Python, is relying on the vips library from from John. It's really outstanding. because it lets me do things like make a 717 gigapixel image of the Nightwatch, like you can't do that with any other software as far as I know.
+
+Joe Padfield  9:31  
+Okay, I'm assuming, many other people probably don't have images of that size Rob, but I would like to have, I've not yet it's not yet, yeah so, as you saw in the example that Andrew presented from the photographic department, he's playing with something. But if we actually let him free on one of the larger paintings in the gallery, we wouldn't see him for three months but the resulting image would be that kind of old resolution mind you. We have another question here: Would using a full image as a possible with very large painting so that that kind of overall image I think the question is, is when you take that overall image to do your high resolution matching against, how big does that single image need to be to still get the accuracy?
+
+Rob Erdmann  10:16  
+In my case, a factor of 20 and resolution is is acceptable, though a factor of five is better. I gave the keynote at this year's Pycon and I talked all about making this huge image of the Nightwatch and so they can learn more about that in detail but another step that we had to do in that case was, we took a 400 megapixel photo, so that's a six shot with the possible 60. And then we measured the four sides, and, and two diagonal corners to get sort of fiducial mark measurements that we could use to rectify the image, sorry there's a bird in the canal by my house. Yeah, so that was, that's good enough but the thing is that it's not a flat object, so there is no sort of true shape and 2d stuff to sort of pick what is, what is the thing against which everything else will be, to which everything will be anchored.
+
+Joe Padfield  11:21  
+Okay. I think sort of looking at some other questions we've got in from one anonymous attendee: One of the most challenging types of objects I deal with is colour field abstract paintings that don't have the same types of features present in the Old Masters, cracks, more obvious brushstrokes in pastels, etc. I would appreciate knowing how others are or are not dealing with successfully with these sorts of things? So what sorts of features are required to do image registration or are cracks and brushstrokes kind of the key thing being used for some of these more complex systems at the moment. Any folks? John,
+
+John Cupitt  12:06  
+If you have enough detail of course you'll have features in the canvas texture you could use, but beyond that, no, I I can't really think of anything. Rob.
+
+Rob Erdmann  12:21  
+Yeah, I don't mean to dominate the discussion at all but this is a problem that my software solves and it's basically that the particular features are whatever the neural network finds, so there are often very strange nonlinear filters that it learns in order to pull out whatever faint feature is present in the two images in order to get to get a lot. And then the rest of this is, is the software, basically uses a Bayesian technique with some regularizer so that if there are regions where you, you sort of lose sight of how they match that you can do an intelligent job of filling it in. By using the places where they do match, sort of robust smooth destinations for making this far slash into it.
+
+Joe Padfield  13:13  
+okay.
+
+Rob Erdmann  13:14  
+I haven't two kinds of images, a pair of images that I can't register with this approach yet.
+
+Joe Padfield  13:20  
+ Okay. Well, hopefully that's answered that question.
+
+Adam Gibson  13:24  
+I genuinely didn't have much in the way features at all, you might be able to cheat, and add some features to the object, or put the object in front  of a background that has features instead. I'm not quite solving the same problem but it might be a cunning way to register some difficulties, in fact,
+
+Rob Erdmann  13:52  
+Yeah. And the thing is that if, if there really are no features shared. Then, mis-registration is undetectable. So, right, it's a, it's a much, much easier judge of the whole process, so who cares?
+
+Joe Padfield  14:09  
+Okay, we've had a question: I mean, technically this discussion here is more related to 2D rather than 3D although 3D has been brought up. Someone is asking, Taylor: Is there a role, more of a role, for 3D models, or for mosaics as a framework for registration of 2D images from different modes, spectra, sensors. These models are generated lens, generated lens calibration and can be removed various lens distortions that are 2D. So if we're photographing a 3D shape when we photograph the 2D shape can that help with any image registration at all? Andrew?
+
+Andrew Bruce  14:50  
+Yeah, I mean just in response, of course you know I wanted to say that you know you can make 2D images through photogrammetry processes. And to a certain extent, and actually this process solves some of the issues that we currently have with mosaic in terms of, like you mentioned, it can figure out any kind of lens distortion through the process. Also like Rob said, you know, a painting is a 3D thing. You know, there comes a point where you have to kind of align your camera or imaging device up with that painting and it will change it geometrically, and with photogrammety, it actually has that data kind of stored in the file.
+
+Joe Padfield  15:32  
+Thank you very much to ask another question, to bring in some of the other people. Obviously, John and Rob have the advantage of being computer scientists and writing your own code, and, and are able to solve the problem by creating new software but for the panellists who effectively are making use of existing pieces of software. Would anyone like to comment on how well they like the solutions they're working with, or what they find are the problems of the solutions, the systems they're using. Open to anyone at the moment. Yes. Giles.
+
+Giles Bergel  16:13  
+Yeah, I mean, the software, the real famous comparator wasn't designed specifically for me but it was designed for people who operate in the same world as me. Book historians and textual editors therefore, I have a fairly good idea of the workflow that those users will find helpful. And in some ways I'm a good kind of dummy target for the software that if it works on me, it may be suitable for others of my kind. And, you know, so this is, I suppose more kind of organisational software development issue than a feature based issue is about the relationship between the users, and where you put the user within the year development chain, and certainly we spend a lot of time, more time than most academic computer science groups, we do on gathering requirements, doing user interface, and doing user UX work. And it's remarkable how to registration tools actually are available. I felt like coming in on the Rods answer to the question about how to get started: yes you can get started with Photoshop. But beyond that, and even with Photoshop, there is a pretty steep learning curve. Though we certainly aim to kind of push out solutions as far as possible. For kind of essentially recipe reasons because we want to have impact. And, you know, you can't have much impact if you're only addressing other computer scientists.
+
+Joe Padfield  17:35  
+Thank you, Ryan, I think you were next.
+
+Ryan Baumann  17:39  
+Yeah, I would also just say to add to the software that is available for registration, one that hasn't been mentioned yet is Image-J, with the biomedical imaging for Java toolkits, is a free and not necessarily like easy to use, but usable, way to do  rigid body image registration. If you're interested, we use it for multispectral imaging a lot for image registration, but for more complicated  registration is the is the automatic registration algorithms in there don't work for your data, then it's not as much help to be able to go in and tweak the results there so we use a lot of customised software for more complicated registration, but yeah, biomedical imaging for Java is pretty good and Image-J,
+
+Joe Padfield  18:25  
+Thank you. Right. Nathan, I think you were next.
+
+Nathan Daly  18:28  
+Just to say so. With our macro XRF data cubes, the way we tend to work is we pull out fitted image slices, and then work with those we use Nip2, which works great for that. But in some ways it's kind of builds off of what Rob was mentioning about trying to fuse for example hyperspectral and macro XRF scanning data cubes, we still want to work with the cube itself, and look at it spectrally. So we are looking for ways to do this on full data cubes rather than images we pull out of them. And there are tools to do that for hyperspectral imaging, but not so far for XRF and part of the inherent problem with that is any one slice of an XRF cube. It's very noisy, the signal is not great for doing registration, which is part of the reason why we sort of pull out these sitted images, but we are looking potentially to to find ways of keeping the maintaining the integrity of that full XRF data cube after registration as well.
+
+Joe Padfield  19:32  
+Rob I think you're next. Yeah, actually,
+
+Rob Erdmann  19:37  
+Yeah, actually to follow on what Nathan just said, I find that without doing anything fancy just, often with the painting taking the iron map or the lead map is good enough. And then when you're using something like vips it's quite easy when, when you get your deformation map, whether that's a rigid homography or just rotation scaling or or even something very fancy. Then whatever you've learned for this proxy image, the lead image or the iron image or whatever, you can then just directly apply that coordinate transformation to the whole stack, to a hyperspectral stack that has 600 channels, or 4096 channels if you're using the raw XRF energy data. And that seems to work pretty well. And then another piece of software that I forgot to mention is Inkscape. If you don't need anything really fancy, Inkscape I find to be much more intuitive and easy to use than Photoshop. So Inkscape is actually the front end for my image processing workflow. I start by bringing little proxy images into Inkscape and then you can make them opaque and rotate and scale them and group them in nice things. And then this SVG format is read by the rest of my software as the sort of starting point of what images are we're looking at, and so on so it's and it's completely free. And I would also add that it will be a long time till it's released, but I'm working on a web-based workflow that will use drag and drop and these sorts of things for image registration. 
+
+Joe Padfield  21:13  
+Thank you Rob. Joanne?
+
+Joanne Dyer  21:18  
+I just wanted to say for some from a lower-tech point of view. I'm very happy with Nip2, which I used to do image registration, but I think a very important step in, in my work is actually the acquisition step. So that's something to consider. I think a lot of people have got round registration of multiband images by using specialised lenses which make the job easier. If you don't have that from a lower-tech point of view, it can get tricky. So I think position is a very important step, not to be overlooked in this.
+
+Joe Padfield  21:57  
+Thank you very much, John. I think Charlie you were next.
+
+Charles Willard  22:01  
+Just to add, so I use Matlab, do do a bit of my registration, they've got quite a few nice tutorials to follow on their website as an entry level programme programming starters point I suppose but it's not. It's not that easy to do, kind of mosaicking stuff with it, but if you want to have different layers or different wavelengths or something to mosaic or to align. I found that quite useful. And there's also a third party toolbox which is the image alignment toolbox, which can do the more advanced stuff.
+
+Joe Padfield  22:38  
+Thank you Charlie, John.
+
+John Cupitt  22:40  
+I just wanted to follow up on something Rob was saying, it can be very helpful to think of registration as occurring in two stages. First you derive a transform, which will go from one image to the other. And then, secondly, you apply that transform to the source image. And if you think of the registration as being the process of finding a transform, rather than simply the process of directly aligning two images, you can do things like applying the transform that you learned on one pair of images to another pair of images that makes the whole thing much more flexible, so thinking in terms of IIIF, one useful thing to think about for the future might be a way to represent transforms within the IIIF framework, rather than thinking about registering images directly, that would be, that'd be something very, very useful I think to look at.
+
+Joe Padfield  23:37  
+Thank you, John. I think there's a few experiments have been tried with IIIF with basic stuff so doing scale comparison, I think some people have been doing some experiments with that and translation, and offset. The example that Luca was providing does some things as well. Yes, yes. 
+
+John Cupitt  23:56  
+Yeah, translations, it has some of these basic Python style transforms things in, but something more complex will be could be
+
+Joe Padfield  24:05  
+ very nice, 
+
+John Cupitt  24:06  
+Potentially very useful, particularly piecewise, piecewise transforms of the kind that Rob was talking about.
+
+Joe Padfield  24:15  
+Because we did discuss it in IIIF, the standard allows you to describe the key metadata of images and sets of images. So the ability to say: this set of images are registered together and this is the transform required for each of these images to meet the master would would be a lovely way of doing it, because then you wouldn't need to create all the surrogates or a derivative images, it'd be very nice. And when you're looking at, what was it you said 700 gigabytes Rob for the Nightwatch? Then that would be quite nice not to have to have lots of images of that size 
+
+Rob Erdmann  24:46  
+700 Giga-pixels, Five giga-terabytes. 
+
+Joe Padfield  24:49  
+Okay, even bigger. Yes. Okay. I see I'm losing track here, Maria, I think you were next and then Rob.
+
+Maria Villafane  25:00  
+Yeah, I would like to follow up a little bit on, on, on one of the already answered comments, or question, sorry. All day, say the aspect of registering images when they don't have the similar, the same features. aAnd that's kind of what I'm working with when I was trying to present the work with mutual information and using tools in the medical imaging industry. The. Yeah, they'll be a way to go. It might be a little bit more code, heavy, is not probably as simple as using Photoshop, if you don't have features, such as what we use as anchor points basically. But, but actually, I don't know, Um, I mean, maybe if I got it right, most presenters are working with, with feature detection, feature detection which actually caught my attention. And maybe this is, of all the brilliant work that you guys all presented today, like I have a pile of questions for everybody but maybe we would like to, to ask Robert on expanding a little bit this on the semantic registration, part of you your work, like do work with with feature detection as well, Or do you ever look at the general structure of the image, like in medical imaging, you look at the anatomical structures. Do you still use features when you look at semantic registration and then probably for John Cupitt,  do you use this, you know like these tools of medical imaging, or your work on neonatal registration images, or do you still use feature-based registration. Other than that, great. It was great to see all of this work today, and it's really nice to catch up.
+
+Joe Padfield  27:06  
+Thank you, Maria, if Rob if you'd like to, yeah you had your hand up first, if you'd like to  responded and make your point.
+
+Rob Erdmann  27:11  
+I'll happily respond first. So, for the. Yeah, for, for registration, semantic registration I have sort of two techniques. And the simplest one that is really just two lines of Python off the shelf with modern neural network libraries, is if you take a classification-based network, ResNet 50, or something like that that's trained to identify objects in photos. Then you know that those neural networks have a layer structure and so it comes in one end is just the raw pixels. And then at each subsequent layer, we have a higher and higher level of sort of semantic content so we have cooperation of pixels gives you things like the Gabor wavelets you know oriented spaced stripes and then those combined to make textures and those combined to make patterns and those combined to make parts and those combined to make. So if you look at the features that are coming out of the, the second to the last layer of the neural network, you know, not the classification layer but so cut that off, cut off the head, then that layer is actually really excellent for semantic registration. So you can basically compute this densely across a pair of images, and just, just doing you know straight dot products between these features or distances between the features will do a really surprisingly excellent job at making the semantic match between the two. And so it's really just like two lines: load neural network, cut off the head. And that's one line, and then run my image through and get a stack of features, so your image becomes more resolution but it now has 500 channels or 2000 channels and those are the sort of semantic channels if you, if you want.
+
+Maria Villafane  29:03  
+Sorry, just to just to understand, just to see if I understood correctly. So effectively, you're performing the registration with the with the with the layers that are past the initial input let's say once you have the convolutional layers you're performing there your registration effectively.
+
+Rob Erdmann  29:19  
+Well, this, this is used to find. You might say this is a feature-based approach where now the features are semantic features. And then from, and then you can just, you know, substitute the sort of standard pipeline at that point where you have, you know ransack with, you know, point matches or macsec or whatever you prefer. That will get you up to some point and then and then another stage is to actually train neural networks based upon semantic matches from from stereo pairs, so you can get a neural network that's good at seeing, because you know the truth. How I left out two pictures that are similar but different relate to each other. Yeah, there's some nice work out of Berkeley too where they've done like,  they've got a Cranach data set where they've manually marked repeating motifs throughout Cranach and then this is used to teach a neural network, How to find semantic matches in artistic depictions.
+
+Maria Villafane  30:21  
+Thank you. 
+
+Joe Padfield  30:22  
+Thank you, John, do you want to respond? or do you...
+
+John Cupitt  30:28  
+Well I suppose so. brain images aren't very much like paintings in that the things are soft, squishy and change shape and then grows and ages and so on. So that means you really have to do everything via searching means content, you have to look for correlation between pairs of images, so it's usually done in two ways. You'll transform a brain to match an atlas. An atlas is one brain that that's an expert anatomist has marked up semantically to say you know this is the corpus callosum, and this is the bradytep and so on. So you find that transform, and then you take the Atlas back onto the image and use that to mark up brain regions, so you know, semantically which bit's what. And then when you try to align to brain volumes can use this semantic labelling of the brain to to drive the deduction of the transport that will move two dissimilar brains together. And there are lots of fancy tricks that people use. I had to read a paper called 'Diffeomorphic Homologous Reversible Transforms on LogEuclidean Manifolds'. I almost I almost died. It was awful. But that's the kind of thing you have to read for medical imaging at the moment, it's absolutely dreadful.
+
+Joe Padfield  31:57  
+Thank you very much.
+
+Maria Villafane  31:59  
+Sorry, yeah, just, just, when you talk about the, the Atlas, are you talking about the image segmentation of the, of the anatomical structure of the brain.
+
+John Cupitt  32:07  
+Soyes, some experts anatomist will have taken, taken a single scan and mark up the features using just using Photoshop essentially to say which bits are what functional or anatomical feature, and then you can use that to help drive the transport and alignment of other brains. So that's that, that provides the sort of structural metrics, that's used in the registrations.
+
+Joe Padfield  32:31  
+So thinking what sore of painting we should use for that John?
+
+John Cupitt  32:35  
+Un sorry, sorry Joe
+
+Joe Padfield  32:36  
+I was just thinking who would want to pick which painting we should use as the ground truth for all of us
+
+John Cupitt  32:42  
+So in paintings took might work across different modalities. So you take the visible for example, and some skillful person could mark up the heads or something like that. And then you could use that as an atlas to help drive the alignment of other modalities, but I think Rob has done something rather like this.
+
+Joe Padfield  33:02  
+I think, I think, I think, Rob, you had a point next and then Ryan, 
+
+Maria Villafane  33:06  
+thank you for your time. 
+
+Joe Padfield  33:07  
+Thanks, thanks Maria
+
+Rob Erdmann  33:09  
+Yeah, I was just going to amplify John's earlier comment about transformations and carrying on transformations, I think it's also important from an image quality standpoint, that the geometric transformation, whether that's a simple description like, you know, here's the homography or the outline transformation, or a deformation map, whatever that is, can serve as a proxy for the image so that you don't handle the same image many times. It doesn't go through the sausage grinder. So you what you do not want to do is to take an image and to rotate it, and then to take that and resample it and then take that and warp it. Every time it goes through the sausage grinder, you lose some frequency content. So instead, I think, the right thing to do is to track the cumulative stack of geometric transformations that have been virtually applied to an image and only at the very end do you run all the original pixels, through the pipe, to get to get the deformed image.
+
+Joe Padfield  34:11  
+Thank you very much, Rob, Ryan.
+
+Ryan Baumann  34:14  
+Yeah I think kind of building on that, one thing that I just want to highlight to bring up because we're often registering images to compare or contrast things across, like a single frame of reference so that we can have them you know so we can just talk to the images and see what's changed, especially when you get into informal registrations non-rigid restorations. It's kind of like a paradox of registration where if you perfectly register two images, they may be identical in ways they are not physically identical. So for example if you have two brain volumes and you perfectly register them in a formal way, you might eliminate the differences between them that you're interested in finding. So it's important to be understanding of like what the registration process is actually doing and what you're trying to understand from your data and what you're trying to understand from that registration process.
+
+Joe Padfield  35:06  
+Thank you Ryan. I'd add to that, is that some of the use cases that have come up in the past, is trying to say register drawings, preparatory drawings, to finished paintings, and often you can have multiple examples of drawings and different shapes and orientations and angles on the original test piece shall we say. And they match different parts of the painting in different positions. So that kind of notion is one image is not necessarily a complete match to the whole of another image, bits of it. And it's that that kind of discussion of, of, when you're looking at tools is that you definitely don't want to: Here's, here's my images, and then you have a black box and you get given a result is that it's often a conversation with specialists, looking at the images to know what it is they're trying to register and why. And yeah, it's if you're if you're looking at different modalities and same painting you should get a good match, but if you're not, then yes, I think your point there is very, very important Ryan is you're actually looking for the differences sometimes so to ensure that the processing doesn't remove them is very important. Okay. We had another question in the q&a and someone has upped it as well. How different are the transformations people are discussing here for image registration cases described, relative to geospatial warping transformations done to align historic maps, there's quite an active group within the IIIF community looking at working with maps. So it'd be quite interesting to see what the correlation there is. Does anyone able to answer that one? Rob?
+
+Rob Erdmann  35:21  
+I was gonna say that it's my perception that the transformations we would usually use in the context of imaging, the paintings, let's say, are simpler than old maps for example. Because old maps have lots of weird distortions and they're often not metrically correct and except very approximately. So, with a good, well calibrated lens and everything else, then mostly just tomography is which is to say, the ways that images are worked when you move the camera, are, are enough, and probably not enough in the math context I would guess.
+
+Joe Padfield  35:59  
+All right, thank you very much. We have one other question. Let's see: Deep learning techniques exists for predicting fluorescent stains from bright field images in cellular microscopy,  (This will be obviously medical imaging people), but two modalities do not always have obvious shared features so training the dnn with fluoresecent images that are not well registered to their brightfield counterparts can lead to errors, what would be the best way to achieve better registration? I couldn't answer that question myself, if anyone else candidates. John any thoughts?
+
+John Cupitt  36:37  
+I'm very sorry I have not worked with fluoroscent microscopy, I couldn't really comment.
+
+Joe Padfield  36:44  
+ I think, I think that generally, it relates to the previous set of questions, is that how are you, when you know two images are supposed to have a correlation, but there are insufficient features between them, to actually compute it. I think, I think one, I can, sorry I can't remember who suggested it before, is the idea of artificially putting something in. So if there's a potential the ability to put in a physical object or a projected light, or anything that will mark consistency between the two modalities to give you that. But if you actually, if both images have no actual sort of comparison between the two I think registration is going to prove tricky. Okay. There are a few. There are a number of comments in the chats, a number of links, 
+
+Anne McLaughlin  37:30  
+Joe, I think we have a hand up, Adam Gibson,
+
+Joe Padfield  37:33  
+Yes, sorry.
+
+Adam Gibson  37:37  
+I think that as being the problem of training, a neural network or any other algorithm with training data that isn't perfect. And I think that is a well studied problem. I think there are sensitivity analyses, you can do, where you can you can understand the errors in the training data and look at how that can propagate to the errors in the final solution. Whatever the problem you're looking at is. I don't know anything about this specific problem here, but it wouldn't surprise me if related problems have been studied elsewhere. 
+
+Joe Padfield  38:17  
+Okay.
+
+Anne McLaughlin  38:19  
+We have a follow up question, from Kurt: saying if you're capturing your being just UV, and visible fluorescence, do you then use the same capture system eliminate the need for registration? I'm not trying to comment on that, just as a follow up.
+
+Joe Padfield  38:36  
+If you can ensure your camera doesn't move, and you're effectively changing the lighting environment, registration, would be easier. Rob?
+
+Rob Erdmann  38:48  
+Yeah I was just going to, to amplify what Ryan was saying about what you might call over registration, making two images that that really perfectly aligned when they shouldn't. This is a constant problem, and it's one of the reasons probably that it will be a long time before we have anything like a black box, because yeah, I mean from a machine learning standpoint you, you don't want to overfit. So we have regularisers. That is to say, we have a belief about how smooth the deformation field should be, so it shouldn't have rips and shouldn't have tears and it should have some kind of smoothness, but that's just completely up to the person sitting in front of the computer. I don't think there's a good theoretical guidance for how, how, how crunchy should the deformation field be because you can always basically beat it into shape so that they're perfectly aligned, but is it realistic? Probably not. And then you may be throwing out the very relevant information. For example, when you have imaging techniques that have different depths of penetration, then you expect them to be misregistered slightly because of the parallax effect of the third dimension. And that's a good thing and there's data there that you can use to infer things like scattering. So it's a really hard problem.
+
+Joe Padfield  40:10  
+Thank you, because I think, I think, I have heard people commenting about that difficulty when dealing with hyperspectral imaging. So effectively, your focus is changing across quite a wide wavelength difference that some actual processing of the individual slices within the data cube may be required. In addition to just a simple registration of the most feature rich slice to something else. But that's not something I have explored too much but, yes, so possibly other. Anyone like to comment on that at all, or difficulties? Ryan?
+
+Ryan Baumann  40:49  
+Just on the multispectral imaging aspect. A lot of times with different multispectral setups you do need to register, or may want to register, slices, you know, taken with the same system through the same camera because the different wavelengths will have different like penetrating depths, different like excitation volumes for fluorescence, as far as like, what portion of the object is getting light reflected through it or into it, or absorbed into it. And also you'll have different angles of diffraction or refraction on the on the lens or if you're using the filter wheel they can slightly shift the image some if the angle isn't like perfectly parallel to the lens and your filter wheel is coming through and slightly changing the, the image registration between, between those images so it's a, it's something that you think about with multimodal materials.
+
+Joe Padfield  41:43  
+Okay. Okay, thank you. Now, it is in the UK anyway. It's half past five. So we have a little bit more time. Do we have any more questions or points people in the panel would like to add? Do we have any more questions from the audience? If not, I've got a question for Rob. Now, okay, I'll ask my question, Rob. You mentioned in passing there that you're working on a web-based interface to the toolkits. When, effectively, a number of other people discussing the various bits of software they use, but you've given some extremely nice examples. So what I was wondering is how complex, would it be for other people to test it, and what sort of timeframe, roughly, are we talking years, months, days, minutes in rough areas?
+
+Rob Erdmann  42:40  
+Yeah, it's, it's always three years away. Yeah, it's, it's, it's a lot of pain. I mean, developing user interfaces is really a whole extra level of painful, of course, as Giles has experienced I think. Yeah, there's a saying in user interface design that it's impossible to make anything foolproof, because fools are so ingenius. And the basis of that is just that, as one who uses the software who's very deep into it, there's a whole other level of making it so that it's well understood, so that it's intuitive, so that it's robust. And, and this now involves multiple programming languages too, because now you have a JavaScript side of things, and then we're not going to be doing the computations, at least in my case, inside the browser, because I need a GPU, ideally, so this means then having a backend and a live connection between the two. So, yeah, maybe a couple years for a prototype, and if people would like to test it they're welcome to contact me, but I can't make any promises because like I said it's perpetually three years in the future. 
+
+Joe Padfield  43:58  
+This this is sort of off topic slightly. Have you considered the notion of setting it up as a service? So I'm involved in a number of EU projects related to the European Open Science Cloud and these sorts of things where potentially you can say, 'Oh, can I borrow some supercomputing for a few minutes and process my images?'. So, could you sort of see it being dealt with with that type of solution?
+
+Rob Erdmann  44:21  
+Oh yeah, yeah, definitely. I mean, the big the computation is not so bad anymore, in fact you can get, you know, free GPUs from Google without much trouble and so running the service wouldn't be so hard. The bandwidth is the is the main trouble. And insofar as uploading the images, you know, because these are, these are heavy, heavy images and so viewing them is no big deal because then your screen is basically the bottleneck. Now there's only 4 million pixels that you ever have to show at once, but to actually get these big images up into the cloud, so that you're doing all the heavy lifting, there is going to just going to be a pain so I'm not, I'm not quite sure what the right answer is there. Maybe internet speeds will become fast enough that it becomes feasible. Or maybe you'll just have to have your images, locally and then you could mount them from of the clouds somehow or something I don't really know. Maybe John has thoughts about this?
+
+Joe Padfield  45:17  
+ John,
+
+John Cupitt  45:18  
+I was only gonna say that, although I think you're right, you'll need a powerful GPU to derive the transports, once they've been derived, there's not very much computation left to do. And there it is feasible to do it in a browser.
+
+Rob Erdmann  45:31  
+Oh yeah, for sure, I agree.
+
+John Cupitt  45:33  
+Yeah, you can do things like fetching sections of the fence for on demand as well. So, which I've actually done in other projects, so I think you could probably, probably handle that.
+
+Rob Erdmann  45:45  
+Yeah, I mean my own viewer as has a homography ability, built in. So you can you can have an arbitrary homography between pairs of images. But the problem I was addressing was: I'm a user and I have a stack of visible and a stack of infrared and a stack of X-rays and I want them to all come together into a nice stack. How do I do that, that's, that's what I'm trying to solve with my software and and turning that into a cloud service has been hard, I think. But but it certainly, I do envision it within the Rijksmuseum for example, that, you know, I have a powerful computer under my desk and then my colleagues would have the URL to an internal link. And there's a shared file system behind the scenes we have a sort of research network so then someone can put their images on the shared file server, and then use the GPUs under my desk while they manipulate the images and ultimately view them through their own browser.
+
+Joe Padfield  46:51  
+Thank you. We've had a couple of extra questions. It's a question from Richard, which I'll come back to before we finish, but we've had one question about PT GUI, sort of translating this to be slightly more generic: So not speaking to John, and Rob here because, obviously, the answer is you write new software, How many people have had the opportunity to interact with software developers to say like PT GUI is great, but it doesn't do X, Y and Z? Are there any possibilities that PT GUI could be changed? Andrew, I think you've had your hand up before I started talking, but did you want to add to that, or
+
+Andrew Bruce  47:34  
+I just want to say that you know obviously, we've actually spoken a lot about incredibly complex transformations processes, developing software, you know, would I recommend using PT GUI as a kind of starter. Well yeah. Hugely, it's it's a really wonderful piece of software, which you can make 10 gigapixel files on a laptop, honestly. You know I have spoken to the developers, and you know we are an incredibly small, kind of market for them. And I guess their answer is that actually, you know, there are, I think about four steps that you can do, which will make it work very well for the kinds of mosaicking I do. But like I said you know it's not, it's definitely workarounds, and it means that we spend a lot of time kind of wrestling, to make a do what we want.
+
+Joe Padfield  48:27  
+Maria, did you want to add
+
+Maria Villafane  48:31  
+Actually it's more. Yeah, it's more like a ... like something that occured to me, talking about time, and it's nice and, how do you say, yes, on with the comment of Andrew just now that we are all talking about different ways of doing the registration, but one thing that occurred to me, because specifically is my, one of my concerns in my research, is basically I wanted to have like, a feeling of how long do you take to do your registrations? Either if that's manually or computationally? Like in an average, basically in general, this is an open question to all of the presenters. And for the audience to know, like, how, how long do you take to do the registration, from when you have your fixed moving image until you have the registration as you like it for working purposes?
+
+Joe Padfield  49:31  
+Less time that I did, and probably slightly more time than I should have done. I think, it's it's I'm not sure if anyone else wants to answer it's quite a tricky question is, well hey I haven't done registration for a little while, but it comes down to the purpose of the registration. So if the registration is for someone to have a quick look at something, then 5-10 minutes. If actually you're looking at a publication, or wanting to do any sort of, you know, actually any mathematical comparison, or looking at sort to try and infer more complex things behind it, then longer. I think, I say it's 'a how long is a piece of string' answer. And so that, I guess, the required time, hopefully is diminishing, and a number of the suggestions that have been put forward and different pieces of software will be decreasing that, so it should be minutes. I do remember spending hours on this type of thing in years gone by. But I would have thought he would be minutes if not less these days if possible. Anyone else want to comment on that? No, more comments? Okay. The last thing I was wanting to say, and people can we are planning to send emails around to people who registered to ask similar questions to this. But Richard has put forward the question is, what kind of forum stroke project is there to continue this discussion? Perhaps with an eye to standardisation and what can be done... As I said at the start, this, this seminar is kind of a side seminar to our IIIF project, and we are interested in how, particularly the discussion to do with recording the transformations and how they might be applied on the fly into the future IIIF standards or viewers. But that goes beyond the scope of our current project, but the IIIF consortium as a whole is quite a big, very friendly family. And I think the, it may well be some discussions about how transformation metrics can be applied in a IIIF process or how best to relate to the IIIF standard may well be able to continue within the IIIF consortium itself, potentially within a technical group, we may well be having other events as part of this project, or subsequent projects, and we will be asking what sorts of things people would need, and a few of the possibilities were further discussion, specific questions submitted and answers, reports, lists of software, with links to documentation. There's a number of different things that could be useful. I think we've had some examples of a number of different ways of doing registration here; from the simple sort of 'looking at it' backwards and forwards, to much more complex processes using AI, and other more computationally intensive approaches. So I think there are two issues here: there's one What can I do now? and what would I like to do in the future? And I think a number of people have mentioned ensuring that the quality of the images you capture in the first place is as high as realistic. At the time you're capturing them isn't always a good strong point to start with. And you may won't be able to apply better registration software in the future. But we are going to send these questions around to see what sorts of things people would like next or we could get out next. Some of which we might be able to help with, within our project, and some of which may well need to be handed on for other projects at the moment we're happy to receive questions we may not be able to answer them, and then pass them on. As another forum develops. But as I said, when it comes to the sort of IIIF standard, the actual IIIF community itself may well be a good place to have those discussions. There are larger entities, shall we say, within the heritage environment. One of them may well be ERIHS, which is their European Research Infrastructure heritage science, and it might be possible that that type of entity in the future might be able to act as a starting point, when people are trying to answer these sorts of questions, but it's not solved yet. But if people have suggestions of forums that we could let people know about, please do let us know and we can add them to our project website, and give people directions on where they might be able to go.
+
+I would like to say, now we've reached the end of our time a very big thank you to all of the panellists for your answers and questions and discussions, and thank you very much for all of the participants. We still have a sizable number of participants right down to the bitter end. And thank you very much for continuing. I think we sort of peaked at over 150 attendees, which is, which is great. And so, yes. So again, thank you very much for everybody, and it's very great to hear you all. The videos will be processed and segmented, to a certain extent, not sure how segmented we can do, and they will be put up on the project website, the Twitter feed has been dropped into the chat, but effectively our Twitter handle is @practicalIIIF. And that's a good place to watch for when the new information is out. There as I said, we will email everyone who registered for this event to say when the videos are available. So, again, I would like to thank you. And if no one has any last comments they'd like to make, I think we are able to draw the meeting to a close. Okay, well thank you very much, and good night, good morning, good evening, whatever time zone people are at. Okay, bye bye everybody. Thank you very much. 
+
+
