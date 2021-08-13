@@ -17,12 +17,14 @@
 	"comment": "",
 	"video": "https://www.youtube.com/embed/W1BoGtzvYVM",
 	"slides": "files/IIIF TaNC Webinar1 - S01 01 - Jpadfield -  Introduction.pdf",
+	"transcript": "files/transcripts/PracticalIIF_Webinar01_S01_00_JPadfield_otter.ai.txt", 	
 	"link": "https:\/\/twitter.com\/JoePadfield"
 }, {
 	"groups": ["Session 01"],
 	"ptitle": "Explore the Raphael Cartoons at the V&A",
 	"stitle": "Luca Carini",
 	"video": "https://www.youtube.com/embed/FwBbNw2Ko6c",
+	"transcript": "files/transcripts/PracticalIIF_Webinar01_S01_01_LCarini_otter.ai.txt",
 	"comment": "Luca Carini will present this great new resource from the V&A highlighting how IIIF has allowed them to present these wonderful Raphael cartoons to the general public and a research audience.",
 	"link": ""
 },{
@@ -30,6 +32,7 @@
 	"ptitle": "Embedding IIIF resources into teaching and course work at The University of St. Andrews",
 	"stitle": "Andrew Wilson",
 	"video": "https://www.youtube.com/embed/s66ul6-PQ3g",
+	"trascript": "files/transcripts/PracticalIIIF_Webinar01_S01_02_AWilson_otter.ai.txt",
 	"comment": "Andrew Wilson will present their work with Exhibit.so and how this flexible IIIF based tool has allowed them to provide rich interactive teaching resources during the Covid-19 pandemic.",
 	"link": ""
 },{
@@ -39,12 +42,14 @@
 	"video": "https://www.youtube.com/embed/emS-4n7cxwo",
 	"comment": "Joe Padfield will present details of how IIIF has been used as the basis for the National Gallery’s internal image sharing and presentation system and how these resources have been re-used to create a digital documentation system to record the delicate process of sampling old master paintings.",
 	"slides": "files/IIIF TaNC Webinar1 - S01 04 - Jpadfield -  Re-using IIIF resources.pdf",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar01_S01_03_JPadfield_otter.ai.txt", 
 	"link": "https:\/\/twitter.com\/JoePadfield"
 },{
 	"groups": ["Session 01"],
 	"ptitle": "Showcasing the practical use of IIIF Session 1 Questions",
 	"stitle": "Panel Discussion",
 	"video": "https://www.youtube.com/embed/77HzJ-4ZuUk",
+	"transcript": "files/transcripts/PracticalIIIF_Webianr01_S01_04_Questions_otter.ai.txt",
 	"comment": "",
 	"link": ""
 }, {
@@ -54,6 +59,7 @@
 	"comment": "Charlotte Bolland will present a user perspective on the development of a IIIF demonstrator to facilitate image-led research into a significant dataset of Tudor portraits collated in collaboration with the Yale Center for British Art.",
 	"video": "https://www.youtube.com/embed/OEWAtppCDTc",
 	"slides": "files/IIIF TaNC Webinar1 - S02 01 - CBolland -  Tudor Portrait Demonstrator​.pdf",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar01_S02_01_CBolland_otter.ai.txt",
 	"link": "https://www.npg.org.uk/research/staff-research-profiles/charlotte-bolland"
 }, {
 	"groups": ["Session 02"],
@@ -62,6 +68,7 @@
 	"comment": "Tom Crane will present on the various ways IIIF Manifests are built, and what tools and libraries are available to help with this process. Most manifests are transformations of other data, but sometimes you want to build them by hand.",
 	"video": "https://www.youtube.com/embed/d1Eais2NrWA",
 	"slides": "files/IIIF TaNC Webinar1 - S02 02 - TCrane -  Manifest Builders.pdf",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar01_S02_02_TCrane_otter.ai.txt",
 	"link": "https://twitter.com/tomofhernehill"
 }, {
 	"groups": ["Session 02"],
@@ -70,6 +77,7 @@
 	"comment": "Melissa Terras will introduce plans for a user focused examination of IIIF, engaging with the wider research and IIIF communities to explore IIIF experiences for users from different backgrounds.",
 	"video": "https://www.youtube.com/embed/aOWMG5FXnMI",
 	"slides": "files/IIIF TaNC Webinar1 - S02 03 - MTerras -  IIIF and Users.pdf",
+	"transcript": "files/transcripts/PracticalIIF_Webinar01_S02_03_MTerras_otter.ai.txt",
 	"link": "https://twitter.com/melissaterras"
 }, {
 	"groups": ["Session 02"],
@@ -78,13 +86,15 @@
 	"comment": "Joe Padfield will present details of the Simple Site GitHub project and how it can be used by researchers to create their own IIIF workspace to explore, compare and present their own arrangement of existing IIIF resources.",
 	"video": "https://www.youtube.com/embed/xsuj4SQ1w2Y",
 	"slides": "files/IIIF TaNC Webinar1 - S02 04 - Jpadfield - SimpleSite.pdf",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar01_S02_04_JPadfield_otter.ai.txt",
 	"link": "https:\/\/twitter.com\/JoePadfield"
 }, {
 	"groups": ["Session 02"],
 	"ptitle": "Showcasing the practical use of IIIF Session 2 Questions",
 	"stitle": "Panel Discussion",
 	"comment": "",
-	"video": "https://www.youtube.com/embed/WDmNnNV-3Rg"
+	"video": "https://www.youtube.com/embed/WDmNnNV-3Rg",
+	"transcript": "files/transcripts/PracticalIIIF_Webinar01_S02_05_Questions_otter.ai.txt"
 } ]
 	
 }
