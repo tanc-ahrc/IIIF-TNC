@@ -2,30 +2,31 @@
 {
     "manifests": {
 	    
-	      "https://media.ng-london.org.uk/ng/NG27": {
-		 "provider": "The National Gallery, London UK"
-	    },
 	     "https://iiif.vam.ac.uk/collections/O102006/manifest.json": {
 		    "provider": "The Victoria and Albert Museum, UK"
 	    },
 	    "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100056056799.0x000001/manifest.json": {
 		 "provider": "The British Library, London UK"
+	    },
+	    "https://iiif.rbge.org.uk/herb/iiif/E00593790/manifest": {
+		    "provider": "The Royal Botanic Garden, Edinburgh"
 	    }
     },
-    "windows": [{
-                "id": "a",
-           	"manifestId": "https://media.ng-london.org.uk/ng/NG27",
-                "canvasIndex": 0
-            },
+    "windows": [
             {
-                "id": "b",
+                "id": "a",
                 "manifestId": "https://iiif.vam.ac.uk/collections/O102006/manifest.json",
                 "canvasIndex": 0
             },
 		{
-                "id": "c",
+                "id": "b",
                 "manifestId": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100056056799.0x000001/manifest.json",
                 "canvasIndex": 142
+            },
+	    {
+                "id": "c",
+           	"manifestId": "https://iiif.rbge.org.uk/herb/iiif/E00593790/manifest",
+                "canvasIndex": 0
             }
     ],
      "workspace": {
