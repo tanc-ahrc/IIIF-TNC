@@ -1,0 +1,130 @@
+{
+  "defaultcard": "full",
+  "displaychecked": true,
+  "tableofcontents": false,
+  "groups": {
+    "Session 01" : {
+      "comment": "Panellist Introductions",
+      "card": "presentation"},
+    "Session 02" : {
+      "comment": "Panel Discussion",
+      "card": "presentation"}
+    	},
+	"list": [{
+	"groups": ["Session 01"],
+	"ptitle": "A Seminar on Image Registration Introduction and Welcome",
+	"stitle": "Joe Padfield",
+	"comment": "The slides for all of the Panellist Introductions are available [here|https://tanc-ahrc.github.io/IIIF-TNC/files/Practical%20IIIF%20Seminar%201%20-%20Panellist%20Introduction%20Slides.pdf]. Andrew Bruce, Maria Villafane, & Luca Carini contributed additional reference material. These slides are available [here|https://tanc-ahrc.github.io/IIIF-TNC/files/Practical%20IIIF%20Seminar%201%20-%20Additional%20Image%20Registration%20Materials.pdf]",
+	"video": "https://www.youtube.com/embed/GydqC0TIV4A",
+	"slides": "",
+	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 00 - JPadfield_otter.ai.txt", 	
+	"link": "https:\/\/twitter.com\/JoePadfield"
+}, {
+	"groups": ["Session 01"],
+	"stitle": "Panellist Introduction",
+	"ptitle": "Andrew Bruce",
+	"video": "https://www.youtube.com/embed/zPieDIcPWvE",
+	"slides": "files/IIIF TaNC Webinar 2 - S01 - 01 - TCrane.pptx",
+  "comment": "",
+	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 01 - ABruce_otter.ai.txt",
+	"link": "https:\/\/twitter.com\/AndrewPBruce"
+},{
+	"groups": ["Session 01"],
+	"stitle": "Panellist Introduction",
+	"ptitle": "Nathan Daly",
+	"video": "https://www.youtube.com/embed/Yd2Tzk2ya-M",
+	"comment": "",
+	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 02 - NDaly_otter.ai.txt", 
+	"link": "https:\/\/twitter.com\/AbiraHussein"
+},{
+	"groups": ["Session 01"],
+	"stitle": "Panellist Introduction",
+	"ptitle": "Maria Villafane",
+	"video": "https://www.youtube.com/embed/X149NUjzW8U",
+	"comment": "",
+	"slides": "files/IIIF TaNC Webinar 2 - S01 - 03 - ADavis.pdf",
+	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 03 - MVillafane_otter.ai.txt", 
+	"link": ""
+},{
+  "groups": ["Session 01"],
+	"stitle": "Panellist Introduction",
+	"ptitle": "Luca Carini",
+	"video": "https://www.youtube.com/embed/Ui5AjPYQY",
+	"comment": "",
+	"slides": "files/IIIF TaNC Webinar 2 - S01 - 04 - JEvans.pdf",
+	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 04 - LCarini_otter.ai.txt", 
+	"link": ""
+},{
+	"groups": ["Session 01"],
+	"stitle": "Panellist Introduction",
+	"ptitle": "Ryan Baumann",
+	"video": "https://www.youtube.com/embed/vGIe_uoIJ6M",
+	"comment": "",
+	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 05 - RBaumann_otter.ai (1).txt",
+	"link": "https:\/\/twitter.com\/ryanfb"
+}, {
+	"groups": ["Session 01"],
+	"stitle": "Panellist Introduction",
+	"ptitle": "Joanne Dyer",
+	"comment": "",
+	"video": "https://www.youtube.com/embed/RrjaEB4-xAQ",
+	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 06 - JDyer_otter.ai.txt", 
+	"link": "https:\/\/twitter.com\/JoanneDyer_BM"
+}, {
+	"groups": ["Session 01"],
+	"stitle": "Panellist Introduciton",
+	"ptitle": "Keats Webb",
+	"comment": "",
+	"video": "https://www.youtube.com/embed/vxWjtQdSKrc",
+	"slides": "files/IIIF TaNC Webinar 2 - S02 - 01 - DVerbeke.pptx",
+	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 07 - KWebb_otter.ai.txt", 
+	"link": "https:\/\/twitter.com\/keats_webb"
+},{
+  "groups": ["Session 01"],
+	"stitle": "Panellist Introduction",
+	"ptitle": "Rob Erdmann",
+	"comment": "",
+	"video": "https://www.youtube.com/embed/eukBelNz2rQ",
+	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 08 - RErdmann_otter.ai.txt", 
+	"link": "https:\/\/twitter.com\/erdmann"
+}, {
+	"groups": ["Session 02"],
+	"stitle": "Panellist Introduction",
+	"ptitle": "Adam Gibson",
+	"comment": "files/transcripts/PracticalIIIF Seminar01 - S01 09 - AGibson_otter.ai.txt",
+	"video": "https://www.youtube.com/embed//i-Fopdw3GEk",
+	"transcript": "", 
+	"link": "https://twitter.com/adam_p_gibson"
+}, {
+	"groups": ["Session 01"],
+	"stitle": "Panellist Introduction",
+	"ptitle": "Charles Willard",
+	"comment": "",
+	"video": "https://www.youtube.com/embed/https://youtu.be/8Xl9OhQ-yzM",
+	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 10 - CWillard_otter.ai.txt", 
+	"link": ""
+}, {
+	"groups": ["Session 01"],
+	"stitle": "Panellist Introduction",
+	"ptitle": "John Cupitt",
+	"comment": "",
+	"video": "https://www.youtube.com/embed/v15JdRA8-GI",
+	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 11 - JCupitt_otter.ai.txt", 
+	"link": "https:\/\/twitter.com\/jcupitt65"
+}, {
+  "groups": ["Session 01"],
+	"stitle": "Panellist Introduction",
+	"ptitle": "Giles Bergel",
+	"comment": "",
+	"video": "https://www.youtube.com/embed/M7H98NADNhs",
+	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 12 - GBergel_otter.ai.txt", 
+	"link": "https:\/\/twitter.com\/ChapBookPro"
+},  {
+	"groups": ["Session 02"],
+	"ptitle": "Panel Discussion",
+	"comment": "",
+	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S02 - Discussion combined.txt", 
+	"video": "https://www.youtube.com/embed/LjWLjzyKhRA"
+} ]
+	
+}
