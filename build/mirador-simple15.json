@@ -3,11 +3,4 @@
 		"https://collection.sciencemuseumgroup.org.uk/iiif/objects/co103895/manifest": {
 			"provider": "The Science Museum Group"
 		}
-	},
-	"windows": [
-		{
-			"manifestId": "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co103895/manifest",
-			"canvasIndex": 0
-		}
-	]
-}
+	}
