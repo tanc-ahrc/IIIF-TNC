@@ -13,7 +13,7 @@
 	"list": [{
 	"groups": ["Session 01"],
 	"ptitle": "A Seminar on Image Registration Introduction and Welcome",
-	"stitle": "Joe Padfield",
+	"stitle": "Joe Padfield (National Gallery, UK)",
 	"comment": "The slides for all of the Panellist Introductions are available [here|https://tanc-ahrc.github.io/IIIF-TNC/files/Practical%20IIIF%20Seminar%201%20-%20Panellist%20Introduction%20Slides.pdf]. Andrew Bruce, Maria Villafane, & Luca Carini contributed additional reference material. These slides are available [here|https://tanc-ahrc.github.io/IIIF-TNC/files/Practical%20IIIF%20Seminar%201%20-%20Additional%20Image%20Registration%20Materials.pdf]",
 	"video": "https://www.youtube.com/embed/GydqC0TIV4A",
 	"slides": "",
@@ -22,7 +22,7 @@
 }, {
 	"groups": ["Session 01"],
 	"stitle": "Panellist Introduction",
-	"ptitle": "Andrew Bruce",
+	"ptitle": "Andrew Bruce (National Gallery, UK)",
 	"video": "https://www.youtube.com/embed/zPieDIcPWvE",
 	"slides": "files/IIIF TaNC Webinar 2 - S01 - 01 - TCrane.pptx",
   "comment": "",
@@ -31,7 +31,7 @@
 },{
 	"groups": ["Session 01"],
 	"stitle": "Panellist Introduction",
-	"ptitle": "Nathan Daly",
+	"ptitle": "Nathan Daly (National Gallery, UK)",
 	"video": "https://www.youtube.com/embed/Yd2Tzk2ya-M",
 	"comment": "",
 	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 02 - NDaly_otter.ai.txt", 
@@ -39,7 +39,7 @@
 },{
 	"groups": ["Session 01"],
 	"stitle": "Panellist Introduction",
-	"ptitle": "Maria Villafane",
+	"ptitle": "Maria Villafane (Imperial College, London & National Gallery, UK)",
 	"video": "https://www.youtube.com/embed/X149NUjzW8U",
 	"comment": "",
 	"slides": "files/IIIF TaNC Webinar 2 - S01 - 03 - ADavis.pdf",
@@ -48,7 +48,7 @@
 },{
   "groups": ["Session 01"],
 	"stitle": "Panellist Introduction",
-	"ptitle": "Luca Carini",
+	"ptitle": "Luca Carini (V&A)",
 	"video": "https://www.youtube.com/embed/Ui5AjPYQY",
 	"comment": "",
 	"slides": "files/IIIF TaNC Webinar 2 - S01 - 04 - JEvans.pdf",
@@ -57,7 +57,7 @@
 },{
 	"groups": ["Session 01"],
 	"stitle": "Panellist Introduction",
-	"ptitle": "Ryan Baumann",
+	"ptitle": "Ryan Baumann (Duke University)",
 	"video": "https://www.youtube.com/embed/vGIe_uoIJ6M",
 	"comment": "",
 	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 05 - RBaumann_otter.ai (1).txt",
@@ -65,7 +65,7 @@
 }, {
 	"groups": ["Session 01"],
 	"stitle": "Panellist Introduction",
-	"ptitle": "Joanne Dyer",
+	"ptitle": "Joanne Dyer (British Museum)",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/RrjaEB4-xAQ",
 	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 06 - JDyer_otter.ai.txt", 
@@ -73,7 +73,7 @@
 }, {
 	"groups": ["Session 01"],
 	"stitle": "Panellist Introduciton",
-	"ptitle": "Keats Webb",
+	"ptitle": "Keats Webb (Smithsonian Institution)",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/vxWjtQdSKrc",
 	"slides": "files/IIIF TaNC Webinar 2 - S02 - 01 - DVerbeke.pptx",
@@ -82,7 +82,7 @@
 },{
   "groups": ["Session 01"],
 	"stitle": "Panellist Introduction",
-	"ptitle": "Rob Erdmann",
+	"ptitle": "Rob Erdmann (Rijksmuseum)",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/eukBelNz2rQ",
 	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 08 - RErdmann_otter.ai.txt", 
@@ -90,7 +90,7 @@
 }, {
 	"groups": ["Session 02"],
 	"stitle": "Panellist Introduction",
-	"ptitle": "Adam Gibson",
+	"ptitle": "Adam Gibson (UCL)",
 	"comment": "files/transcripts/PracticalIIIF Seminar01 - S01 09 - AGibson_otter.ai.txt",
 	"video": "https://www.youtube.com/embed//i-Fopdw3GEk",
 	"transcript": "", 
@@ -98,7 +98,7 @@
 }, {
 	"groups": ["Session 01"],
 	"stitle": "Panellist Introduction",
-	"ptitle": "Charles Willard",
+	"ptitle": "Charles Willard (UCL)",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/https://youtu.be/8Xl9OhQ-yzM",
 	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 10 - CWillard_otter.ai.txt", 
@@ -106,7 +106,7 @@
 }, {
 	"groups": ["Session 01"],
 	"stitle": "Panellist Introduction",
-	"ptitle": "John Cupitt",
+	"ptitle": "John Cupitt (Imperial College, London)",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/v15JdRA8-GI",
 	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 11 - JCupitt_otter.ai.txt", 
@@ -114,7 +114,7 @@
 }, {
   "groups": ["Session 01"],
 	"stitle": "Panellist Introduction",
-	"ptitle": "Giles Bergel",
+	"ptitle": "Giles Bergel (Oxford University)",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/M7H98NADNhs",
 	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 12 - GBergel_otter.ai.txt", 
