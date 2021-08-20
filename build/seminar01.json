@@ -16,7 +16,6 @@
 	"stitle": "Joe Padfield (National Gallery, UK)",
 	"comment": "The slides for all of the Panellist Introductions are available [here|https://tanc-ahrc.github.io/IIIF-TNC/files/Practical%20IIIF%20Seminar%201%20-%20Panellist%20Introduction%20Slides.pdf]. Andrew Bruce, Maria Villafane, & Luca Carini contributed additional reference material. These slides are available [here|https://tanc-ahrc.github.io/IIIF-TNC/files/Practical%20IIIF%20Seminar%201%20-%20Additional%20Image%20Registration%20Materials.pdf]",
 	"video": "https://www.youtube.com/embed/GydqC0TIV4A",
-	"slides": "",
 	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 00 - JPadfield_otter.ai.txt", 	
 	"link": "https:\/\/twitter.com\/JoePadfield"
 }, {
@@ -24,8 +23,7 @@
 	"stitle": "Panellist Introduction",
 	"ptitle": "Andrew Bruce (National Gallery, UK)",
 	"video": "https://www.youtube.com/embed/zPieDIcPWvE",
-	"slides": "files/IIIF TaNC Webinar 2 - S01 - 01 - TCrane.pptx",
-  "comment": "",
+ 	"comment": "",
 	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 01 - ABruce_otter.ai.txt",
 	"link": "https:\/\/twitter.com\/AndrewPBruce"
 },{
@@ -42,7 +40,6 @@
 	"ptitle": "Maria Villafane (Imperial College, London & National Gallery, UK)",
 	"video": "https://www.youtube.com/embed/X149NUjzW8U",
 	"comment": "",
-	"slides": "files/IIIF TaNC Webinar 2 - S01 - 03 - ADavis.pdf",
 	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 03 - MVillafane_otter.ai.txt", 
 	"link": ""
 },{
@@ -51,7 +48,6 @@
 	"ptitle": "Luca Carini (V&A)",
 	"video": "https://www.youtube.com/embed/Ui5AjPYQY",
 	"comment": "",
-	"slides": "files/IIIF TaNC Webinar 2 - S01 - 04 - JEvans.pdf",
 	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 04 - LCarini_otter.ai.txt", 
 	"link": ""
 },{
@@ -76,7 +72,6 @@
 	"ptitle": "Keats Webb (Smithsonian Institution)",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/vxWjtQdSKrc",
-	"slides": "files/IIIF TaNC Webinar 2 - S02 - 01 - DVerbeke.pptx",
 	"transcript": "files/transcripts/PracticalIIIF Seminar01 - S01 07 - KWebb_otter.ai.txt", 
 	"link": "https:\/\/twitter.com\/keats_webb"
 },{
