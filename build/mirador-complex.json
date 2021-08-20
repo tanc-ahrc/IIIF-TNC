@@ -2,8 +2,8 @@
 {
     "manifests": {
 	    
-	     "https://iiif.vam.ac.uk/collections/O102006/manifest.json": {
-		    "provider": "The Victoria and Albert Museum, UK"
+	     "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co103895/manifest": {
+		    "provider": "The Science Museum Group"
 	    },
 	    "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100056056799.0x000001/manifest.json": {
 		 "provider": "The British Library, London UK"
@@ -13,19 +13,19 @@
 	    }
     },
     "windows": [
-            {
-                "id": "a",
-                "manifestId": "https://iiif.vam.ac.uk/collections/O102006/manifest.json",
-                "canvasIndex": 0
-            },
 		{
-                "id": "b",
+                "id": "a",
                 "manifestId": "https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100056056799.0x000001/manifest.json",
                 "canvasIndex": 142
             },
 	    {
-                "id": "c",
+                "id": "b",
            	"manifestId": "https://iiif.rbge.org.uk/herb/iiif/E00593790/manifest",
+                "canvasIndex": 0
+            },         
+	    {
+	         "id": "c",
+                "manifestId": "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co103895/manifest",
                 "canvasIndex": 0
             }
     ],
