@@ -110,8 +110,10 @@
 
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
-       windows: ,
-       manifests: [],
+       windows: [{
+					"manifestId": "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co103895/manifest"
+					}],
+       manifests: {"https:\/\/collection.sciencemuseumgroup.org.uk\/iiif\/objects\/co103895\/manifest":{"provider":"The Science Museum Group"}},
        
        
        });     
