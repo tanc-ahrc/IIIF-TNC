@@ -1,33 +1,32 @@
 
 {
     "manifests": {
-	    "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co103895/manifest": {
-		    "provider": "The Science Museum Group"
-	    },
 	       "https://media.ng-london.org.uk/ng/NG788.4": {
 		    "provider": "The National Gallery, UK"
 	    },
 	       "https://media.ng-london.org.uk/ng/NG6457": {
 		    "provider": "The National Gallery, UK"
+	    },
+	       "https://iiif.vam.ac.uk/collections/O1036744/manifest.json": {
+		    "provider": "The Victoria and Albert Museum"
 	    }
-	 
     },
     "windows": [
-	    {
-	         "id": "a",
-                "manifestId": "https://collection.sciencemuseumgroup.org.uk/iiif/objects/co103895/manifest",
-                "canvasIndex": 0
-            },
 	    	{
-                "id": "b",
+                "id": "a",
                 "manifestId": "https://media.ng-london.org.uk/ng/NG788.4",
                 "canvasIndex": 0
             },
 	     {
-                "id": "c",
+                "id": "b",
            	"manifestId": "https://media.ng-london.org.uk/ng/NG6457t",
                 "canvasIndex": 0
-            }   
+            },
+	    {
+	        "id": "c",
+                "manifestId": "https://iiif.vam.ac.uk/collections/O1036744/manifest.json",
+                "canvasIndex": 0
+            }
     ],
      "workspace": {
         "layout": {
