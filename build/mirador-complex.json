@@ -1,30 +1,31 @@
 
 {
     "manifests": {
-	       "https://media.ng-london.org.uk/ng/NG788.4": {
-		    "provider": "The National Gallery, UK"
-	    },
+	     
 	       "https://media.ng-london.org.uk/ng/NG6457": {
 		    "provider": "The National Gallery, UK"
 	    },
 	       "https://iiif.vam.ac.uk/collections/O1036744/manifest.json": {
 		    "provider": "The Victoria and Albert Museum"
+	    },
+	      "hhttps://dlcs.io/iiif-manifest/wellcome/8/V0032162": {
+		    "provider": "The Wellcome Collection"
 	    }
     },
     "windows": [
-	    	{
-                "id": "a",
-                "manifestId": "https://media.ng-london.org.uk/ng/NG788.4",
-                "canvasIndex": 0
-            },
 	     {
-                "id": "b",
+                "id": "a",
            	"manifestId": "https://media.ng-london.org.uk/ng/NG6457t",
                 "canvasIndex": 0
             },
 	    {
-	        "id": "c",
+	        "id": "b",
                 "manifestId": "https://iiif.vam.ac.uk/collections/O1036744/manifest.json",
+                "canvasIndex": 0
+            },
+	    	{
+                "id": "c",
+                "manifestId": "https://dlcs.io/iiif-manifest/wellcome/8/V0032162",
                 "canvasIndex": 0
             }
     ],
