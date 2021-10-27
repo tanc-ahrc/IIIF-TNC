@@ -75,7 +75,7 @@
 	},
  "detailoftheweek": {	 
 	"displayName": "Detail of the Week",
-	"aliases": "Detail_of_the_Week",
+	"aliases": "Detail_of_the_Week, Detail of the Week",
 	"class": "mirador",
 	"title": "The Detail of the Week",
 	"file": "mirador-complex.json",
