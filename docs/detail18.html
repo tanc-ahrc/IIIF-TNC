@@ -12,6 +12,8 @@
     
 	<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous" rel="stylesheet" type="text/css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" integrity="sha256-BNdodQbWHpU3HT8xGhkEusT4ch4HEjvwzcbDcVuHR+E=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.css" integrity="sha256-rXfxviikI1RGZM3px6piq9ZL0YZuO5ETcO8+toY+DDY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/highlight.js@11.2.0/styles/github.css" integrity="sha256-Oppd74ucMR5a5Dq96FxjEzGF7tTw2fZ/6ksAqDCM8GY=" crossorigin="anonymous" rel="stylesheet" type="text/css">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
     <style>
     .fixed-top {z-index:1111;}
@@ -22,13 +24,17 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-		gtag('config', 'G-5RYMG8S3P0');
+		gtag('config', 'G-5RYMG8S3P0', {
+    cookie_domain: 'auto',
+    cookie_flags: 'SameSite=Strict;Secure',
+  });
 	</script>
   </head>
 
-  <body onload="onLoad();">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<body onload="onLoad();">
+	<div id="wrap" class="container h-100">
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 <div class="container-fluid">
       <button 
 				class="navbar-toggler navbar-toggler-right" 
@@ -45,51 +51,85 @@
 				style="" alt="The National Gallery"/>
 		  </a>
 			<div class="collapse navbar-collapse" id="navbarsExampleDefault"><ul class="navbar-nav">
-<li class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+
+<!-- Start Normal Item 1 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="home.html">Home</a>
+</li>
+<!-- End Normal Item 1 -->
+
+<!-- Start Loop Item 2 -->
 <li class="nav-item dropdown ">
-<!-- Dropdown Loop 1 -->
-<div class="btn-group">
-  <a href="events.html"><button type="button" class="btn nav-link" title="Click to open the &ldquo;Events&rdquo; page">
-  Events</button></a>
-  <button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"  title="Click to open the &ldquo;Events&rdquo; menu">
+<div class="btn-group"><a href="events.html" class="nav-link" style="white-space:nowrap;" title="Click to open the &ldquo;Events&rdquo; page">
+  Events</a><button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"  title="Click to open the &ldquo;Events&rdquo; menu">
     <span class="visually-hidden">Toggle Dropdown</span>
   </button>
-  <ul class="dropdown-menu"><li><a href="webinar01.html" class="dropdown-item">Webinar: Practical applications of IIIF</a></li><li><a href="webinar02.html" class="dropdown-item">Webinar: IIIF Services and Tools</a></li><li><a href="workshop01.html" class="dropdown-item">Workshop: Building Solutions with IIIF</a></li><li><a href="webinar03.html" class="dropdown-item">Webinar: Project Results</a></li><li><a href="seminar01.html" class="dropdown-item">Seminar: Image Registration and IIIF</a></li></ul></li><!-- End Loop 1 --><li class="nav-item "><a class="nav-link" href="team.html">Team</a></li><li class="nav-item "><a class="nav-link" href="timeline.html">Timeline</a></li>
+	<ul class="dropdown-menu"><li><a href="webinar01.html" class="dropdown-item">Webinar: Practical applications of IIIF</a></li><li><a href="webinar02.html" class="dropdown-item">Webinar: IIIF Services and Tools</a></li><li><a href="workshop01.html" class="dropdown-item">Workshop: Building Solutions with IIIF</a></li><li><a href="webinar03.html" class="dropdown-item">Webinar: Project Results</a></li><li><a href="seminar01.html" class="dropdown-item">Seminar: Image Registration and IIIF</a></li>
+	</ul>
+</div>
+</li>
+<!-- End Loop Item 2 -->
+
+<!-- Start Normal Item 3 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="team.html">Team</a>
+</li>
+<!-- End Normal Item 3 -->
+
+<!-- Start Normal Item 4 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="timeline.html">Timeline</a>
+</li>
+<!-- End Normal Item 4 -->
+
+<!-- Start Loop Item 5 -->
 <li class="nav-item dropdown active">
-<!-- Dropdown Loop 1 -->
-<div class="btn-group">
-  <a href="Detail%20of%20the%20Week.html"><button type="button" class="btn nav-link" title="Click to open the &ldquo;Detail of the Week&rdquo; page">
-  Detail of the Week<span class="sr-only">(current)</span></button></a>
-  <button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"  title="Click to open the &ldquo;Detail of the Week&rdquo; menu">
+<div class="btn-group"><a href="detailoftheweek.html" class="nav-link" style="white-space:nowrap;" title="Click to open the &ldquo;Detail of the Week&rdquo; page">
+  Detail of the Week<span class="sr-only">(current)</span></a><button type="button" class="btn nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"  title="Click to open the &ldquo;Detail of the Week&rdquo; menu">
     <span class="visually-hidden">Toggle Dropdown</span>
   </button>
-  <ul class="dropdown-menu"><li><a href="detail01.html" class="dropdown-item">Hans Holbein | The Ambassadors</a></li><li><a href="detail02.html" class="dropdown-item">Hans Holbein | Portrait of Anne of Cleves set in a turned ivory box</a></li><li><a href="detail03.html" class="dropdown-item">Two Packs of Playing Cards</a></li><li><a href="detail04.html" class="dropdown-item"><i>Rhododendron sperabile var. weihsiense</i> speciman from the RBGE</a></li><li><a href="detail05.html" class="dropdown-item">Cotton MS Vitellius C III</a></li><li><a href="detail06.html" class="dropdown-item">Joseph Wright 'of Derby' | An Experiment on a Bird in the Air Pump</a></li><li><a href="detail07.html" class="dropdown-item">View of Round Tower from Lower Ward, Windsor Castle</a></li><li><a href="detail08.html" class="dropdown-item">The Kings and Queens of England: From the Conquest to Queen Victoria</a></li><li><a href="detail09.html" class="dropdown-item">Bust Study of a Young Man</a></li><li><a href="detail10.html" class="dropdown-item">Giorgione | Il Tramonto (The Sunset)</a></li><li><a href="detail11.html" class="dropdown-item">Raphael | Portrait of Pope Julius II</a></li><li><a href="detail12.html" class="dropdown-item">Raphael | The Miraculous Draught of Fishes</a></li><li><a href="detail13.html" class="dropdown-item">Harley MS 4751: A bestiary with additions from Gerald of Wales's <i>Topographia Hibernica</i></a></li><li><a href="detail14.html" class="dropdown-item"><i>Taxus baccata</i> Nantglyn Church Clone speciman from the RBGE</a></li><li><a href="detail15.html" class="dropdown-item">Carved wooden cross encased in silver</a></li><li><a href="detail16.html" class="dropdown-item">Crivelli | St Catherine of Alexandria</a></li><li><a href="detail17.html" class="dropdown-item">Cézanne | Landscape with Poplars</a></li><li><a href="detail18.html" class="dropdown-item">Cézanne | Guillaumin au pendu</a></li><li><a href="detail19.html" class="dropdown-item">Riva | Saint Gothard</a></li></ul></li><!-- End Loop 1 --><li class="nav-item "><a class="nav-link" href="about.html">About</a></li></ul></div></li>
-			
-    <span class="navbar-text">
-      			<a href="https://github.com/tanc-ahrc/IIIF-TNC/">
+	<ul class="dropdown-menu"><li><a href="detail01.html" class="dropdown-item">Hans Holbein | The Ambassadors</a></li><li><a href="detail02.html" class="dropdown-item">Hans Holbein | Portrait of Anne of Cleves set in a turned ivory box</a></li><li><a href="detail03.html" class="dropdown-item">Two Packs of Playing Cards</a></li><li><a href="detail04.html" class="dropdown-item"><i>Rhododendron sperabile var. weihsiense</i> speciman from the RBGE</a></li><li><a href="detail05.html" class="dropdown-item">Cotton MS Vitellius C III</a></li><li><a href="detail06.html" class="dropdown-item">Joseph Wright 'of Derby' | An Experiment on a Bird in the Air Pump</a></li><li><a href="detail07.html" class="dropdown-item">View of Round Tower from Lower Ward, Windsor Castle</a></li><li><a href="detail08.html" class="dropdown-item">The Kings and Queens of England: From the Conquest to Queen Victoria</a></li><li><a href="detail09.html" class="dropdown-item">Bust Study of a Young Man</a></li><li><a href="detail10.html" class="dropdown-item">Giorgione | Il Tramonto (The Sunset)</a></li><li><a href="detail11.html" class="dropdown-item">Raphael | Portrait of Pope Julius II</a></li><li><a href="detail12.html" class="dropdown-item">Raphael | The Miraculous Draught of Fishes</a></li><li><a href="detail13.html" class="dropdown-item">Harley MS 4751: A bestiary with additions from Gerald of Wales's <i>Topographia Hibernica</i></a></li><li><a href="detail14.html" class="dropdown-item"><i>Taxus baccata</i> Nantglyn Church Clone speciman from the RBGE</a></li><li><a href="detail15.html" class="dropdown-item">Carved wooden cross encased in silver</a></li><li><a href="detail16.html" class="dropdown-item">Crivelli | St Catherine of Alexandria</a></li><li><a href="detail17.html" class="dropdown-item">Cézanne | Landscape with Poplars</a></li><li><a href="detail18.html" class="dropdown-item">Cézanne | Guillaumin au pendu</a></li><li><a href="detail19.html" class="dropdown-item">Riva | Saint Gothard</a></li>
+	</ul>
+</div>
+</li>
+<!-- End Loop Item 5 -->
+
+<!-- Start Normal Item 6 -->
+<li class="nav-item "><a class="nav-link" style="white-space:nowrap;" href="about.html">About</a>
+</li>
+<!-- End Normal Item 6 -->
+</ul><span class="navbar-text w-100">			<a href="https://github.com/tanc-ahrc/IIIF-TNC/" class="float-end">
 				<img id="ex-logo1" class="logo" title="github" src="graphics/github logo white.png" 
 				style="" alt="GitHub TANC - IIIF"/>
-		  </a>
-    </span>
+		  </a></span></div>
 </div>
     </nav>
-			<div class="row ">				
-			 <div class="col-12 col-md-12">          
-				
-				<div class="p-2 bg-light border rounded-3 jumbotron">
-      <div class="container-fluid py-4"><h3>Cézanne | Guillaumin au pendu</h3></div></div><div class="row"><div class="col-12 col-lg-12">		<div class="alert alert-light" role="alert" style="padding-bottom: 0px;border-color:#dee2e6;">
+		
+		<div class="row " style="padding-top:80px; padding-bottom:40px; min-height:100%;">				
+			<div class="col-12 col-md-12">  
+				<div class="h-100 d-flex flex-column"> 
+					
+					
+<!-- Start SimpleBDGrid -->
+<div class="p-2 bg-light border rounded-3 jumbotron">
+      <div class="container-fluid py-2"><h3 style="margin-bottom:0px;">Cézanne | Guillaumin au pendu</h3></div></div><div class="container-fluid "><div class="row h-100"><div class="col-12">							
+								<div class="h-100 d-flex flex-column">
+									<div class="alert alert-light" role="alert" style="padding:0.5rem 0.5rem 0px 0.5rem;border-color:#dee2e6;">
 		<nav  style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="Detail%20of%20the%20Week.html">Detail of the Week</a></li><li class="breadcrumb-item active" aria-current="page">Cézanne | Guillaumin au pendu</li>
+			<ol class="breadcrumb" style="margin-bottom:0.5rem;">
+				<li class="breadcrumb-item"><a href="detailoftheweek.html">Detail of the Week</a></li><li class="breadcrumb-item active" aria-current="page">Cézanne | Guillaumin au pendu</li>
 			</ol>
 		</nav>
-		</div></div><!--/span--></div><!--/row-->    <div class="row"><div class="col-12 col-lg-12"><h2>About this Object</h2><p>Simply described by the V&A as an 'image of a man sat on the ground with his arms crossed. He wears a hat, jacket, trousers and neck-tie. In the top left corner is a sketch of a hanged man', this enegmatic etching is one of five completed by Cézanne at Dr Gachet's press during the summer of 1873 when Cézanne and Guillaumin were staying in Pontoise at the invitation of Pisarro.</p><p> To see this object on The V&A Website please click <a href='https://collections.vam.ac.uk/item/O1036744/guillaumin-au-pendu-print-paul-cezanne/'>here</a>.</p><p><b>Connection to last week's item:</b>This week's item and last week's share an artist, despite being vastly different in terms of their method, materials, purpose, and size.<h2>Viewer</h2><div class="row" style="padding-left:16px;padding-right:16px;"><div class="col-12 col-lg-12"><div style="height:500px;position:relative" id="mirador"></div></div></div><p>  </p><p>  </p><p>  </p><p></p><h2><div class="foonote"><ul></ul></div></div><!--/span--></div><!--/row-->    <br/>
-			</div><!--/span-->
+		</div>
+						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 flex-grow-1">							
+								<div class="h-100 d-flex flex-column">
+							<h2>About this Object</h2><p>Simply described by the V&A as an 'image of a man sat on the ground with his arms crossed. He wears a hat, jacket, trousers and neck-tie. In the top left corner is a sketch of a hanged man', this enegmatic etching is one of five completed by Cézanne at Dr Gachet's press during the summer of 1873 when Cézanne and Guillaumin were staying in Pontoise at the invitation of Pisarro.</p><p> To see this object on The V&A Website please click <a href='https://collections.vam.ac.uk/item/O1036744/guillaumin-au-pendu-print-paul-cezanne/'>here</a>.</p><p><b>Connection to last week's item:</b>This week's item and last week's share an artist, despite being vastly different in terms of their method, materials, purpose, and size.<h2>Viewer</h2><div class="row" style="padding-left:16px;padding-right:16px;"><div class="col-12 col-lg-12"><div style="height:500px;position:relative;min-width:324px;" id="mirador"></div></div></div><p>  </p><p>  </p><p>  </p><p></p><h2><div class="foonote"><ul></ul></div>
+						</div></div><!--/span--></div></div><!--/row-->    
+<!-- End SimpleBDGrid -->
+
+			</div></div><!--/span-->
 			
 			
-			</div><!--/row-->
+		</div><!--/row-->
 			
-			  <footer>
+		  <footer class="fixed-bottom bg-light">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-5" style="text-align:left;"><a href="https://ahrc.ukri.org/research/fundedthemesandprogrammes/tanc-opening-uk-heritage-to-the-world//"><img alt="AHRC TANC" style="border-width:0;height:31px;" src="graphics/TANC - IIIF.png"></a></div>
@@ -98,15 +138,18 @@
 			</div>
 		</div>        
   </footer>
-    </div><!--/.container-->
     
+	</div><!--/.container-->
     
+	
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/tether@2.0.0/dist/js/tether.min.js" integrity="sha256-cExSEm1VrovuDNOSgLk0xLue2IXxIvbKV1gXuCqKPLE=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha256-d+FygkWgwt59CFkWPuCB4RE6p1/WiUYCy16w1+c5vKk=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/mirador@3.1.1/dist/mirador.min.js" integrity="sha256-kgsl88ooIyFxWsB8GWBeWDt+qbAklTRuCD0rT7w14p0=" crossorigin="anonymous"></script>
-    <script>
-				$(function() {
+	<script src="https://cdn.jsdelivr.net/npm/jquery.json-viewer@1.4.0/json-viewer/jquery.json-viewer.js" integrity="sha256-klSHtWPkZv4zG4darvDEpAQ9hJFDqNbQrM+xDChm8Fo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mirador@3.2.0/dist/mirador.min.js" integrity="sha256-e11UQD1U7ifc8OK9X0rVMshTXSKl7MafRxi3PTwXDHs=" crossorigin="anonymous"></script>
+	<script>
+			$(function() {
 
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
@@ -118,8 +161,39 @@ var myMiradorInstance = Mirador.viewer({
        
        });     
      });
-			function onLoad() {
-				$(function() {
+		
+		function onLoad() {
+			hljs.highlightAll();			
+	$('pre.json-renderer').each(function(index, value) {			
+			var vtext = $(value).text()
+			var jsonResult;
+			
+			try {jsonResult = JSON.parse(vtext);}
+			catch (e) {
+				//console.log("\""+vtext+"\" " + "is not valid JSON: "+e);
+				};
+		
+			if (jsonResult) {$(value).jsonViewer(jsonResult);}
+			else
+				{let vurl = new URL(vtext);
+				 if (vurl.origin != "null") {
+				 $.getJSON({
+						url: vtext
+						}).done(function (result, status, xhr) {
+								$(value).jsonViewer(result)
+								}).fail(function (xhr, status, error) {									
+									$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+										'","error":"The supplied text does not seems to be' +
+										' valid JSON or a valid URL"}'));
+									});
+							}
+				else
+					{$(value).jsonViewer(JSON.parse('{"string":"'+vtext+
+					 '","error":"The supplied text does not seems to be valid '+
+					 'JSON or a valid URL"}'));}
+				}		
+		});
+		$(function() {
   // ------------------------------------------------------- //
   // Multi Level dropdowns
   // ------------------------------------------------------ //
@@ -139,7 +213,8 @@ var myMiradorInstance = Mirador.viewer({
 
   });
 });
-				}
-    </script>
-  </body>
+			}
+	</script>
+</body>
+
 </html>

@@ -1,6 +1,6 @@
 <?php
 
-// Last updated 22 Apr 2021
+// Last update 21 Apr 2021
 
 // A V&A viewer (https://github.com/vanda/curtain-viewer) based on OpenSeaDragon, using the curtain-sync plugin (https://github.com/cuberis/openseadragon-curtain-sync) for comparing naturally aligned image variants, such as those obtained by multi-spectral imaging, supplied as canvases in a IIIF manifest. 
 

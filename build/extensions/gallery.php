@@ -1,6 +1,6 @@
 <?php
 
-// Last updated 22 Apr 2020
+// Last update 21 Apr 2021
 
 $extensionList["gallery"] = "extensionGallery";
 

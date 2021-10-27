@@ -73,16 +73,18 @@
 	"footnotes": [],
 	"content right": ""		
 	},
- "Detail of the Week": {
+ "detailoftheweek": {	 
+	"displayName": "Detail of the Week",
+	"aliases": "Detail_of_the_Week",
 	"class": "mirador",
-	"title": "<b>The Detail of the Week",
+	"title": "The Detail of the Week",
 	"file": "mirador-complex.json",
-	"content": "<p>Each week of the project we'll be highlighting a deep zoom image from one of our project partners' collections. On this site you can explore the full image via the [IIIF|https:\/\/iiif.io] image viewer [Mirador|https:\/\/projectmirador.org\/], find links to related IIIF content and additional information about the image selected each week. The most recent three items are listed in the blue boxes below, with the corresponding items displayed in the viewer. Links to all of the previous 'Details of the Week' can be found in the bottom of the page, beginning with the first, Hans Holbein's <i>The Ambassadors</i>, and culminating with the most recent. As we've been building a chain in which each item connects to the subsequent week's item, and explanation of these connections as well as additional resources can be found on each item's dedicated page.  </p><p><p><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 17, September 24<sup>th</sup> 2021</h4><p><i>Paul Cézanne's <i>Landscape with Poplars</i></p></div><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 18, October 1<sup>st</sup> 2021</h4><p>Cézanne's <i>Guillaumin au pendu</i>.</p></div><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 18, October 21<sup>st</sup> 2021</h4><p>Riva's <i>Saint Gothard in Episcopal Dress</i></p></div><h2>Viewer</h2>[##]",
+	"content": "<p>Each week of the project we'll be highlighting a deep zoom image from one of our project partners' collections. On this site you can explore the full image via the [IIIF|https:\/\/iiif.io] image viewer [Mirador|https:\/\/projectmirador.org\/], find links to related IIIF content and additional information about the image selected each week. The most recent three items are listed in the blue boxes below, with the corresponding items displayed in the viewer. Links to all of the previous 'Details of the Week' can be found in the bottom of the page, beginning with the first, Hans Holbein's <i>The Ambassadors</i>, and culminating with the most recent. As we've been building a chain in which each item connects to the subsequent week's item, and explanation of these connections as well as additional resources can be found on each item's dedicated page.  </p><p><p><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 17, September 24<sup>th</sup> 2021</h4><p><i>Paul Cézanne's <i>Landscape with Poplars</i></p></div><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 18, October 1<sup>st</sup> 2021</h4><p>Cézanne's <i>Guillaumin au pendu</i>.</p></div><div class=\"alert alert-info\" role=\"alert\"><h4 class=\"alert-heading\">Week 19, October 21<sup>st</sup> 2021</h4><p>Riva's <i>Saint Gothard in Episcopal Dress</i></p></div><h2>Viewer</h2>[##]",
 	"content right": "",
 	"displaycode": false
 	},
 "detail01": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Hans Holbein | The Ambassadors",
    	"class": "mirador",
    	"file": "mirador-simple01.json",
@@ -91,7 +93,7 @@
 	"content right": ""
 	},
 "detail02": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Hans Holbein | Portrait of Anne of Cleves set in a turned ivory box",
    	"class": "mirador",
    	"file": "mirador-simple02.json",
@@ -100,7 +102,7 @@
 	"content right": ""
 	},
 "detail03": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Two Packs of Playing Cards",
    	"class": "mirador",
    	"file": "mirador-simple03.json",
@@ -109,7 +111,7 @@
 	"content right": ""
 	},
 "detail04": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "<i>Rhododendron sperabile var. weihsiense</i> speciman from the RBGE",
    	"class": "mirador",
    	"file": "mirador-simple04.json",
@@ -118,7 +120,7 @@
 	"content right": ""
 	},
 "detail05": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Cotton MS Vitellius C III",
    	"class": "mirador",
    	"file": "mirador-simple05.json",
@@ -127,7 +129,7 @@
 	"content right": ""
 	},
 "detail06": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Joseph Wright 'of Derby' | An Experiment on a Bird in the Air Pump",
    	"class": "mirador",
    	"file": "mirador-simple06.json",
@@ -136,7 +138,7 @@
 	"content right": ""
 	},
 "detail07": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "View of Round Tower from Lower Ward, Windsor Castle",
    	"class": "mirador",
    	"file": "mirador-simple07.json",
@@ -145,7 +147,7 @@
 	"content right": ""
 	},
 "detail08": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "The Kings and Queens of England: From the Conquest to Queen Victoria",
    	"class": "mirador",
    	"file": "mirador-simple08.json",
@@ -154,7 +156,7 @@
 	"content right": ""
 	},
 "detail09": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Bust Study of a Young Man",
    	"class": "mirador",
    	"file": "mirador-simple09.json",
@@ -163,7 +165,7 @@
 	"content right": ""
 	},
 "detail10": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Giorgione | Il Tramonto (The Sunset)",
    	"class": "mirador",
    	"file": "mirador-simple10.json",
@@ -172,7 +174,7 @@
 	"content right": ""
 	},
 "detail11": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Raphael | Portrait of Pope Julius II",
    	"class": "mirador",
    	"file": "mirador-simple11.json",
@@ -181,7 +183,7 @@
 	"content right": ""
 	},
 "detail12": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Raphael | The Miraculous Draught of Fishes",
    	"class": "mirador",
    	"file": "mirador-simple12.json",
@@ -190,7 +192,7 @@
 	"content right": ""
 	},
 "detail13": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Harley MS 4751: A bestiary with additions from Gerald of Wales's <i>Topographia Hibernica</i>",
    	"class": "mirador",
    	"file": "mirador-simple13.json",
@@ -199,7 +201,7 @@
 	"content right": ""
 	},
 "detail14": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "<i>Taxus baccata</i> Nantglyn Church Clone speciman from the RBGE",
    	"class": "mirador",
    	"file": "mirador-simple14.json",
@@ -208,7 +210,7 @@
 	"content right": ""
 	},
 "detail15": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Carved wooden cross encased in silver",
    	"class": "mirador",
    	"file": "mirador-simple15.json",
@@ -217,7 +219,7 @@
 	"content right": ""
 	},
 "detail16": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Crivelli | St Catherine of Alexandria",
    	"class": "mirador",
    	"file": "mirador-simple16.json",
@@ -226,7 +228,7 @@
 	"content right": ""
 	},
 "detail17": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Cézanne | Landscape with Poplars",
    	"class": "mirador",
    	"file": "mirador-simple17.json",
@@ -235,7 +237,7 @@
 	"content right": ""
 	},
 "detail18": {
-	"parent": "Detail of the Week",
+	"parent": "detailoftheweek",
 	"displayName": "Cézanne | Guillaumin au pendu",
    	"class": "mirador",
    	"file": "mirador-simple18.json",
@@ -244,7 +246,7 @@
 	"content right": ""
 	},
 "detail19": {
-	"parent": "Detail of the Week", 
+	"parent": "detailoftheweek", 
 	"displayName": "Riva | Saint Gothard",
    	"class": "openseadragon",
    	"file": "openseadragon_list.txt",

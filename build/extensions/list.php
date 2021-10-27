@@ -218,7 +218,7 @@ END;
     }
 
 function buildPresentationCard ($la)
-  {   
+  {  
   if ($la["link"])
     {$ltop= "<a href=\"$la[link]\">";
       $lbottom = "</a>";}
@@ -235,7 +235,7 @@ function buildPresentationCard ($la)
 		{
 		if (preg_match("/^http[s]*[:][\/]+www[.]youtube[.]com[\/].+$/", $la["video"], $m))
 			{$prev = '<div class="pcontainer"><iframe class="preview" src="'.$la["video"].
-				'" title="YouTube video player" frameborder="0" allow='.
+				'" title="YouTube video player" allow='.
 				'"accelerometer; autoplay; clipboard-write; encrypted-media; '.
 				'gyroscope; picture-in-picture" allowfullscreen></iframe></div>';}
 		else
@@ -248,13 +248,14 @@ function buildPresentationCard ($la)
 			
 		if (isset($la["slides"])) 
 			{$extra .= "<p>The slides for this presentation can be downloaded <a href=\"$la[slides]\">here</a></p>";}
-	  
-	 	if (isset($la["transcript"])) 
+		if (isset($la["transcript"])) 
 			{$extra .= "<p>The transcript for this presentation can be downloaded <a href=\"$la[transcript]\">here</a></p>";}
 		}
 	else if (isset($la["slides"]))
 		{$prev = '<div class="pcontainer"><iframe class="preview-iframe preview" id="preview-iframe" '.
-			'src="'.$la["slides"].'"></iframe></div>';}
+			'src="'.$la["slides"].'"></iframe></div>';
+		 if (isset($la["transcript"])) 
+			{$extra .= "<p>The transcript for this presentation can be downloaded <a href=\"$la[slides]\">here</a></p>";}}
 	else if (isset($la["image"]))
 		{$prev = "<img src=\"$la[image]\" class=\"card-img\" alt=\"$la[ptitle]\">";}
 	else
@@ -312,7 +313,7 @@ function buildSimpleCard ($la) {
   ob_start();      
   echo <<<END
       
-  <div class="$cc col-md-6 col-sm-12  col-xs-12 mb-4 $hclass";>
+  <div class="$cc col-md-6 col-sm-12  col-xs-12 mb-4 $hclass">
     <div class="card" title="$la[ptitle]">
       $ltop
       <img class="card-img-top" src="$la[image]" alt="$la[ptitle]">

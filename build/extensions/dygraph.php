@@ -31,12 +31,15 @@ function extensionDygraph ($d, $pd)
     ";
 
   /*$pd["extra_onload"] .= "
+
   $(function () { // INITIALIZE DATEPICKER PLUGIN
     $('.datepicker').datepicker({
       clearBtn: true,
       format: \"yyyy-mm-dd\"});});
+
   $(function () {
     $('[data-toggle=\"tooltip\"]').tooltip()})
+
   ";*/
    
   $titles = array(
@@ -55,6 +58,7 @@ function extensionDygraph ($d, $pd)
 		{
 		ob_start();
 		echo <<<END
+
 END;
     $mcontent = ob_get_contents();
 		ob_end_clean(); // Don't send output to client
