@@ -6,8 +6,8 @@
 	},
 	"windows": [
 		{
-			"manifestId": "https://iiif.vam.ac.uk/collections/O18966/manifest.json",
-			"canvasIndex": 540
+			"manifestId": "https://www.e-codices.unifr.ch/metadata/iiif/kba-Ms-ZF-0018/manifest.json",
+			"canvasIndex": 543
 		}
 	]
 }
