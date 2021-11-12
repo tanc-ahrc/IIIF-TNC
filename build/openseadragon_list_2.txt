@@ -1,1 +1,2 @@
 https://data.ng-london.org.uk/iiif/image/0THO-0008-0000-0000/info.json
+https://iiif.rbge.org.uk/herb/iiif/E00010016/info.json
