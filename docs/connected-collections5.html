@@ -165,8 +165,8 @@
 
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
-       windows: ,
-       manifests: [],
+       windows: [{"manifestId":"https:\/\/s3-eu-west-1.amazonaws.com\/vanda-production-iiif-manifests\/p3\/pietre_dure.json"},{"manifestId":"https:\/\/manifests.collections.yale.edu\/yuag\/obj\/178331"}],
+       manifests: {"https:\/\/s3-eu-west-1.amazonaws.com\/vanda-production-iiif-manifests\/p3\/pietre_dure.json":{"provider":"The Victoria and Albert Museum"},"https:\/\/manifests.collections.yale.edu\/yuag\/obj\/178331":{"provider":"Yale University"}},
        
        
        });     
