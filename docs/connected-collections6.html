@@ -165,8 +165,10 @@
 
 var myMiradorInstance = Mirador.viewer({
        id: "mirador",
-       windows: ,
-       manifests: [],
+       windows: [{
+					"manifestId": "https://librarylabs.ed.ac.uk/iiif/manifest/mahabharataFinal.json"
+					}],
+       manifests: {"https:\/\/librarylabs.ed.ac.uk\/iiif\/manifest\/mahabharataFinal.json":{"provider":"The University of Edinburgh"}},
        
        
        });     
