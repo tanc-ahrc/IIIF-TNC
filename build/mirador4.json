@@ -8,8 +8,8 @@
 		}
 	},
 	"windows": [{
-			"manifestId": "https://purl.stanford.edu/hj504pg5511/iiif/manifest"
-      "canvasIndex": 6
+			"manifestId": "https://purl.stanford.edu/hj504pg5511/iiif/manifest",
+     			 "canvasIndex": 6
 		},
 		{
 			"manifestId": "https://media.ng-london.org.uk/ng/NG1406"
