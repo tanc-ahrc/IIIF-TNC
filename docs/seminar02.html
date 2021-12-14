@@ -17,6 +17,57 @@
 	<link href="css/main.css" rel="stylesheet" type="text/css">
     <style>
     
+.card-img {
+  width: auto;
+  max-width: 100%;
+  max-height:200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.card-img-top {
+  width: auto;
+  max-width: 100%;    
+  max-height:128px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.nodec:link, .nodec:visited, .nodec:hover, .nodec:active {
+  text-decoration: none;
+  color: inherit;
+  }
+
+.card-hov:hover {
+  opacity: 0.7;
+}
+
+.offsetanchor {
+  position: relative;
+  top: -75px;
+}
+
+.pcontainer {
+   position: relative;
+   width: 100%;
+   padding-top: 56.25%; /* 16:9 Aspect Ratio */
+	}
+	
+.preview {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+	}
+
+
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics - Only added in if the 'GoogleAnalyticsID' i set in the site.json file-->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5RYMG8S3P0"></script>
@@ -132,7 +183,37 @@
 		</div>
 						</div></div><!--/span--></div></div><!--/row-->    <div class="container-fluid "><div class="row h-100"><div class="col-12 flex-grow-1">							
 								<div class="h-100 d-flex flex-column">
-							<div class="alert alert-success" role="alert"><h4 class="alert-heading">Collaborative Webinar: Persistent Identifiers in IIIF</h4><p>Discussing the intersection of Persistent Identifiers in the IIIF Framework</p><p>This collaborative webinar took place on Tuesday 26<sup>th</sup> October 2021, 16.00 - 17.30</h4></p></div><p><figure class="figure"><img src="https://raw.githubusercontent.com/tanc-ahrc/IIIF-TNC/master/docs/graphics/PIDS_in_IIIF_Flyer.jpeg" class="figure-img img-fluid rounded" alt="Event flyer for PIDs in IIIF Collaborative Webinar."></figure></p><p>The emergence of the International Image Interoperability Framework (IIIF) has presented researchers with an opportunity to annotate and cite digitised or digital resources. However many of the creative and scholarly uses of IIIF are stymied by an inability to reliably and persistently link to objects or collections of objects.</p><p>Persistent identifiers are long lasting digital references to resources, whether physical or digital, including objects published in IIIF. A workshop organised by the Practical Applications of IIIF project identified the need for the ability to be able to consistently identify objects or collections of objects in IIIF.</p><p>Both the Practical IIIF and Heritage PIDs projects are actively gathering use cases on this topic to understand community needs in this area. Some initial use cases and issues the projects identified include:<ul><li>The ability to assign a PID for collection level manifests to showcase and present areas of a collection</li><li>The ability to identify IIIF manifests with a PID, both static and dynamic</li><li>The ability to create PIDs for user generated manifests, collections and annotations</li><li>The ability to update existing IIIF manifests with PIDs to reflect new imaging or updated metadata</li></ul></p><p>This seminar provides an occasion for a panel of international experts to discuss the opportunities and challenges these use cases present and suggest a way forward for individual implementations and the framework as a whole.</p><p>Confirmed panelists include: Ben and Sara Brumfield (FromThePage), Andy Irving (Bodleian Libraries), Rachael Kotarski (British Library), Joseph Padfield (National Gallery) and Julien Raemy (University of Basel and DaSCH).</p><h2>Presentations</h2>[##]<div class="foonote"><ul></ul></div>
+							<div class="alert alert-success" role="alert"><h4 class="alert-heading">Collaborative Webinar: Persistent Identifiers in IIIF</h4><p>Discussing the intersection of Persistent Identifiers in the IIIF Framework</p><p>This collaborative webinar took place on Tuesday 26<sup>th</sup> October 2021, 16.00 - 17.30</h4></p></div><p><figure class="figure"><img src="https://raw.githubusercontent.com/tanc-ahrc/IIIF-TNC/master/docs/graphics/PIDS_in_IIIF_Flyer.jpeg" class="figure-img img-fluid rounded" alt="Event flyer for PIDs in IIIF Collaborative Webinar."></figure></p><p>The emergence of the International Image Interoperability Framework (IIIF) has presented researchers with an opportunity to annotate and cite digitised or digital resources. However many of the creative and scholarly uses of IIIF are stymied by an inability to reliably and persistently link to objects or collections of objects.</p><p>Persistent identifiers are long lasting digital references to resources, whether physical or digital, including objects published in IIIF. A workshop organised by the Practical Applications of IIIF project identified the need for the ability to be able to consistently identify objects or collections of objects in IIIF.</p><p>Both the Practical IIIF and Heritage PIDs projects are actively gathering use cases on this topic to understand community needs in this area. Some initial use cases and issues the projects identified include:<ul><li>The ability to assign a PID for collection level manifests to showcase and present areas of a collection</li><li>The ability to identify IIIF manifests with a PID, both static and dynamic</li><li>The ability to create PIDs for user generated manifests, collections and annotations</li><li>The ability to update existing IIIF manifests with PIDs to reflect new imaging or updated metadata</li></ul></p><p>This seminar provides an occasion for a panel of international experts to discuss the opportunities and challenges these use cases present and suggest a way forward for individual implementations and the framework as a whole.</p><p>Confirmed panelists include: Ben and Sara Brumfield (FromThePage), Andy Irving (Bodleian Libraries), Rachael Kotarski (British Library), Joseph Padfield (National Gallery) and Julien Raemy (University of Basel and DaSCH).</p><h2>Presentations</h2><h3>Welcome and Panellist Introductions</h3><p></p><div class="row"><div class="card mb-3" style="width: 100%;">
+  <div class="row no-gutters">
+    <div class="col-md-4  my-auto" >
+      <div class="pcontainer"><iframe class="preview" src="https://www.youtube.com/embed/deZEcKmPPDs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">Welcome and Panellist Introductions</h4>
+        <a href="https://twitter.com/heritagepids"><h5 class="card-title">Facilitated by Frances Madden (BL) from the Heritage PIDs Project</h5></a>
+        <p class="card-text">The slides for the welcome are available <a href='https://github.com/tanc-ahrc/IIIF-TNC/blob/master/docs/files/PIDs%20in%20IIIF%20Webinar%20-%20Introduction.pdf'>here</a>. Three of our panelists also created slides for their presentations: Rachael Kotarski's slides are available <a href='https://github.com/tanc-ahrc/IIIF-TNC/blob/master/docs/files/PIDs%20in%20IIIF%20Webinar%20-%20Introduction%20-%20Kotarski.pdf'>here</a>, Joe Padfield's are available<a href='https://github.com/tanc-ahrc/IIIF-TNC/blob/master/docs/files/PIDs%20in%20IIIF%20Webinar%20-%20Introduction%20-%20Padfield.pdf%20'>here</a>, and Julien Raemy's are available <a href='https://github.com/tanc-ahrc/IIIF-TNC/blob/master/docs/files/PIDs%20in%20IIIF%20Webinar%20-%20Introduction%20-%20Raemy.pdf'>here</a>.</p>        
+        <p>The transcript for this presentation can be downloaded <a href="files/transcripts/PIDs%20in%20IIIF%20Webinar%20-%20Introduction.txt">here</a></p>
+      </div>      
+    </div>
+  </div>
+</div>
+</div><br/><h3>Panel Discussion</h3><p></p><div class="row"><div class="card mb-3" style="width: 100%;">
+  <div class="row no-gutters">
+    <div class="col-md-4  my-auto" >
+      <div class="pcontainer"><iframe class="preview" src="https://www.youtube.com/embed/3JzisjZDLr4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title">Panel Discussion</h4>
+        <a href="https://twitter.com/practicalIIIF"><h5 class="card-title">Facilitated by Anne McLaughlin (National Gallery) from the Practical IIIF Project</h5></a>
+        <p class="card-text"></p>        
+        <p>The transcript for this presentation can be downloaded <a href="files/transcripts/PIDs%20in%20IIIF%20Webinar%20-%20Discussion.txt">here</a></p>
+      </div>      
+    </div>
+  </div>
+</div>
+</div><br/><div class="foonote"><ul></ul></div>
 						</div></div><!--/span--></div></div><!--/row-->    
 <!-- End SimpleBDGrid -->
 
