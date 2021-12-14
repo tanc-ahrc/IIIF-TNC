@@ -60,6 +60,7 @@
 	},
  "seminar02": {
 	"parent": "events",
+	 "class": "list",
 	"displayName": "Collaborative Webinar: Persistent Identifiers in IIIF",
 	"file": "seminaro2.json",
 	"title": "Showcasing the practical use of IIIF",
