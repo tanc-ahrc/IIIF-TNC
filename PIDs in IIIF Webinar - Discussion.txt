@@ -1,0 +1,326 @@
+Anne McLaughlin  
+Thank you. Hello, everybody. Thank you to the audience for joining us and to our panellists for agreeing to take part today. In advance of this discussion, just a bit of, I suppose, minor housekeeping in terms of the structure. We see this session as broadly divided into two halves. So one thinking about ARKs from a researcher or a small institution point of view, and the other from a much larger institutional sort of background or with that hat on. We do really want this to be an open discussion, please do pop your questions into the Q&A. If you'd like to ask that question live, we definitely support that and we would be happy to pop you on screen or unmute your mic, whatever you'd prefer. Just to post that information in the Q&A box, and of course, the chat in order to sort of keep the discussion going. In advance of this session today, we did circulate some questions to our audience, or to our panellists, I'm sorry. Just for them to sort of start considering and thinking about the ways in which PIDs and IIIF might be able to work together. So I think let's just start with a general discussion. When we think about user-generated content, be that custom annotations, a user created manifest or bespoke collections, what role do PIDS currently play? What role would we like to see them play? And what sort of barriers are holding us back from that sort of ideal implementation? Who would like to kick us off today? Joe? Looks like you. You see, that mic get unmuted, and we're off to the races.
+
+Joe Padfield  
+I think from a user point of view, the connection between persistent identifiers and IIIF is one of trust. So if someone is going to do research, or someone is going to build resources, or presentations based on information and content, video, or images or audio from multiple different institutions, they would hope that that content would stay there. So whatever complexity of their works are going to be if they base it on resources that then disappear, that could be quite problematic. So I would say that first, the first bit, perhaps to consider is the notion of trust. And if people can trust IIIF resources, because they are constructed from persistent identifiers, then that acts as the foundation for the ability to do any work on top of it.
+
+Anne McLaughlin  
+Sara and Ben as people who are on a platform that deals with doing work on top of IIIF resources, how do you see this playing out in your current role? 
+
+Ben Brumfield  
+I think it's a real challenge. As I mentioned, when we are used as part of a digitization workflow, oftentimes the annotations that are created, the transcriptions that are created by end users they will end up in a permanent location like a digital library system, the images will also end up the same place. But the IDs have not really been minted yet before we enter the process. So establishing that trust can be hard. And we run into this actually with some cases of user interface in which an institution, after their material has been transcribed and transferred over to a collection management system or a digital library system, will want to pull the material off of our platform, because from the institutional perspective, they're done. 
+
+Sara Brumfield  
+Right. 
+
+Ben Brumfield  
+But the users who worked on that, whose main interaction with that material was on that platform are horrified to see their material disappear. So I think that this issue of trust is is a real challenge in a lot of cases,
+
+Sara Brumfield  
+I say trust goes in another way, which is if we are importing material from digital library systems, if, so for instance, a well not going to name names sorry, but your image server has to stay up. Because if it doesn't stay up, your transcribers can't see your images and we're the ones who have to go figure out why. Your, your manifests and your identifiers that are in your IIIF manifest have to stay the same, or our things break. And that's true, too for anything we're producing and people are using our IIIF manifests where we've changed something recently, and we broke some downstream users. So...
+
+Ben Brumfield  
+We're going to change them back.
+
+Sara Brumfield  
+Yeah
+
+Anne McLaughlin  
+Um, Rachael, I see your hand up. 
+
+Rachael Kotarski  
+Yes, I was going to comment that, absolutely in terms of user generated content, what we need to be able to do is allow them, as Joe says, to be able to reference and link to and cite the contributions that they've made to our content and really value that. But I think I wouldn't be surprised, just as devil's advocate, if there is nervousness from organisations about what might be seen as a bit of a free for all. So anyone can come here, write whatever they want, and we're putting a persistent identifier on it, and then as an organisation, I have to maintain and manage that. And I think there would potentially be nervousness around that, I think until we allow people to do it, start putting those persistent identifiers on there, we're never going to know how much of a problem it is. I think we have to go out there and try it first.
+
+Anne McLaughlin  
+Yeah I think that's an issue with crowd sourced material generally, is certainly not from an institutional perspective. Andy I just say your mic come on, would you like to contribute?
+
+Andy Irving  
+Yeah, so I also think there's a different type of intent. So if when we're agreeing to publish something in IIIF although we might not have realised it, we are agreeing to publish it in a persistent format, so that it can be reused in the way that makes it useful outside of just our institutions or outside of our classroom, whatever it happens to be. But there are other use cases for generating user content, which are not meant to be long lived, things like teaching paleography, and so on, where students produce transcriptions, etc, as part of their curriculum that does not need a long lived identifier, which uniquely identifies it forever. In the same way that say, an actual thorough transcription of a work, which is going to be reused and become part of that work down the road will. 
+
+Anne McLaughlin  
+I guess the question there is, where do we draw the line between serious research that needs to be sizable and sort of recreate-able versus work that's been done perhaps as part of a class assignment or by students who are still learning and perhaps not ready to share those transcriptions or that translation or whatever it may be with a wider audience? Joe?
+
+Joe Padfield  
+I'd completely agree with that Andy. But I suppose the issue is there's two parts to that classroom. One is the work of the students, which is temporary and ephemeral. But if the image underneath disappears, before you can mark the work that the student has done, then there's a problem. I think, the issue of what Rachael just said about, you know, what are we agreeing to host and what we agreeing to present is a big deal. And I think that nervousness is quite strong in many institutions. And it may well be that the initial stumbling block, well, the initial steps are, our images will persist, but we're not managing what people stick on top of them, type thing. And then you have services that perhaps will look at managing annotations or transcriptions or comments that will sit on top of them but that can be managed separately. But the institutions themselves can then just be responsible for their own content and their own resources that they're presenting. So I think, because IIIF enables such a spread of use, and such an organic use, identifying where the responsibility stops and starts between the different players is probably quite important. Not necessarily from a technical point of view, but just so people can relax and say, no, that's not your responsibility, you're just responsible for this bit. And then people can go, okay, we can do that, we have the resources for that, we're able to do that. And I think that's becoming more clear is the sort of use of persistence. And then the spread of IIIF is what that scope can be. Whether you're a huge institution, whether you're a small institution, what you can and cannot do is different. But the persistence of the foundation or the building blocks is still very important.
+
+Anne McLaughlin  
+I suppose continuing on from that, thinking about an institution's commitment to persistence, versus perhaps an individual scholarly work product or transcription, translation, collection, whatever it may be, annotations, in the IIIF sense. How ought we to think about persistence for that thinking about the professional researcher or someone who's contributed a lot of time or effort to creating something that they would like to be able to share or cite in IIIF.
+
+Rachael Kotarski  
+My feeling is that that's really key for supporting what should be one of our key use cases really. You know, they're using our material for research that, actually down the line, will help us as organisations understand the content that we have and the images we're seeing. So it's not even just about their careers, but it's actually acknowledging the contributions we get from those researchers, which let's face it, as an organisation, we're getting that for free. And we should absolutely recognise that. I think that's potentially where the opportunity comes to include not just persistent identifiers for their contributions, but as was mentioned before, we can work in their ORCID identifiers, so they can link that into their professional profiles, and we know who's made this contributions so we can acknowledge that.
+
+Anne McLaughlin  
+Joe?
+
+Joe Padfield  
+I was just going to say that it's, I think, based on the previous webinars, we've had to do with IIIF, a lot of the questions that have come up, have been balanced on how do you do this, if you're a small museum with one member of staff, and the only computing IT infrastructure you have is a laptop in the corner that's gathering dust. I think from both the persistent identifier side and the IIIF side, that can be quite daunting. And I should say that there are resources, a lot of work being done within the IIIF community. And what Julien was commenting about ARKs, is ARKs you don't pay for them. I mean, I think you have to be a recognised organisation to be able to register an ARK ID or an ARK number. But there are methods and processes that facilitate the presentation of IIIF content for almost free, or for complete free, if you don't mind it being slightly less [INAUDIBLE]. And there are possibilities to create persistent identifiers, which are backed up by organisations which are trusted and will persist. So it is possible, though slightly harder for smaller institutions to also join in these activities as well as big ones. But the investment of their personal time relative to the resource of their entire organisation is obviously much bigger, because you've only got one member of staff and if you spend your time doing that, then that's a bigger chunk of your resource time, but it is possible.
+
+Sara and Ben?
+
+Ben Brumfield  
+Going back...
+
+Sara Brumfield  
+Actually, in fact, can I address the small organisation before we...we have two points to make. So we actually work with a lot of very small organisations and a surprising number of them, a medium number of them use IIIF without even realising it. So a lot of small institutions host material on the Internet Archive. The Internet Archive has a IIIF  endpoint and people use it to pull stuff into into systems like ours. OCLC's ContentDM also supports IIIF and a lot of small and medium sized institutions will use IIIF so making it seamless and they don't have to know. Right you just take advantage of the benefit of having these persistent identifiers that can help you pull information from one system to another and I think that is the way to to kind of scoop up all of your small institutions that don't have deep IT resources.
+
+Ben Brumfield  
+And for my part, I wanted to go back to what Rachael was saying about crediting people. And particularly the difference between a serious scholarly researcher who has an ORCID versus a student as Andy's case. We are at the tail end of a National Endowment for the Humanities funded project at University of Texas Libraries to explore the role of contributors and how to credit them. And so, surveys have been conducted of the different institutions that use our platforms to say, how do they credit people who have transcribed and found real variations in terms of what kinds of credit they provide people, whether they credit anyone at all, the differentiation between crediting volunteers versus crediting staff members in an organisation that traditionally doesn't credit staff members for doing the same work. And so the approach that we've taken is to look at two things, how to credit and then whether to credit. And how to credit, we try to provide people with a range in between one extreme of pseudonymity. So you've got a student in a classroom who does not, has privacy concerns and does not want to be identified, all the way to real names with ORCIDs that will be attached to everything they do. When to credit is something we still haven't worked out yet. 
+
+Sara Brumfield  
+We kind of leave it up to the organizations 
+
+Ben Brumfield  
+Right. Technically, we do. What the best practice is we don't know. But I'll I'll paste that study into the chat.
+
+Anne McLaughlin  
+Yeah, excuse me, Julien, in discussing sort of free IDs and ARK IDs, do you think there's a place for this within the kind of personally created IIIF resources?
+
+Julien Raemy  
+I mean, I should hope so, we do have a crowdsourcing project at the university. And so we also want to enable end users to annotate IIIF resources. But the question is, how do we I mean, technically, it's not that difficult. But the problem is really curating those annotations, which annotations are better than the other, or which ones should go first. And and now we have to think of also maybe attributing IDs or personalities for some of those, or all of those, and how do we curate that. And that's one part because we know that we want annotations or more information on those resources. But then, if you think of, maybe in a few years, when this collection will be more famous, then other scholars will want to annotate that. And if it is on their own GitHub account, if they have one, or whatever they want, wherever they want to host those annotations, with or without persistent IDs, it's it's a good thing. But then how do we, how do we get notified about this? There is a linked data notification, for example, but I think, also here, it's not only about curating what you know, but it's also about aggregating what you don't know about your own resources and stats. And then how do you make that persistent that's, well, that's a commitment. And it's trusted that and I think we should also enable that.
+
+Anne McLaughlin  
+Joe, you've got your hand up. 
+
+Joe Padfield  
+The one thing that's slightly tricky about persistent identifiers and IIIF, is, well IIIF it kind of comes with the turf, but a persistent identifier, as Rachael highlighted needs to ideally resolve to something. So you can register an ID somewhere and great, I've got an ID, it's going to persist. But if someone sticks it into a web browser, something has to come back. And that something that comes back is the bit that needs to persist. It can evolve, and it can extend and develop. But I suppose the core metadata that describes the thing you have your ID for needs to persist, and that one does potentially get slightly harder. I mean, to be consistent with how you reference a thing. You can get an ID quite quickly, but then to have or decide where that ID points to is another question that needs to be explored. 
+
+Rachael Kotarski  
+I was going to mention on Julien's QA point, that also persistent identifiers shouldn't and we should absolutely get the messaging right on this. Say anything about the quality of what the thing is. So just because we might maintain a person identifier to an annotation, we're not saying that annotation is right. All the persistent identifier is vouching for is that you're going to be able to get to whatever that thing was, not that it's any good. So I do think we need to be careful and ensure that that message gets across, you know, in the way that you'll frequently find written in some books. "Well, there's a copy of this in the British Library." And it's like that's we've got a copy of it. But that doesn't mean it's there because we like it, we just have to take a copy of everything. So yeah, I think there needs to be a clear message about persistent identifiers vouching for the quality of persistence, not the quality of the content.
+
+Anne McLaughlin  
+I think there's an inherent issue there, in terms of what we're talking in terms of, about trust, basically. If I see something cited, or on the website of the National Library in Paris, or the National Library of France or on Gallica. My instinct is that that has also been vouched for by the library or by the institution. But clearly, from what persistence is saying is just that it's there, and that you can find it. How that works, I think is another question. Joe? 
+
+Joe Padfield  
+I suppose that that then depends on what information exists when you go to what the PID points at. Because I think if something is part of, or is owned and authored by this comes back to the attribution, which is which is extremely important. If you've got clear attribution of who's responsible for an image or a video or just an annotation or a comment, you could see who's responsible for it. So it's, it's, that starts to help that issue is that just because a large organization is aggregated, or can provide you access to a piece of information, unless it says this was authored by the British Library, then it's not actually their responsibility, to some extent. It's, it's whoever's actually name or institution is down there, and who created it and who produced it. So the the, the attribution bit works two ways. One it's to ensure that people have credit for the work that they've done, but also indicating the responsibility of who put that information up there in the first place.
+
+Anne McLaughlin  
+Yeah, Sara and Ben? 
+
+Sara Brumfield  
+I think there's an interesting question of scope here, and I'm gonna play a little bit of devil's advocate. But if you own an item, if you are the holding institution for an item, a PID absolutely make sense, right? Like it seems obvious, and annotation on that item, eh, you didn't write it, it may or may not have been created in one of your systems. You get to choose whether or not it's something you put a PID on and I would argue what we see with with transcriptions is they are not permanent until they get pulled into another system someplace else. And that other system generally has an identifier for the item, and the transcription just becomes metadata on the item and that's probably good enough. It would be good to have credit and stuff like that. But like, I don't know that you have to think about putting a PID on every single piece of content and layer of content on top of an item. Especially not yet. Right, let's solve the easy problems first.
+
+Andy Irving  
+Yeah, I also think it's slightly tricky for those of us that have chosen persistent identifiers that contain some kind of non opaque data like an ARK with a name or authority in it, because it inherently makes it seem as though that data is belonging to that organization, when it may not be, right? So even though there's tons of other benefits for them in other ways.
+
+Joe Padfield  
+We have had systems where you can end up with more than one persistent identifier for the same piece of data. So it's almost like you can create a persistent identifier when someone authors some content, and that'd be something they've organized themselves. And then if an institution aggregates that data and absorbs it into their own system, they may well give it an additional persistent identifier, which hopefully will acknowledge and link to the original one. It's because it just may well be how systems work. So one of the links that were provided right at the start to the Simple IIIF Discovery system that we'll be building in the project, has highlighted when exploring certain institutions, their persistent identifiers can be quite varied. And then how you process the use of URLs with these persistent identifiers in them may change depending on what the format of that ID was. So you can end up with collections with five, six, seven, eight, X different types of IDs. But it's, I think, that's we just need to accept that we will have multiple shapes and sizes of ID. And as long as they resolve, and as long as they provide the content and information, then it's kind of the onus is on the people creating the use cases, to be able to cope with that. But you can have multiple persistent IDs, and they can have multiple levels of importance, shall we say, if you maintain your own little list of something that may well not be seen as quite as important as if a larger institution has stated their credibility on the fact that it's going to persist?
+
+Anne McLaughlin  
+Julien, you've added a comment to the chat. Would you expand on that?
+
+Julien Raemy  
+Ah yeah, I mean, it's generally speaking, in most ARKs you will find you will have the ARKs table and the NAAN, but actually, it's not mandatory at all. So so it depends how you set up your resolver. And then also, what's difficult, I think, when you, whether ARK or other scheme, if, at the beginning, when you start assigning those files, you think of what you have, and most of the time not what you're going to have in future. So that also may be a burden when you have to rethink, again, and redo your resolver and just assuming that you won't know you are going to have different types of resources, or different types of annotation, and so on and so on. But that's just another thought.
+
+Anne McLaughlin  
+Andy Corrigan has popped a comment in the chat as well. So Andy, would you like to just join the discussion and ask it live?
+
+Andy Corrigan  
+Yeah, yeah. I mean, I just think when we have such a varied amount of material from all over the place that we pull together in Cambridge Digital Library, that kind of, I wish we could have a PID for every digital object, but trying to do one for every aspect of that digital object, just it, just wouldn't, it's just completely unviable really. It might be, it might be a great thing to aim for, but I'm not sure, I'm just not sure it'd work in practice.
+
+Rachael Kotarski  
+I think that is a concern for organizations with larger collections. And one of the things we've advocated is taking an approach where you think about parts of a collection, and then slowly break down the granularity, as you kind of discover the use cases and the need that you might have as an organization. So rather than doing, you know, per image, or per page, persistent identifier, have one for the item. And that encompasses all the images, potentially all the annotations and metadata at an item level and start going down. And I think, you know, knowing Cambridge, probably that's still quite a bit of an overhead in itself. But I think we can take a bit of a pragmatic approach to just doing what we can. And at least trying to when we're digitizing content, have persistent identifiers for the units that we think will be useful to our users, I don't think we have to go and do everything at once. Some of the conversations have got me thinking about the, kind of, the versioning question, which is always going to come around again, and certainly at the British Library, we might redigitize something and have better quality images and then what are we doing about persistent identifiers for those? Are they new persistent identifiers? Or are we reusing them? And yeah, that's probably a very, very good question, which we could spend the whole time on, potentially. 
+
+Anne McLaughlin  
+I suppose that does sort of raise the issue of what is a minimum acceptable level for persistence? Is it that it goes back to the objects? If you have new images, how does that work in etc. Glen, you asked an excellent question in the chat, would you care to share it with us.
+
+Glen Robson  
+Sure, thank you. So I'm the IIIF technical coordinator. So I know more about IIIF than PIDs. But my question was, are the two different types of persistent identifier. So for example, in Julien's example of the the ARK, em if you follow that you get to, kind of like, an about page of the digital item. But then there's also the IIIF link, which has that ARK kind of embedded in the URL. And my question to the panel really is how are users to know about these different identifiers and when they should use which particular identifier? I know for my previous experience at the National Library of Wales, we used to use handles for things. And that was quite easy to explain to users because they were public, and they'd follow it, and then they get to the item. But the IIIF link was kind of very hidden in the background. And so how can we kind of expose that to people and explain where and when you could use that type of identifier?
+
+Rachael Kotarski  
+I think that the simplest answer for me is that we should have clear 'copy and paste this'. This is the link to use and this is the citation. And we should make that visible to users.
+
+Joe Padfield  
+I think I think it depends a lot on what the PID points at. So one of the things we've been exploring is we give PIDs to paintings. And then a IIIF manifest and images about that painting is achieved by a suffix on the same persistent identifier. Or you can give a persistent identifier for each individual image, then, depending on what you're going to do with them. I think that's the bit where some systems are sort of learning now, exactly what is the most efficient way of of using persistent identifiers because the easy one is just throw one at everything. But if you've got millions of objects that's not really practical, as has been expressed. And I think a lot of it comes down to, the work that we're doing, a lot of it comes down to documentation, is that if you want to hang other resources off a thing, it needs a PID. And if it's just the end, if it's a variable, if it's a piece of information related to an object, it might not need a PID, it's just just a number or just a piece of text. But it's the use cases that start to answer these questions. And the more robust, clear use cases you have, the more clear it becomes where these persistent identifiers are required to join knowledge together. I mean, that's the point is that resolvable PIDs, are used as the linchpins between knowledge that you connect whether it's a persistent identifier to an annotation, or whether it's a book to a page, or whether it's an individual data point in a huge data cloud of some analytic examination. It's that relationship, that's important. When you need to talk about that relationship, you need something to hang that conversation from.
+
+Anne McLaughlin  
+Oh, John, I see you've got your hand up.
+
+John Kunze  
+Yeah, I wanted to just address Andy Corrigan's comment. If you're using ARKs, you you're not paying for any of your registration. So you could, if you wanted to, you could register 1000 different, you know, elements within an image or any digital object. But there's a simpler way that a lot, that permits, you just just register the top level of the object and use something called suffix passthrough through the N2T resolver. And that means that you, you don't actually have to register or manage more than one ARK for all of those, to get to all of those things. So I think it's quite straightforward, basically, to do with ARKs.
+
+Rachael Kotarski  
+And I think this is where I confess that in terms of what we do at the British Library, we don't necessarily properly follow the standards to do all of that. So we don't necessarily practice what we preach in terms of use of ARKs. But absolutely, that should make the overheads in terms of management a lot easier.
+
+Andy Corrigan  
+And one other just one other comment, if I may, it's, it has to do with this concept of because ARKs are quite flexible. And you can throw them away easily. It's easy to, to develop workflows, where you assign ARKs to the very beginning of an object, long before you're making, you've made a preservation decision. So if you decide, yes, we're going to preserve this, then you already have a preservation ready identifier, it's ready to go. And you don't have to actually rename it. At the moment when this item its proven its value, which it can be disruptive in its own way. So you just keep it and there are there are other ARKs you just you just throw them away. And if you've been careful in your workflows, you haven't released them to the public. So there's no damage. I mean, your your credibility isn't affected because you don't actually go public with it until you're ready to make that decision.
+
+Anne McLaughlin  
+That's a fair point to the wise approach. Andy a while ago you put a question in the Q&A? Would you care to raise it now?
+
+Andy Corrigan  
+Em yes, I was just wondering what the pros and cons of sort of non opaque PIDs over something that's sort of human readable? And as reading about the use of the suffix pass through on ARKs, and how does that help with that possibly?
+
+John Kunze  
+I'm happy to take a stab at that, but I'll let others go.
+
+Joe Padfield  
+So I was just gonna say just a quick thing is if you put too much human sort of readable information in your PIDs, you have the problem is that people's understanding of what that meaning is changes. So you, we have an issue is that we have had URLs used within the National Gallery that use the title of the painting. So we have 30 odd paintings that are called Portrait of a Man. And similar, I think, high 20s of Portrait of a Woman. So if you start to use, well, that's, that's the title, that's obviously how someone will know how, yeah but which one? Then you end up with a number at the end of the prefix. And then the title changes for some other reason, because a lot of that human readable information changes. And that's what the metadata the resolver should present to you will give you. To some extent, the PIDs, you aren't going to type a PID into a URL on the whole. Well some of us mad idiots do, but most of the time, it's it's the connections that happen in the background. So you'd run a search based on the title and you the objects you get back will have PIDs on them. And that's how you would document or connect. But
+
+Anne McLaughlin  
+John, you raise the idea of suffix passthrough and Julien I know you commented about this in the chat? Would you care to respond to Anthony's questions? It seems like...
+
+John Kunze  
+Yeah, I agree with Joseph. It is, you know, there's, there is this terrible tension, you know, opaque identifiers are just painful to deal with. But they're so useful for, at least for backroom people, and certain kinds of usability. So the ARK approach is pretty hybrid, really, it says that you want the top level objects should be opaque, it's that you're making a commitment to this top level object. That's the preservation, that's the center of your preservation activity. But the extensions that you'll do to get to elements of that object, you might as well make a non opaque like thumbnail, you know. You could say dot thumbnail or chapter four, or... Certain kinds of usability because your commitment is to the object and as, as the years roll by, or the decades roll by, you know, that thumbnail is going to change, it's going to be at a higher resolution in 10 years, that OCR will have gotten better, and it will be replaced. But you're still honoring your commitment to persistence. But you know, you can you can combine usability with the opaque, the benefits of opacity for that top level object. That's the ARK approach, and recommendation.
+
+Anne McLaughlin  
+Julien, do you want to follow that up? 
+
+Julien Raemy  
+No, no. No, I don't have anything to add. 
+
+Anne McLaughlin  
+All right. I just saw you nodding along. Sara, I noticed in the chat, this idea that you also kind of passed the ball down the field. So name the ball and then continue to use it is that something you guys are embracing FromThePage, or at Brumfield Labs in general?
+
+Sara Brumfield  
+Yeah we do a lot of work with digital documentary editions that often start with digitization and flow through to a digital documentary edition site. And so I often talk to those projects with this metaphor of, you know, passing a ball down the field and you want an identifier, that's the ball, right? That you can like, a metaphor falls apart, but you can start hanging things off of as it goes from, you know, digitization into a content system from a content system into a transcription system, someplace where you do metadata. And then you take all that and you pull it into something like a Omeka S to do additional edition sites. We have a number of projects that that do that and try to keep track of the same item in all three or four systems that they're using. 
+
+Ben Brumfield  
+So assigning the ID at the very beginning, 
+
+Sara Brumfield  
+It's the only way to do it. Right? Otherwise, you lose it.
+
+Anne McLaughlin  
+Yes, Joe?
+
+Joe Padfield  
+I was just goingt to say I mean, we have been experimenting with ARKs a bit. And there's lots of documentation on ARKs explaining how you're supposed to structure your ARK ID. But one of the things we've done is we had an internal ID system based on an alphanumeric string and effectively, we were able to construct ARKs by just sticking the ARK and our institutional code on the front of the existing ID. So the IDs we had were opaque they they were unique to the individual things we were dealing with inside, but we only then had to create an external resolvable, persistent ID for the objects that we needed to publish or present or talk about externally. So the ARK approach allowed us to do that on our own requirement basis. So we've registered the information. And then we can have, if someone puts a code in with the ARK prefix at the start with the resolver, it just brings you to the metadata that's required. So it's quite a flexible system to make use of identifiers that you already have, internally in institutions. It technically breaks some of the documentation, so people may tell me that you shouldn't do that but it seems to work. So it's something we're experimenting with. 
+
+Anne McLaughlin  
+Ed I noticed, you raised a question earlier, in the chat or a thread of discussion about Internet Archive and working with that, would you care to kind of follow that up now?
+
+Ed  
+I'll try. So I'm, I've had an interest in things like IPFS, for a while, since they will, since IPFS was launched, I've been experimenting with it, combining it with IIIF. And I was invited to present about it at the Internet Archive a few years ago, their summit. I shared the, the presentation, or the long form of it. And since then, I've managed to get it to actually work and I've demonstrated it. And this is one form of, I think you'd call it a persistent ID, I mean, the the the goal with protocols like IPFS, there are other ones, to kind of, for permanent storage, and for decentralized storage, so and the IDs are generated, they're a hash of the content itself, it's got nothing to do with the institution, or anything else. It's just purely from the content. So if you change one, one bit in, in a JPEG, it's a different hash. Because you've got this kind of reliable way of addressing content, you can fully trust, what you're going to get is the exactly the thing you're requesting. But also, you don't have the issue of what if the server goes down, because it can be persisted elsewhere. And there's no kind of king node if you like, there are lots of nodes potentially. And I saw the potential for that, you know, institutions collaborating and pinning each other's hash content, to provide a kind of a resilient network, but it's not really caught on. But yeah, I sort of went ahead and made my own demo anyway. Because also I'm interested in allowing smaller institutions, who are my clients, generally, to publish IIIF. So I made a tool for publishing IIIF on GitHub, but that can also, because of the way it works, it, it's all file based it's file system based, I can generate IPFS hashes of everything in that folder as well. And that includes the IIIF manifest the original image, so the tiles and everything else. So yeah.
+
+Anne McLaughlin  
+Olga I think that feeds nicely into your earlier comment about your dream for having a IIIF kind of platform which can be personalized. Do you want to expand on that and how you see PIDs playing a role?
+
+Olga Barysheva  
+I could do that. Can you hear me? 
+
+Anne McLaughlin  
+Yes. 
+
+Olga Barysheva  
+I think that some part of the problem is that, sorry, is that we only work with IIIF with persistent identifiers on institutional level. And as soon as we go a little down and let everyone understand what it is and what the benefits of it, it could be used freely, openly and without, you know, hesitation about trust. So I think that say I take a picture from whatever national library I do my research, my, I don't know, transcription, translation, anything and I publish it somewhere in my country. So no one except those who speak the same language, or live with the same country, or have personal connections with me knows about it. So if we have such platform, which, you know, like, simpler like Medium, where you can go, like registered, have your, get your personal ID or use the existing like ORCID then link to the manifest for the IIIF object and put your contribution. And that would be perfect if this platform could auto generate ARK ID, or I don't like DOI personally, but it's okay, any type of persistent identifier so that every contribution could be simply linked by having only three strings like manifest-ID, personal-ID and contribution like persistent identifier.
+
+Anne McLaughlin  
+John, I think Olga's comment that leads nicely into what you put in the chat about questions about discovery apparatus, and how these things will persist into the future. Would you like to expand on that?
+
+John Kunze  
+Were you talking to me with that question? 
+
+Anne McLaughlin  
+John Lowe's was who looking for but John lead the way. 
+
+John Kunze  
+I'm not inspired myself, but while there's someone else, I'll pass
+
+Joe Padfield  
+I think I'm looking Oh, John's back. Okay. 
+
+Anne McLaughlin  
+Yep.
+
+John Lowe  
+You're talking to me? John Lowe?
+
+Anne McLaughlin  
+Yes, to you John Lowe just your comment in the chat about discovery apparatus and future persistence. 
+
+John Lowe  
+Right. So I was wondering, so you, certainly the PID itself? Well, we talked about how to persist that that seems not to be a problem. But if the the IIIF, and, and the suffix pass through apparatus assumes that there's some way of describing the details of the object. And that's not been universalized or standardized. I'm just wondering how in the future, we would figure out how to make sure that people can find all the details of an object. 
+
+Anne McLaughlin  
+Joe
+
+Joe Padfield  
+I think a lot of this is, I'm not sure if everyone knows, that there's an acronym, I dropped it in the chat right at the start called FAIR, it stands for Findable, Accessible, Interoperable and Reusable. And it's one of these acronyms that has been massively funded. and it's actually quite, you know, you can follow bits of it, but it's quite a complex idea. But the basis of it is that you want to ensure that people understand and can find the content and know how they can use it. So I think part of the notion of persistence is looking at what metadata comes back when you resolve a PID. So I think in the use case of looking at pass through, ideally, the top level PID should tell you what pass through options are available underneath it. And whether that's a consistent across hundreds of them, or thousands of them, or whatever, may not be to do with how a resolver is set up. So I think that would be quite important, because you may have different paths or options in the same institution. So the only way to really ensure that people can find the documentation requirement would be at that upper level, the bit that was expressed as being the persistent hub, as it were, for the description, all of the digital information about that particular object. So I think that that would be ideally the best place to put it. And then it starts to, to move on to the notion of a FAIR Digital Object. So if you've got a digital object, it has a persistent identifier, be it a IIIF resource or any sort of data resource. It's looking at the agreement of what metadata is required to hang off that FAIR digital object to make sure it makes sense to other people, and people do know how to use it and what it's for. So I think that discovery apparatus you're describing is something that's being explored on a fairly core level of sort of internet and information is that notion of a FAIR digital object and how you ensure that the appropriate documentation or standardization is achieved to make sense of that information.
+
+Anne McLaughlin  
+John, I just saw you unmute your mic. Do you have a follow up?
+
+John Kunze  
+Yeah, I think the the idea of discovering all the possibilities that exist inside of an image or digital objects is kind of a thorny thing. You definitely want to be able to, say, persistently reference the detail in a painting. Right? So someone, a human being is discovering something, they want to reference a detail, cite it somewhere. But if you're at the top level, VI, it's pretty tricky to try to enumerate all the possible details that might exist, which is all the all the tiles of all the different sizes. So that would even be, could be, you know, quite a cognitive burden to you try to enumerate that in a discovery system. So there has to be some balance, and I don't, I don't honestly know what it is. But I agree that we, it's, there's an unexplored area. How do you the very least associate with that cited detail metadata about about that? So but the other, the other problem is pretty thorny still.
+
+Anne McLaughlin  
+Peter? Yes.
+
+Peter Binkley  
+Yeah, I just threw in a comment in the chat that this started to remind me of the Memento system for getting timed versions of resources that the API returns via 302s, I think and 304s, it returns all your options for resolution. And the the client can then decide which one it needs. So it has that mechanism. I mean, it's built into HTTP, there's that mechanism for returning lists of options and letting the client make an informed choice of which one they want.
+
+Anne McLaughlin  
+Andy, I've seen you nodding in the corner. Well, of my screen you're in the corner, would you like to follow up?
+
+Andy Irving  
+Well, I'm in the middle of my screen. But yes, no, there's some interesting things. So I want to go back to what Ed was saying a little bit about IPFS, hashes, etc. And just how that contrasts with what I think some of the other things we were talking about which were retiring identifiers and replacing content where necessary. So we're talking about making a distinction between the intellectual entity that we're addressing with a persistent identifier, and then the kind of physical pixels or information about an image that's addressed through this kind of content hash, that we can't change without changing the hash that we get. And that kind of distinction, that kind of Joe was also kind of mentioning about how you can build an ARK from your own internal identifier, because of course we can, it's just, it's just an identifier. But we also, you know, we do want to be able to kind of replace things over time, while still being able to resolve that kind of intellectual object. I wasn't sure where I was going with that, but I just wanted to kind of jump back to it and throw it back out to the panel.
+
+Anne McLaughlin  
+Really, I suppose that is a question. If things are being replaced, there's new imaging, say new names new attributions - what do we do with the old ones? The idea of persistence means that they need to still exist, but they could also be out of date. Rachael?
+
+Rachael Kotarski  
+I think at least use of persistent identifiers allows us to maintain metadata about what it used to be. So the fact with that we can say this no longer exists for XYZ reason, but here is the available information that we can tell you about it. And we should absolutely try and make use of those aspects. Em the persistent identifiers for intellectual objects. I think there is a very strong case that we need to look at how we do that. And I think some of that ties into other persistent identifiers that we could link in from elsewhere. So you know, other vocabularies, Wikidata, etc, and making use of other people's persistent identifiers for intellectual items and anything else you might want to reference around our contents as well.
+
+Anne McLaughlin  
+Joe, yes?
+
+Joe Padfield  
+I just wanted to drop in another example of practical persistent identifiers, as our Practical IIIF project sort of focuses on practical aspects. I don't know how many people have played with a platform called Zenodo. Zenodo is or has been designed as a way of publishing data in relation to projects or publications or activities or just data in its own right, you can publish software on there. It's free, it's backed by CERN. And they have promised it will persist for as long as their research project or goes, which is funded, at least for the next 20 years. And if you upload data into Zenodo, you get a DOI. If you upload more data, you'll get another DOI, but you also have a DOI for the group of things you've uploaded. Now, technically speaking, Zenodo, if you upload a big image in there, it uses IIIF to give you the thumbnail, you can create a manifest for it, and pop it into a IIIF using viewer, it stops very quickly because they have a limiter on the number of requests you can do. But the new version of that software is going to support IIIF more fully. So this is a platform that people can use now for individual work, for individual researchers to put content up, whether they're imaging or other types of content, and get a persistent identifier that you can then reference in a publication, you can reference in an email or in an article or just use within your own internal documentation for smaller institutions. So I just thought I'd raise that as it's a useful resource and it might be something that's applicable for a range of different users.
+
+Anne McLaughlin  
+And in a way, if you're uploading that image to Zenodo, and adding your annotation to whatever, that's no longer a IIIF instance, you have taken that image and you're uploading it separately. Even though it's displayed by a IIIF through InvenioRDM.
+
+Joe Padfield  
+Yes, yes. That mean, basically, you get, when they upload, update to that new version of the software, it will provide you with a manifest. That will have Canvas ID. So effectively, if you wanted to attach annotations that would persist onto that persistent foundation, you would need to migrate them to the ID that was created by Zenodo, when you're doing the work. Just as a little plug, our Practical IIIF project has uploaded all of our previous webinars, and the content for this webinar will also be uploaded to Zenodo so it'll be easy to find.
+
+Anne McLaughlin  
+The links for all of those are earlier in the chat, thanks to Frances. Rachael, I noticed your hand up.
+
+Rachael Kotarski  
+Yes, I know we're coming to the end. So I hope I'm not opening a massive can of worms. But my question is around content that we will eventually be able to use IIIF for that has more than two dimensions. So whether 3d materials or time based materials. Are there any topics around persistent identification that we should be thinking about? And considering now?
+
+Anne McLaughlin  
+Yes, Joe?
+
+Joe Padfield  
+Well, I was I was gonna say that the AAA of spesification has gone beyond simple images and does deal with audio, visual, and audio now. And I have seen implementations of that, that allow you to effectively cite a small snippet of a video from a three hour film. So you don't need to crop it, you don't need to pull out that small section, you can just reference the little bit of interest that people can then see and view and watch. So they have the use cases to start to do that practically. When it comes to 3D models, if Ed is still around, he probably can comment on this a lot more than me, they are working on the structure of how to do IIIF for 3D, it is quite complex. There are working implementations of various aspects of that. There are some very nice examples presented in the Universal Viewer structure under exhibit.so where you can see some very nice models. So there are starting to be the technical use cases to show how the time based or 3D based materials will be used. And where you might want persistent identifiers often so I guess it comes down to how the previous comment I made about which hooks you want to hang more information off, will indicate where you might want persistent identifiers in an evolving 3D model, basically. Because if you picked up PID for every single pixel, or voxel or whatever system you want to use, you will start to end up with a lot of very quickly which is which is fair enough, but highlighting the generation of a persistent identifier based on the creation of new knowledge attached to it would probably be most, well, most feasible in the short term anyway.
+
+Anne McLaughlin  
+Sara and Ben, I saw you guys nodding quite a bit during the first bit of Joe's comment, would you like to add on to that?
+
+Sara Brumfield  
+So we're involved in a project that does audio and video publishing on GitHub, like Ed mentioned that he does for smaller institutions, although I think that inherently has some problems, but you kind of do what you can do at the moment. And I put a link into information about that project into the chat. It basically allows researchers to to annotate audio or video material and publish it as static websites on GitHub. And we wrap everything in a IIIF manifest and use web annotations.
+
+Anne McLaughlin  
+All right, so I see, we've got two minutes left. We could just ask for each of our panelists and those who have joined us for the discussion here and for just their final thoughts on IIIF and PIDs. What's good? What's bad? And where should we go from here? Rachael, can we start with you for that?
+
+Rachael Kotarski  
+Sorry, I was just typing something something into the chat. Fine. It wasn't, it wasn't for a summing up. I think I was just going to say that the discussion, I think has really supported the idea that all of this stuff is there already. And what we need to do is just work together to continue to move forward and join together all the pieces, really. All the pieces of the jigsaw puzzle are there and we just need to work with them to build that picture up. I think especially in terms of persistent identifiers, it's just understanding whether the ones that we have now are definitely working, you know, it sounds like lots of institutions are using ARKs, they seem to work really well for the scale of the content that we have, as well as the technical functionality. And the missing bit is that the smaller organizations, again, and their lack of technical capacity, and I think we need to understand how we can help those organizations move forward. When they don't have the staff. It's not even about the money for me, I think it's about the staff capacity.
+
+Joe Padfield  
+Anne looks like she might have frozen slightly,
+
+Rachael Kotarski  
+I was just about to say the same thing. 
+
+Frances Madden  
+Joe do you want to go next? 
+
+Joe Padfield  
+OK I'll go next. I would very much agree with what Rachael has just said. That a lot of the tools are out there. I think a lot of the process with dealing with persistent identifiers is just sitting down with a pen and pencil, and scribbling on a piece of paper and thinking of how stuff connects together and planning what you do. I mean, I've created a few systems within the National Gallery that we've called persistent, but we've put beta all over them knowing that they're not going to be. We've managed to keep them persisting, but we've been experimenting, and we've had live experiments of how we might be able to do things. And I think that's part of it as well, as long as you allow people to understand what you're doing is an experiment, so that they don't then invest a three year project on top of what you've done. It's good to start moving forward. Look at what free services are there. Look at what things you can explore. There's lots of training material on IIIF, there's growing issues to do with how you can engage with it. I know a lot of people get scared of it. And I would agree there are various issues with that. But there are free platforms, you can start, you can try. And then that will inform a more robust solution in the future. But as long as you document what you've done, you can then continue wrapping that in what you do in the future.
+
+Frances Madden  
+Thanks, Joe. I'm conscious we're over time now but in the order that we did the introductions, Sara and Ben, do you want to do a quick sum up? 
+
+Ben Brumfield  
+Yeah, I just agree with Rachael, I now have something like a dozen new tabs open.We have a lot of work to do. I think this has been great. 
+
+Andy Irving  
+Thanks. And Andy, we'll give the last word to you.
+
+Oh, just briefly, I just I'm going to disagree with Joe but agree with Rachael that I don't think it's a technical problem as such as it is one of making a decision up front. And we have the means of, to go back to Rachael's point about connecting to other identifiers, we have that means through linked data in IIIF through the kind of 'see also' or the 'same as' property. But it doesn't make sense in most contexts because they're not the same work, etc. So yeah, lots of, lots of things to explore there.
+
+Anne McLaughlin  
+All right, back now sorry for dropping out midway, my internet connection decided it was no longer going to play ball. However, thank you to all of our panelists, thank you to our participants, our attendees, and all those who have contributed to the discussion. All of this will be put on Zenodo, along with all the slides, recordings and transcripts. And we'll send out an email to all attendees when that's ready to go with the DOI included, of course. It will also be published on the National Collection YouTube channel for the videos. I don't know if YouTube counts as a DOI, but they certainly have a URL which we'll share that. So thank you again, and we wish you all a very good evening, good afternoon, good night, wherever you may be joining us from and thank you again. Have a nice evening.
+
+Transcribed by https://otter.ai
