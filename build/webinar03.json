@@ -1,0 +1,75 @@
+{
+  "defaultcard": "full",
+  "displaychecked": true,
+  "tableofcontents": false,
+  "groups": {
+    "Session 01" : {
+      "comment": "Project demonstrators",
+      "card": "presentation"},
+    "Session 02" : {
+      "comment": "Panel Discussion",
+      "card": "presentation"}
+    	},
+	"list": [{
+	"groups": ["Session 01"],
+	"ptitle": "Project Outcomes and Future Directions - Introduction and Welcome",
+	"stitle": "Joe Padfield",
+	"comment": "",
+	"video": "",
+	"slides": "",
+	"transcript": "", 	
+	"link": "https:\/\/twitter.com\/JoePadfield"
+}, {
+	"groups": ["Session 01"],
+	"ptitle": "Simple Site in Practice",
+	"stitle": "Anne McLaughlin",
+	"video": "",
+	"slides": "",
+        "comment": "",
+	"transcript": "",
+	"link": "https:\/\/twitter.com\/anmcl001"
+}, {
+	"groups": ["Session 01"],
+	"ptitle": "Simple Discovery and the IIIF Collection Explorer",
+	"stitle": "Joe Padfield",
+	"video": "",
+	"slides": "",
+        "comment": "",
+	"transcript": "",
+	"link": "https:\/\/twitter.com\/JoePadfield"
+}, {
+	"groups": ["Session 01"],
+	"ptitle": "Tudor Paintings Research Project - InvenioRDM Repository Pilot",
+	"stitle": "Charlotte Bolland",
+	"video": "",
+	"slides": "",
+        "comment": "Presented in collaboration with  Peter Cornwell (Director - Data Futures)",
+	"transcript": "",
+	"link": "https://www.npg.org.uk/research/staff-research-profiles/charlotte-bolland"
+}, {
+	"groups": ["Session 01"],
+	"ptitle": "Manifest Editor",
+	"stitle": "Tom Crane",
+	"video": "",
+	"slides": "",
+        "comment": "",
+	"transcript": "",
+	"link": "https:\/\/twitter.com\/tomofhernehill"
+},{
+	"groups": ["Session 01"],
+	"ptitle": "IIIF Future Directions",
+	"stitle": "Josh Hadro",
+	"video": "",
+	"comment": "",
+	"transcript": "", 
+	"link": "https:\/\/twitter.com\/Hadro"
+},{
+	"groups": ["Session 02"],
+	"ptitle": "Project Outcomes and Future Directions - Session 2",
+	"stitle": "Panel Discussion",
+	"comment": "",
+	"transcript": "", 
+	"video": ""
+} ]
+	
+}
