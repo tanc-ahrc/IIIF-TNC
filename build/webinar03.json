@@ -15,7 +15,7 @@
 	"ptitle": "Project Outcomes and Future Directions - Introduction and Welcome",
 	"stitle": "Joe Padfield",
 	"comment": "",
-	"video": "",
+	"video": "https://youtu.be/embed/pwHr-AFExxg",
 	"slides": "",
 	"transcript": "", 	
 	"link": "https:\/\/twitter.com\/JoePadfield"
@@ -23,7 +23,7 @@
 	"groups": ["Session 01"],
 	"ptitle": "Simple Site in Practice",
 	"stitle": "Anne McLaughlin",
-	"video": "",
+	"video": "https://www.youtube.com/embed/lTYKru67K_A",
 	"slides": "",
         "comment": "",
 	"transcript": "",
@@ -32,7 +32,7 @@
 	"groups": ["Session 01"],
 	"ptitle": "Simple Discovery and the IIIF Collection Explorer",
 	"stitle": "Joe Padfield",
-	"video": "",
+	"video": "https://www.youtube.com/embed/UfvK7EoIQOA",
 	"slides": "",
         "comment": "",
 	"transcript": "",
@@ -41,7 +41,7 @@
 	"groups": ["Session 01"],
 	"ptitle": "Tudor Paintings Research Project - InvenioRDM Repository Pilot",
 	"stitle": "Charlotte Bolland",
-	"video": "",
+	"video": "https://www.youtube.com/embed/lQXTXNwW-qY",
 	"slides": "",
         "comment": "Presented in collaboration with  Peter Cornwell (Director - Data Futures)",
 	"transcript": "",
@@ -50,7 +50,7 @@
 	"groups": ["Session 01"],
 	"ptitle": "Manifest Editor",
 	"stitle": "Tom Crane",
-	"video": "",
+	"video": "https://www.youtube.com/embed/RvV7tK7E1sY",
 	"slides": "",
         "comment": "",
 	"transcript": "",
@@ -59,7 +59,7 @@
 	"groups": ["Session 01"],
 	"ptitle": "IIIF Future Directions",
 	"stitle": "Josh Hadro",
-	"video": "",
+	"video": "https://www.youtube.com/embed/8lUYHXzs0Ak",
 	"comment": "",
 	"transcript": "", 
 	"link": "https:\/\/twitter.com\/Hadro"
@@ -69,7 +69,7 @@
 	"stitle": "Panel Discussion",
 	"comment": "",
 	"transcript": "", 
-	"video": ""
+	"video": "https://www.youtube.com/embed/oHr1DChG7Ys"
 } ]
 	
 }
