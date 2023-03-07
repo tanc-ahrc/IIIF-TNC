@@ -3,7 +3,7 @@
 	"metaKeywords": "AHRC, TANC, Towards and National Collection, IIIF, Image, Research, The National Gallery, London, National Gallery London, Scientific, Research, Heritage, Culture",
 	"metaAuthor": "Joseph Padfield| joseph.padfield@ng-london.org.uk |National Gallery | London UK | joseph.padfield@ng-london.org.uk |www.nationalgallery.org.uk",
 	"metaTitle": "TANC - IIIF",
-	"metaFavIcon": "https://www.ukri.org/ukri/includes/themes/ukri/images/favicon.ico",
+	"metaFavIcon": "https://www.ukri.org/wp-content/themes/ukri/assets/img/favicon-32x32.png",
 	"logo_link": "./",
 	"licence": "<a href='http://rightsstatements.org/vocab/InC-EDU/1.0/'><img height='16' alt='In Copyright - Educational Use Permitted' title='In Copyright - Educational Use Permitted' src='graphics/InC-EDU.dark-white-interior-blue-type.png'/></a><a rel='license' href='https://creativecommons.org/licenses/by-nc/4.0/'><img alt='Creative Commons Licence' style='border-width:0' src='https://i.creativecommons.org/l/by-nc/4.0/88x31.png' /></a>",
 	"logo_path": "graphics/github-iiif.png",
