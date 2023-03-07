@@ -1,0 +1,29 @@
+And. I'm so the demonstrator that I'm talking about today is one that we actually develop early on in the project. It's called simple site.
+
+But instead of talking about sort of how to work with simple site or sort of the technical underpinnings of it, I thought I'd talked today and said about how we've been using it in the project so it is all available. The documentation is on just hard as well as on so now. And Joe himself has presented a bit about how he worked with simple site during the first building. All this one was held in March and there's this denoto DOI to all of the sort of wrapped up videos, transcriptions, presentations, etcetera. At the bottom there.
+
+So we're using this predominantly in four ways in the 1st place, we want to introduce the project and the people involved provide asynchronous classes. Access to our project outputs engage with wider audience and present case studies.
+
+So looking at that and sort of just a quick rundown, if we're thinking about introducing the project, we have our kind of front page as well as a whole list of the team. Unfortunately, I couldn't get all of us. And then there's about 10 project partners and about 14 researchers who have worked with us over the past year or so.
+
+If we move on to providing asynchronous outputs, these are the webinars that Joe was talking about earlier in his introduction. As he said, we've had four of them, and if you go to our website you can see them all at the top with links to the transcripts, links to the presentation packs, as well as the facility videos as they're presented on YouTube. Afternoon.
+
+Further sought to use our website, you engage with the wider audience beyond those people who might attend our webinars or might know of the projects in other ways and predominantly we get this through Twitter and our first attempt at gaining some following was a series called details of the week where we took the deep zoom functionality of Divya and showed little tiny details from various different civilized compared. Natural selection in this case, it's Suzanne's with a depth. And for you to be the details on Twitter and people who are types in order to sort of help include a better idea of what the process is about as well as computer objects from our project partners and other assistance.
+
+And finally we wanted to show the ways in which IIIF can help to illustrate research and present research. We did this through serious told connected collections. We did it in celebration of between 500 followers on Twitter, which we thought was quite the milestone and these tended to be some of our more popular outputs. According to the analytics, each one is a basically built up research blog post. The lack of a better term about one object that was nominated by one of our project partners to sort of represent their collections. And then we built that out a little more so. For one, you can see the DNA. This is a little kind of mosaic called. It's based on a drawing by piece and Ellis. We're able to actually have mosaic as well as the drawing here and then the video about the technique and how this is done and presents altogether. The other one is from another project partner, the World Botanic Garden Borough. But in this case we link it with some of the French National Library materials showing the journey of this priest as you went through China and collected these botanical samples as well as a sort of miniature photograph of him.
+
+So I was going to keep this quite short in five minutes today, but I thought we also should think about the ways in which this can take on the life of its own beyond the project. And in that case, well first we can say it did have a fairly good reach.
+
+As you can see, we spent fairly across the globe with a fair number of users in each with the United Kingdom being our most popular.
+
+But back to going beyond the tank project and beyond the national collection. This is an example of simple site that also takes advantage of some other IIIF tools in order to tell a story. I made it for a group of the University of Manchester. We're going to try and lift in a demo and see if that works for us today.
+
+So the inbuilt storytelling viewer here is exhibit dot SM so developed by the University of Saint Andrews to present AAA of compliant resources and to be able to tell the story with them. So in this case you can click through. And I'll provide a bit of a presentation. Zooming in on what you need. In this case, the City of Manchester.
+
+But the nice thing is because this is all IIIF compliant. Sorry, it's underneath the box. Here's the exhibit dot SO site and say I don't want to see it as slides. I'd prefer to see it as a scroll. I can just change the view here, say I'd like to update it.
+
+In terms that I am not to robots and that I've read the terms and services. Update my presentation. And if I go back to my website here. Refreshing the page. And all of a sudden you're seeing your resources in an entirely different way. Same resources, same tests.
+
+But because all of this can interact with one another, it's the simple side platform, but with exhibit being embedded within it, we can really start to explore different resources, use it for teaching, use it for student presentations, and ask them to engage directly with some primary source material.
+
+I believe that that's the end of my time today. I just fell short 5 minutes, so I'll hand it back to Joe to talk about some other stuff that we're doing with IIIF as part of the project.

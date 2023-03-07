@@ -1,0 +1,35 @@
+OK, so.
+
+Good afternoon, good morning, good evening, depending on which time zone everyone is in.
+
+Welcome to the 5th or final webinar of the practical applications for IIIF Project, which is part of the towards a national collection program funded by the Arts and Humanities Research Council here in the UK.
+
+The practical applications of IIIF project, just as a quick summary, is one of eight foundation projects that were funded within the towards the national collection program.
+
+Our project was initially aimed at 22 months, though it's been extended slightly due to various issues to do with COVID. And I should say, although this is the coming to the end of the practical IIIF project, the program towards a national collection is continuing on and there are five much larger discovery projects that have begun this year and they are well look well worth having a look at and exploring what they're going to be covering now.
+
+The practical applications for IIIF project there is the website there on the left. Is a collaboration of a number of people, several of which you'll be hearing from today, including representatives from the National Gallery of the National Portrait Gallery, Edinburgh University, British Library, Royal Botanical Gardens, Digerati, V&A, Stanford Library, Science Museum Group, and the IIIF Consortium. So it's been a very, very good collaboration among some really, really good people.
+
+So the aims of the project have been to highlight and demonstrate opportunities and benefits of the IIIF standard and what it will offers a wide audience of institutions and researchers examined its potential to virtually connect IIIF collections from different organizations.
+
+Explore the potential of existing drive systems and tools and exploring what new ideas might need to be developed, or systems or tools might need to be dealt to help maximize the potential of IIIF resources.
+
+Now over the last two years, we've been looking to solve that, so organization of five main webinars and actively participate within a number of community activities and related projects and obviously welcome to number 5. This is the 5th webinar.
+
+As I said, we're exploring how existing complex institutional APIs can be simplified to directly display IIIF resources to less technical users, and I will be presenting that soon.
+
+We've been working with two detailed surveys exploring the awareness and usage of IIIF for the UK and European institutions and examining the current presentation of trip life content from UK institutions and what licensing that they've used and that information is going to be included in the final report for the project, which should be published in the next couple of months and finally the development of a series of open source technical demonstrators and tools to provide new ways of creating and interacting if resources and some of those we will be presenting today.
+
+The other four webinars we've had have been very well received and we had over about 992 registrations for the four webinars, and we've had a lot of interaction with the content on our website and actually through the open data repository, zenodo, where we've uploaded all of the videos and slides from the previous webinars and we will be uploading the content from this webinar there as well.
+
+Now today we're going to have a series of 4-5 talks and then a good section on for questions and discussion to for people to comment on the project or the presentations, or to just discuss or applications of IIIF in general.
+
+So this is kind of the running order today, so we'll begin with Ann Laughlin and then come back to myself before going on to Peter, Cornwell and Charlotte Bolland. And then the last larger. Vote will be from the dorati Tom Crane and Diego Lago, and we will finish off with a discussion from Josh Hadro representing the IIIF Community, our consortium, so.
+
+I will now hand over to Anne and we and we can begin the first presentation and would you like to go? 
+
+Would you let me just share my screen quickly here? I should say that someone is actually asked a question now.
+
+The chat and the Q&A are both on. We will try and answer them.
+
+You can just put things in the chat or if there are specific questions we will be saving all public presentations of comments in the chat and the questions and answers as well with Part 4.
