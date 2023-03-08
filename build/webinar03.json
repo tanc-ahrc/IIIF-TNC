@@ -16,44 +16,44 @@
 	"stitle": "Joe Padfield",
 	"comment": "",
 	"video": "https://www.youtube.com/embed/pwHr-AFExxg",
-	"slides": "",
-	"transcript": "", 	
+	"slides": "files/Practical IIIF Webinar 3 - S01 01 - Introduction.pdf",
+	"transcript": "files/transcripts/Practical IIIF Webinar 3 - S01 01 - Introduction.txt", 	
 	"link": "https:\/\/twitter.com\/JoePadfield"
 }, {
 	"groups": ["Session 01"],
 	"ptitle": "Simple Site in Practice",
 	"stitle": "Anne McLaughlin",
 	"video": "https://www.youtube.com/embed/lTYKru67K_A",
-	"slides": "",
+	"slides": "files/Practical IIIF Webinar 3 - S01 02 - UsingSimpleSite.pdf",
         "comment": "",
-	"transcript": "",
+	"transcript": "files/transcripts/Practical IIIF Webinar 3 - S01 02 - UsingSimpleSite.txt",
 	"link": "https:\/\/twitter.com\/anmcl001"
 }, {
 	"groups": ["Session 01"],
 	"ptitle": "Simple Discovery and the IIIF Collection Explorer",
 	"stitle": "Joe Padfield",
 	"video": "https://www.youtube.com/embed/UfvK7EoIQOA",
-	"slides": "",
+	"slides": "files/Practical IIIF Webinar 3 - S01 03 - DiscoveryandExploringIIIF.pdf",
         "comment": "",
-	"transcript": "",
+	"transcript": "files/transcripts/Practical IIIF Webinar 3 - S01 03 - DiscoveryandExploringIIIF.txt",
 	"link": "https:\/\/twitter.com\/JoePadfield"
 }, {
 	"groups": ["Session 01"],
 	"ptitle": "Tudor Paintings Research Project - InvenioRDM Repository Pilot",
 	"stitle": "Charlotte Bolland",
 	"video": "https://www.youtube.com/embed/lQXTXNwW-qY",
-	"slides": "",
+	"slides": "files/Practical IIIF Webinar 3 - S01 04 - TudorPortraitResource.pdf",
         "comment": "Presented in collaboration with  Peter Cornwell (Director - Data Futures)",
-	"transcript": "",
+	"transcript": "files/transcripts/Practical IIIF Webinar 3 - S01 04 - TudorPortraitResource.txt",
 	"link": "https://www.npg.org.uk/research/staff-research-profiles/charlotte-bolland"
 }, {
 	"groups": ["Session 01"],
 	"ptitle": "Manifest Editor",
 	"stitle": "Tom Crane",
 	"video": "https://www.youtube.com/embed/RvV7tK7E1sY",
-	"slides": "",
+	"slides": "files/Practical IIIF Webinar 3 - S01 05 - IIIFManifestEditor.pdf",
         "comment": "",
-	"transcript": "",
+	"transcript": "files/transcripts/Practical IIIF Webinar 3 - S01 05 - IIIFManifestEditor.txt",
 	"link": "https:\/\/twitter.com\/tomofhernehill"
 },{
 	"groups": ["Session 01"],
@@ -61,14 +61,15 @@
 	"stitle": "Josh Hadro",
 	"video": "https://www.youtube.com/embed/8lUYHXzs0Ak",
 	"comment": "",
-	"transcript": "", 
+	"slides": "files/Practical IIIF Webinar 3 - S01 06 - IIIFCommunity.pdf",
+	"transcript": "files/transcripts/Practical IIIF Webinar 3 - S01 06 - IIIFCommunity.txt", 
 	"link": "https:\/\/twitter.com\/Hadro"
 },{
 	"groups": ["Session 02"],
 	"ptitle": "Project Outcomes and Future Directions - Session 2",
 	"stitle": "Panel Discussion",
 	"comment": "",
-	"transcript": "", 
+	"transcript": "files/transcripts/Practical IIIF Webinar 3 - S02 01 - PanelDiscussion.txt", 
 	"video": "https://www.youtube.com/embed/oHr1DChG7Ys"
 } ]
 	
