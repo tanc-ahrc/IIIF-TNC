@@ -3,7 +3,7 @@
 		"https://purl.stanford.edu/hj504pg5511/iiif/manifest": {
 			"provider": "Stanford University"
 		},
-		"https://media.ng-london.org.uk/ng/NG1406": {
+		"https://data.ng-london.org.uk/0COY-0001-0000-0000.iiif": {
 			"provider": "The National Gallery"
 		}
 	},
@@ -12,7 +12,7 @@
      			 "canvasIndex": 6
 		},
 		{
-			"manifestId": "https://media.ng-london.org.uk/ng/NG1406"
+			"manifestId": "https://data.ng-london.org.uk/0COY-0001-0000-0000.iiif"
 		}
 	]	    
 		    
